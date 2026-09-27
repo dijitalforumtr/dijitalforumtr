@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Son Etkinlik - DijitalForum</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    min-height:100%;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:0 auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#111827;
+    border-bottom:1px solid #1f2937;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.nav-inner{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    flex-wrap:wrap;
+    padding:12px 0;
+}
+
+.logo{
+    color:#60a5fa;
+    font-size:28px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.menu li{
+    list-style:none;
+}
+
+.menu a{
+    color:#cbd5e1;
+    font-size:14px;
+    transition:.2s;
+}
+
+.menu a:hover{
+    color:#60a5fa;
+}
+
+.actions{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:9px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.btn-dark{
+    background:#1e293b;
+    color:#fff;
+}
+
+.btn-blue{
+    background:#2563eb;
+    color:#fff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    padding:45px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#dbeafe;
+    font-size:16px;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main{
+    width:100%;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+/* =========================
+   TABS
+========================= */
+
+.new-tabs{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding-bottom:4px;
+    margin-bottom:18px;
+}
+
+.new-tabs::-webkit-scrollbar{
+    height:5px;
+}
+
+.new-tabs::-webkit-scrollbar-thumb{
+    background:#334155;
+    border-radius:10px;
+}
+
+.new-tabs a{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 14px;
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:8px;
+    color:#cbd5e1;
+    font-size:13px;
+    font-weight:600;
+}
+
+.new-tabs a:hover{
+    border-color:#2563eb;
+    color:#fff;
+}
+
+.new-tabs a.active{
+    background:#2563eb;
+    border-color:#2563eb;
+    color:#fff;
+}
+
+/* =========================
+   ACTIVITY CARD
+========================= */
+
+.activity-card{
+    width:100%;
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.activity-title{
+    padding:16px 18px;
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+}
+
+/* =========================
+   ACTIVITY LIST
+========================= */
+
+.activity-item{
+    display:flex;
+    gap:14px;
+    padding:16px 18px;
+    border-bottom:1px solid #1f2937;
+}
+
+.activity-item:last-child{
+    border-bottom:none;
+}
+
+.activity-avatar{
+    width:44px;
+    height:44px;
+    min-width:44px;
+    border-radius:10px;
+    background:#1e293b;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+}
+
+.activity-content{
+    min-width:0;
+    flex:1;
+}
+
+.activity-header{
+    color:#cbd5e1;
+    font-size:13px;
+    line-height:1.7;
+}
+
+.activity-user{
+    color:#60a5fa;
+    font-weight:700;
+}
+
+.activity-topic{
+    color:#dbeafe;
+    font-weight:600;
+}
+
+.activity-topic:hover{
+    color:#60a5fa;
+}
+
+.activity-target{
+    color:#60a5fa;
+    font-weight:600;
+}
+
+.activity-text{
+    margin-top:6px;
+    color:#cbd5e1;
+    font-size:13px;
+    line-height:1.65;
+}
+
+.activity-time{
+    margin-top:5px;
+    color:#64748b;
+    font-size:11px;
+}
+
+.reaction{
+    display:inline-block;
+    margin-left:4px;
+    padding:2px 6px;
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:6px;
+    color:#94a3b8;
+    font-size:11px;
+}
+
+/* =========================
+   EMPTY
+========================= */
+
+.activity-empty{
+    display:none;
+    min-height:280px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.activity-empty-inner{
+    max-width:520px;
+}
+
+.activity-empty-icon{
+    font-size:48px;
+    margin-bottom:12px;
+}
+
+.activity-empty-title{
+    color:#e5e7eb;
+    font-size:20px;
+    font-weight:700;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination{
+    display:none;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    flex-wrap:wrap;
+    padding:18px;
+    border-top:1px solid #1f2937;
+}
+
+.pagination.show{
+    display:flex;
+}
+
+.pagination a{
+    min-width:36px;
+    height:36px;
+    padding:0 11px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:#111827;
+    border:1px solid #334155;
+    border-radius:7px;
+    color:#cbd5e1;
+    font-size:13px;
+    font-weight:600;
+}
+
+.pagination a:hover{
+    background:#1e293b;
+    border-color:#2563eb;
+    color:#fff;
+}
+
+.pagination a.active{
+    background:#2563eb;
+    border-color:#2563eb;
+    color:#fff;
+}
+
+.pagination span{
+    color:#64748b;
+    padding:0 3px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    margin-top:40px;
+    padding:25px 15px;
+    background:#111827;
+    border-top:1px solid #1f2937;
+    text-align:center;
+    color:#94a3b8;
+    font-size:13px;
+}
+
+/* =========================
+   COOKIE
+========================= */
+
+.cookie{
+    position:fixed;
+    left:15px;
+    right:15px;
+    bottom:15px;
+    z-index:1000;
+    background:#111827;
+    border:1px solid #2563eb;
+    border-radius:10px;
+    padding:11px 45px 11px 15px;
+    color:#cbd5e1;
+    font-size:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.cookie-close{
+    position:absolute;
+    right:10px;
+    top:5px;
+    border:0;
+    background:none;
+    color:#60a5fa;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .menu{
+        order:3;
+        width:100%;
+        overflow-x:auto;
+        flex-wrap:nowrap;
+        padding-bottom:3px;
+    }
+
+    .actions{
+        width:auto;
+    }
+}
+
+@media(max-width:650px){
+
+    .container{
+        width:94%;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .nav-inner{
+        gap:10px;
+    }
+
+    .menu{
+        gap:13px;
+    }
+
+    .actions{
+        width:100%;
+    }
+
+    .actions .btn{
+        flex:1;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .activity-item{
+        padding:13px;
+    }
+
+    .activity-avatar{
+        width:40px;
+        height:40px;
+        min-width:40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <div class="nav-inner">
+
+            <div class="logo">
+                🚀 DijitalForum
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html">
+                        Ana Sayfa
+                    </a>
+                </li>
+
+                <li>
+                    <a href="yeni-mesajlar.html">
+                        Yeni Mesajlar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="konu-olustur.html">
+                        Konu Oluştur
+                    </a>
+                </li>
+
+                <li>
+                    <a href="kategori-sec.html">
+                        Kategoriler
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profil.html">
+                        Profil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="bildirimler.html">
+                        Bildirimler
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Giriş
+                    </a>
+                </li>
+
+                <li>
+                    <a href="register.html">
+                        Kayıt Ol
+                    </a>
+                </li>
+
+            </ul>
+
+            <div
+                class="actions"
+                id="userActions">
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <h1>
+            🕒 Son Etkinlik
+        </h1>
+
+        <p>
+            Forumda gerçekleşen en son etkinlikleri buradan takip edebilirsin.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main class="container">
+
+    <div class="main">
+
+        <!-- SEKME MENÜSÜ -->
+
+        <div class="new-tabs">
+
+            <a href="neler-yeni.html">
+                Ne var ne yok?
+            </a>
+
+            <a href="yeni-mesajlar.html">
+                Yeni mesajlar
+            </a>
+
+            <a href="yeni-blog-girdileri.html">
+                Yeni blog girdileri
+            </a>
+
+            <a href="yeni-blog-yorumlari.html">
+                Yeni blog yorumları
+            </a>
+
+            <a href="yeni-yazilimlar.html">
+                Yeni yazılımlar
+            </a>
+
+            <a href="yeni-profil-mesajlari.html">
+                Yeni profil mesajları
+            </a>
+
+            <a
+                href="son-etkinlik.html"
+                class="active">
+                Son etkinlik
+            </a>
+
+        </div>
+
+
+        <!-- SON ETKİNLİK -->
+
+        <div class="activity-card">
+
+            <div class="activity-title">
+                🕒 Son Etkinlik
+            </div>
+
+
+            <!--
+                ETKİNLİKLER BURADA OLUŞUR
+            -->
+
+            <div id="activityList"></div>
+
+
+            <!--
+                0 ETKİNLİK DURUMU
+            -->
+
+            <div
+                id="activityEmpty"
+                class="activity-empty">
+
+                <div class="activity-empty-inner">
+
+                    <div class="activity-empty-icon">
+                        🕒
+                    </div>
+
+                    <div class="activity-empty-title">
+                        Son etkinlik bulunmamaktadır.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--
+                PAGINATION
+                1 SAYFADA GİZLİ
+                2+ SAYFADA GÖRÜNÜR
+            -->
+
+            <div
+                id="pagination"
+                class="pagination">
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+    © 2026 DijitalForum - Tüm Hakları Saklıdır
+</footer>
+
+
+<!-- =========================
+     COOKIE
+========================= -->
+
+<div
+    class="cookie"
+    id="cookieBox">
+
+    Bu web sitesi deneyimini geliştirmek için çerezleri kullanabilir.
+
+    <button
+        type="button"
+        class="cookie-close"
+        id="cookieClose"
+        aria-label="Kapat">
+        ×
+    </button>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   SON ETKİNLİK VERİLERİ
+
+   ŞU AN 0 KAYIT VAR.
+
+   BU NEDENLE SAYFA AÇILDIĞINDA:
+
+   Son etkinlik bulunmamaktadır.
+
+   YAZACAK.
+
+   PAGINATION DA GÖRÜNMEYECEK.
+========================================================= */
+
+const activities = [];
+
+
+/* =========================================================
+   SAYFA BAŞINA KAYIT
+========================================================= */
+
+const ITEMS_PER_PAGE = 10;
+
+
+/* =========================================================
+   AKTİF SAYFA
+========================================================= */
+
+let currentPage = 1;
+
+
+/* =========================================================
+   HTML ESCAPE
+========================================================= */
+
+function escapeHTML(value){
+
+    return String(value ?? "")
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================================================
+   ETKİNLİK RENDER
+========================================================= */
+
+function renderActivities(){
+
+    const activityList =
+        document.getElementById("activityList");
+
+    const activityEmpty =
+        document.getElementById("activityEmpty");
+
+    const pagination =
+        document.getElementById("pagination");
+
+
+    if(
+        !activityList ||
+        !activityEmpty ||
+        !pagination
+    ){
+
+        return;
+
+    }
+
+
+    /* =====================================================
+       0 ETKİNLİK
+    ===================================================== */
+
+    if(
+        !Array.isArray(activities) ||
+        activities.length === 0
+    ){
+
+        activityList.innerHTML = "";
+
+        activityEmpty.style.display = "flex";
+
+        pagination.innerHTML = "";
+
+        pagination.classList.remove("show");
+
+        return;
+
+    }
+
+
+    /* =====================================================
+       ETKİNLİK VAR
+    ===================================================== */
+
+    activityEmpty.style.display = "none";
+
+
+    const totalPages =
+        Math.ceil(
+            activities.length /
+            ITEMS_PER_PAGE
+        );
+
+
+    if(currentPage > totalPages){
+
+        currentPage = totalPages;
+
+    }
+
+
+    const startIndex =
+        (currentPage - 1) *
+        ITEMS_PER_PAGE;
+
+
+    const endIndex =
+        startIndex +
+        ITEMS_PER_PAGE;
+
+
+    const pageItems =
+        activities.slice(
+            startIndex,
+            endIndex
+        );
+
+
+    /* =====================================================
+       ETKİNLİKLERİ YAZ
+    ===================================================== */
+
+    activityList.innerHTML =
+        pageItems.map(function(item){
+
+            return `
+
+                <div class="activity-item">
+
+                    <div class="activity-avatar">
+                        👤
+                    </div>
+
+                    <div class="activity-content">
+
+                        <div class="activity-header">
+
+                            <span class="activity-user">
+                                ${escapeHTML(item.user)}
+                            </span>
+
+                            ${
+                                item.topic
+                                ? `
+                                    <a
+                                        href="#"
+                                        class="activity-topic">
+                                        ${escapeHTML(item.topic)}
+                                    </a>
+                                `
+                                : ""
+                            }
+
+                        </div>
+
+                        ${
+                            item.text
+                            ? `
+                                <div class="activity-text">
+                                    ${escapeHTML(item.text)}
+                                </div>
+                            `
+                            : ""
+                        }
+
+                        ${
+                            item.time
+                            ? `
+                                <div class="activity-time">
+                                    ${escapeHTML(item.time)}
+                                </div>
+                            `
+                            : ""
+                        }
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+
+    /* =====================================================
+       SADECE 1 SAYFA
+
+       1-10 kayıt:
+
+       PAGINATION TAMAMEN YOK.
+    ===================================================== */
+
+    if(totalPages <= 1){
+
+        pagination.innerHTML = "";
+
+        pagination.classList.remove("show");
+
+        return;
+
+    }
+
+
+    /* =====================================================
+       2+ SAYFA
+
+       PAGINATION GÖSTER
+    ===================================================== */
+
+    pagination.classList.add("show");
+
+
+    let html = "";
+
+
+    /* =====================================================
+       ÖNCEKİ
+    ===================================================== */
+
+    if(currentPage > 1){
+
+        html += `
+            <a
+                href="#"
+                data-page="${currentPage - 1}">
+                Önceki
+            </a>
+        `;
+
+    }
+
+
+    /* =====================================================
+       1. SAYFA
+    ===================================================== */
+
+    html += `
+        <a
+            href="#"
+            data-page="1"
+            class="${currentPage === 1 ? "active" : ""}">
+            1
+        </a>
+    `;
+
+
+    /* =====================================================
+       2-7 SAYFA
+    ===================================================== */
+
+    if(totalPages <= 7){
+
+        for(
+            let page = 2;
+            page <= totalPages;
+            page++
+        ){
+
+            html += `
+                <a
+                    href="#"
+                    data-page="${page}"
+                    class="${
+                        currentPage === page
+                        ? "active"
+                        : ""
+                    }">
+                    ${page}
+                </a>
+            `;
+
+        }
+
+    }
+
+
+    /* =====================================================
+       8+ SAYFA
+    ===================================================== */
+
+    else{
+
+        if(currentPage > 3){
+
+            html += `
+                <span>…</span>
+            `;
+
+        }
+
+
+        let startPage =
+            Math.max(
+                2,
+                currentPage - 1
+            );
+
+
+        let endPage =
+            Math.min(
+                totalPages - 1,
+                currentPage + 1
+            );
+
+
+        for(
+            let page = startPage;
+            page <= endPage;
+            page++
+        ){
+
+            html += `
+                <a
+                    href="#"
+                    data-page="${page}"
+                    class="${
+                        currentPage === page
+                        ? "active"
+                        : ""
+                    }">
+                    ${page}
+                </a>
+            `;
+
+        }
+
+
+        if(currentPage < totalPages - 2){
+
+            html += `
+                <span>…</span>
+            `;
+
+        }
+
+
+        html += `
+            <a
+                href="#"
+                data-page="${totalPages}"
+                class="${
+                    currentPage === totalPages
+                    ? "active"
+                    : ""
+                }">
+                ${totalPages}
+            </a>
+        `;
+
+    }
+
+
+    /* =====================================================
+       SONRAKİ
+    ===================================================== */
+
+    if(currentPage < totalPages){
+
+        html += `
+            <a
+                href="#"
+                data-page="${currentPage + 1}">
+                Sonraki
+            </a>
+        `;
+
+    }
+
+
+    pagination.innerHTML = html;
+
+
+    /* =====================================================
+       SAYFA BUTONLARI
+    ===================================================== */
+
+    pagination
+        .querySelectorAll("[data-page]")
+        .forEach(function(button){
+
+            button.addEventListener(
+                "click",
+                function(event){
+
+                    event.preventDefault();
+
+                    currentPage =
+                        Number(
+                            this.getAttribute(
+                                "data-page"
+                            )
+                        );
+
+
+                    renderActivities();
+
+
+                    window.scrollTo({
+                        top:0,
+                        behavior:"smooth"
+                    });
+
+                }
+            );
+
+        });
+
+}
+
+
+/* =========================================================
+   USER ACTIONS
+
+   TEK BİR userActions TANIMI VAR.
+   ÇAKIŞAN const YOK.
+========================================================= */
+
+(function(){
+
+    const userActions =
+        document.getElementById("userActions");
+
+
+    if(!userActions){
+
+        return;
+
+    }
+
+
+    let loggedIn = false;
+
+
+    try{
+
+        loggedIn =
+            localStorage.getItem(
+                "isLoggedIn"
+            ) === "true";
+
+    }catch(error){
+
+        loggedIn = false;
+
+    }
+
+
+    if(loggedIn){
+
+        userActions.innerHTML = `
+
+            <a
+                href="yeni-mesajlar.html"
+                class="btn btn-dark">
+                🔥 Yeni Mesajlar
+            </a>
+
+            <a
+                href="konu-olustur.html"
+                class="btn btn-blue">
+                ✏️ Konu Aç
+            </a>
+
+        `;
+
+    }else{
+
+        userActions.innerHTML = `
+
+            <a
+                href="register.html"
+                class="btn btn-dark">
+                Kayıt Ol
+            </a>
+
+            <a
+                href="login.html"
+                class="btn btn-blue">
+                Giriş Yap
+            </a>
+
+        `;
+
+    }
+
+})();
+
+
+/* =========================================================
+   COOKIE
+========================================================= */
+
+(function(){
+
+    const cookieBox =
+        document.getElementById("cookieBox");
+
+    const cookieClose =
+        document.getElementById("cookieClose");
+
+
+    if(!cookieBox || !cookieClose){
+
+        return;
+
+    }
+
+
+    try{
+
+        if(
+            localStorage.getItem(
+                "dijitalForumCookieClosed"
+            ) === "true"
+        ){
+
+            cookieBox.style.display = "none";
+
+        }
+
+    }catch(error){}
+
+
+    cookieClose.addEventListener(
+        "click",
+        function(){
+
+            cookieBox.style.display = "none";
+
+
+            try{
+
+                localStorage.setItem(
+                    "dijitalForumCookieClosed",
+                    "true"
+                );
+
+            }catch(error){}
+
+        }
+    );
+
+})();
+
+
+/* =========================================================
+   BAŞLAT
+========================================================= */
+
+renderActivities();
+
+</script>
+
+</body>
+</html>
