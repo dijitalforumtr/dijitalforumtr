@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 <url>
-<loc>https://dijitalforumtr.vercel.app/</loc>
+<loc>https://dijitalforum.onrender.com/</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/login.html</loc>
+<loc>https://dijitalforum.onrender.com/login.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/register.html</loc>
+<loc>https://dijitalforum.onrender.com/register.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/profil.html</loc>
+<loc>https://dijitalforum.onrender.com/profil.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/yeni-mesajlar.html</loc>
+<loc>https://dijitalforum.onrender.com/yeni-mesajlar.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/bildirimler.html</loc>
+<loc>https://dijitalforum.onrender.com/bildirimler.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/konu-olustur.html</loc>
+<loc>https://dijitalforum.onrender.com/konu-olustur.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/kategori-sec.html</loc>
+<loc>https://dijitalforum.onrender.com/kategori-sec.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/thread.html</loc>
+<loc>https://dijitalforum.onrender.com/thread.html</loc>
 </url>
 
 <url>
-<loc>https://dijitalforumtr.vercel.app/mesajlar.html</loc>
+<loc>https://dijitalforum.onrender.com/mesajlar.html</loc>
 </url>
 
 </urlset>
