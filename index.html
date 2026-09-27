@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-   
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="DijitalForum - Türkiye'nin teknoloji, yazılım, donanım, mobil ve oyun topluluğu.">
-<meta name="keywords" content="forum, teknoloji, oyun, yazılım, donanım, mobil, bilgisayar">
-<meta name="robots" content="index, follow">
+<meta
+    name="description"
+    content="DijitalForum - Türkiye'nin teknoloji, yazılım, donanım, mobil ve oyun topluluğu."
+>
 
-<link rel="canonical" href="https://dijitalforumtr.onrender.com/">
+<meta
+    name="keywords"
+    content="forum, teknoloji, oyun, yazılım, donanım, mobil, bilgisayar"
+>
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<link
+    rel="canonical"
+    href="https://dijitalforumtr.onrender.com/"
+>
+
+<title>DijitalForum Sosyal</title>
+
 
 <style>
 
@@ -527,6 +546,71 @@ button{
 
 
 /* =========================================================
+   ONLINE USER
+========================================================= */
+
+.online-user{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    padding:9px 0;
+    border-bottom:1px solid #1f2937;
+    color:#cbd5e1;
+    font-size:13px;
+}
+
+.online-user:last-child{
+    border-bottom:0;
+}
+
+.online-dot{
+    width:8px;
+    height:8px;
+    background:#22c55e;
+    border-radius:50%;
+    display:inline-block;
+    flex-shrink:0;
+}
+
+.online-staff{
+    padding:10px 0;
+    border-bottom:1px solid #1f2937;
+}
+
+.online-staff:last-child{
+    border-bottom:0;
+}
+
+.online-staff-name{
+    color:#60a5fa;
+    font-weight:600;
+    font-size:13px;
+}
+
+.online-staff-rank{
+    color:#64748b;
+    font-size:11px;
+    margin-top:3px;
+}
+
+.stat-number{
+    display:block;
+    color:#e5e7eb;
+    font-size:17px;
+    font-weight:700;
+    margin-top:4px;
+}
+
+.stat-blue{
+    color:#60a5fa;
+}
+
+.stat-muted{
+    color:#94a3b8;
+}
+
+
+/* =========================================================
    EMPTY
 ========================================================= */
 
@@ -713,7 +797,6 @@ button{
 
         <div class="nav-inner">
 
-
             <div class="logo">
                 🚀 DijitalForum
             </div>
@@ -772,24 +855,16 @@ button{
             </ul>
 
 
-            <!--
-                GİRİŞ YAPILINCA BUTONLAR BURAYA GELECEK.
-                GİRİŞ YAPILMADIYSA:
-                Giriş Yap + Kayıt Ol
-            -->
-
             <div
                 class="actions"
                 id="userActions"
             ></div>
-
 
         </div>
 
     </div>
 
 </nav>
-
 
 
 <!-- =====================================================
@@ -807,7 +882,6 @@ button{
     </p>
 
 </section>
-
 
 
 <div class="container">
@@ -830,14 +904,12 @@ button{
         🆕 Yeni Konular
     </button>
 
-
     <button
         type="button"
         data-filter="latest"
     >
         💬 Son Mesajlar
     </button>
-
 
     <button
         type="button"
@@ -846,14 +918,12 @@ button{
         🔥 Popüler Konular
     </button>
 
-
     <button
         type="button"
         data-filter="unanswered"
     >
         ❓ Cevapsız Sorular
     </button>
-
 
     <button
         type="button"
@@ -862,14 +932,12 @@ button{
         🏷️ Sıcak Fırsatlar
     </button>
 
-
     <button
         type="button"
         data-filter="content"
     >
         📚 DijitalForum İçerikleri
     </button>
-
 
     <button
         type="button"
@@ -879,7 +947,6 @@ button{
     </button>
 
 </div>
-
 
 
 <!-- =====================================================
@@ -902,24 +969,12 @@ button{
 
 <div class="category">
 
-
     <div
         class="category-title"
         id="categoryTitle"
     >
         🆕 Yeni Konular
     </div>
-
-
-    <!--
-        BURASI BİLEREK BOŞ.
-
-        Gerçek forumdan yeni konu gelmiyorsa
-        burada hiçbir sahte konu bulunmayacak.
-
-        Sonuç:
-        "Yeni bir konu yok."
-    -->
 
     <div id="topicList">
 
@@ -929,9 +984,7 @@ button{
 
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -940,14 +993,11 @@ button{
 
 <div class="forum-block">
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             D
         </div>
-
 
         <div>
 
@@ -961,7 +1011,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -972,7 +1021,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -982,7 +1030,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -996,12 +1043,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1010,14 +1054,11 @@ button{
 
 <div class="forum-block">
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             ▤
         </div>
-
 
         <div>
 
@@ -1031,7 +1072,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1042,7 +1082,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1052,7 +1091,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1066,12 +1104,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1080,14 +1115,11 @@ button{
 
 <div class="forum-block">
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             💡
         </div>
-
 
         <div>
 
@@ -1101,7 +1133,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1112,7 +1143,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1122,7 +1152,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1136,12 +1165,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1150,14 +1176,11 @@ button{
 
 <div class="forum-block">
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             ▶
         </div>
-
 
         <div>
 
@@ -1171,7 +1194,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1182,7 +1204,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1192,7 +1213,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1206,12 +1226,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1220,19 +1237,15 @@ button{
 
 <div class="forum-block">
 
-
     <div class="question-row">
-
 
         <div class="question-icon">
             ?
         </div>
 
-
         <div class="question-name">
             Cevap Bekleyen Sorular
         </div>
-
 
         <div class="question-stat">
 
@@ -1244,7 +1257,6 @@ button{
 
         </div>
 
-
         <div class="question-stat">
 
             Mesajlar
@@ -1254,7 +1266,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="question-last">
 
@@ -1268,12 +1279,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1282,19 +1290,15 @@ button{
 
 <div class="forum-block">
 
-
     <div class="question-row">
-
 
         <div class="question-icon">
             ✓
         </div>
 
-
         <div class="question-name">
             Çözüme Kavuşmuş Sorular
         </div>
-
 
         <div class="question-stat">
 
@@ -1306,7 +1310,6 @@ button{
 
         </div>
 
-
         <div class="question-stat">
 
             Mesajlar
@@ -1316,7 +1319,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="question-last">
 
@@ -1330,12 +1332,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1344,19 +1343,15 @@ button{
 
 <div class="forum-block">
 
-
     <div class="question-row">
-
 
         <div class="question-icon">
             !
         </div>
 
-
         <div class="question-name">
             Çözüme Kavuşmamış Sorular
         </div>
-
 
         <div class="question-stat">
 
@@ -1368,7 +1363,6 @@ button{
 
         </div>
 
-
         <div class="question-stat">
 
             Mesajlar
@@ -1378,7 +1372,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="question-last">
 
@@ -1392,12 +1385,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1406,19 +1396,15 @@ button{
 
 <div class="forum-block">
 
-
     <div class="question-row">
-
 
         <div class="question-icon">
             ?
         </div>
 
-
         <div class="question-name">
             Rehberler
         </div>
-
 
         <div class="question-stat">
 
@@ -1430,7 +1416,6 @@ button{
 
         </div>
 
-
         <div class="question-stat">
 
             Mesajlar
@@ -1440,7 +1425,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="question-last">
 
@@ -1454,12 +1438,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1467,7 +1448,6 @@ button{
 ===================================================== -->
 
 <div class="forum-block">
-
 
     <div class="forum-block-header">
 
@@ -1482,14 +1462,11 @@ button{
 
     </div>
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             🇹🇷
         </div>
-
 
         <div>
 
@@ -1503,7 +1480,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1514,7 +1490,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1524,7 +1499,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1538,12 +1512,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1551,7 +1522,6 @@ button{
 ===================================================== -->
 
 <div class="forum-block">
-
 
     <div class="forum-block-header">
 
@@ -1565,14 +1535,11 @@ button{
 
     </div>
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             🖥️
         </div>
-
 
         <div>
 
@@ -1586,7 +1553,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1597,7 +1563,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1607,7 +1572,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1621,12 +1585,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1634,7 +1595,6 @@ button{
 ===================================================== -->
 
 <div class="forum-block">
-
 
     <div class="forum-block-header">
 
@@ -1648,14 +1608,11 @@ button{
 
     </div>
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             ⌨️
         </div>
-
 
         <div>
 
@@ -1669,7 +1626,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1680,7 +1636,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1690,7 +1645,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1704,12 +1658,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1717,7 +1668,6 @@ button{
 ===================================================== -->
 
 <div class="forum-block">
-
 
     <div class="forum-block-header">
 
@@ -1731,14 +1681,11 @@ button{
 
     </div>
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             📱
         </div>
-
 
         <div>
 
@@ -1752,7 +1699,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1763,7 +1709,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1773,7 +1718,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1787,12 +1731,9 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -1800,7 +1741,6 @@ button{
 ===================================================== -->
 
 <div class="forum-block">
-
 
     <div class="forum-block-header">
 
@@ -1814,14 +1754,11 @@ button{
 
     </div>
 
-
     <div class="forum-row">
-
 
         <div class="forum-icon">
             🎮
         </div>
-
 
         <div>
 
@@ -1835,7 +1772,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Konular
@@ -1846,7 +1782,6 @@ button{
 
         </div>
 
-
         <div class="forum-stat">
 
             Mesajlar
@@ -1856,7 +1791,6 @@ button{
             </strong>
 
         </div>
-
 
         <div class="forum-last">
 
@@ -1870,15 +1804,12 @@ button{
 
         </div>
 
-
     </div>
 
-
 </div>
 
 
 </div>
-
 
 
 <!-- =====================================================
@@ -1902,12 +1833,9 @@ button{
         👤 Profil
     </h3>
 
-
     <div class="profile">
 
-
         <div class="profile-avatar"></div>
-
 
         <div>
 
@@ -1915,135 +1843,210 @@ button{
                 muhammetaktas122
             </div>
 
-
             <div class="profile-rank">
                 Uzman Üye
             </div>
-
 
             <div class="profile-stat">
                 Mesajlar: 0
             </div>
 
-
             <div class="profile-stat">
                 Beğeniler: 0
             </div>
-
 
             <div class="profile-stat">
                 Ödül Puanları: 0
             </div>
 
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ÇEVRİM İÇİ YETKİLİLER
+===================================================== -->
+
+<div class="sidebar-box">
+
+    <h3>
+        🛡️ Çevrim içi yetkililer
+    </h3>
+
+    <div id="onlineStaffList">
+
+        <div class="empty">
+
+            <strong
+                style="
+                    display:block;
+                    color:#e5e7eb;
+                    font-size:20px;
+                    margin-bottom:5px;
+                "
+            >
+                0
+            </strong>
+
+            Yetkili yok
 
         </div>
 
-
     </div>
-
 
 </div>
 
 
-
 <!-- =====================================================
-     SOSYAL MENÜ
+     ÇEVRİM İÇİ ÜYELER
 ===================================================== -->
 
 <div class="sidebar-box">
 
-
     <h3>
-        📰 Sosyal Menü
+        🟢 Çevrim içi üyeler
     </h3>
 
+    <div id="onlineMembersList">
 
-    <div class="side-topic">
-        Konuları bul
+        <div class="empty">
+
+            <strong
+                style="
+                    display:block;
+                    color:#e5e7eb;
+                    font-size:20px;
+                    margin-bottom:5px;
+                "
+            >
+                0
+            </strong>
+
+            Üye yok
+
+        </div>
+
     </div>
-
-
-    <div class="side-topic">
-        Takip
-    </div>
-
-
-    <div class="side-topic">
-        Sosyal'de ara
-    </div>
-
-
-    <div class="side-topic">
-        Sosyal ağı okundu olarak işaretle
-    </div>
-
-
-    <div class="side-topic">
-        Sosyal kuralları
-    </div>
-
 
 </div>
 
 
-
 <!-- =====================================================
-     POPÜLER
+     ÇEVRİM İÇİ DURUM
 ===================================================== -->
 
 <div class="sidebar-box">
 
-
     <h3>
-        🔥 Popüler
+        👥 Çevrim içi durum
     </h3>
 
-
     <div class="side-topic">
-        Henüz popüler konu yok
+
+        Toplam
+
+        <strong
+            id="onlineTotal"
+            class="stat-number"
+        >
+            0
+        </strong>
+
     </div>
 
+    <div class="side-topic">
+
+        Üye
+
+        <strong
+            id="onlineMemberCount"
+            class="stat-number stat-blue"
+        >
+            0
+        </strong>
+
+    </div>
+
+    <div class="side-topic">
+
+        Misafir
+
+        <strong
+            id="onlineGuestCount"
+            class="stat-number stat-muted"
+        >
+            0
+        </strong>
+
+    </div>
 
 </div>
 
 
-
 <!-- =====================================================
-     KATEGORİLER
+     SOSYAL İSTATİSTİKLERİ
 ===================================================== -->
 
 <div class="sidebar-box">
 
-
     <h3>
-        📚 Kategoriler
+        📊 Sosyal istatistikleri
     </h3>
 
-
     <div class="side-topic">
-        💻 Donanım
+
+        Konular
+
+        <strong
+            id="statTopics"
+            class="stat-number"
+        >
+            0
+        </strong>
+
     </div>
 
-
     <div class="side-topic">
-        💻 Yazılım
+
+        Mesajlar
+
+        <strong
+            id="statPosts"
+            class="stat-number"
+        >
+            0
+        </strong>
+
     </div>
 
-
     <div class="side-topic">
-        📱 Mobil
+
+        Üyeler
+
+        <strong
+            id="statMembers"
+            class="stat-number"
+        >
+            0
+        </strong>
+
     </div>
 
-
     <div class="side-topic">
-        🎮 Oyun
+
+        Son Üye
+
+        <strong
+            id="statLastMember"
+            class="stat-number stat-blue"
+        >
+            Üye yok
+        </strong>
+
     </div>
-
-
-    <div class="side-topic">
-        🇹🇷 Atatürk Köşesi
-    </div>
-
 
 </div>
 
@@ -2053,8 +2056,8 @@ button{
 
 </div>
 
-</div>
 
+</div>
 
 
 <!-- =====================================================
@@ -2066,7 +2069,6 @@ button{
     © 2026 DijitalForum - Tüm Hakları Saklıdır
 
 </footer>
-
 
 
 <!-- =====================================================
@@ -2081,7 +2083,6 @@ button{
     DijitalForum Sosyal, anlık bildirimleri etkinleştirmek
     için izninizi istiyor.
 
-
     <button
         class="cookie-close"
         type="button"
@@ -2091,7 +2092,6 @@ button{
     </button>
 
 </div>
-
 
 
 <!-- =====================================================
@@ -2136,9 +2136,6 @@ document.addEventListener(
 
         /* =================================================
            GİRİŞ DURUMU
-
-           SADECE isLoggedIn = true ise
-           kullanıcı giriş yapmış kabul edilir.
         ================================================= */
 
         let isLoggedIn = false;
@@ -2164,8 +2161,6 @@ document.addEventListener(
 
         if(!isLoggedIn){
 
-            /* Giriş / Kayıt butonları */
-
             userActions.innerHTML = `
 
                 <a
@@ -2184,11 +2179,6 @@ document.addEventListener(
 
             `;
 
-
-            /*
-                Profil kutusunu kesinlikle gizle.
-            */
-
             if(profileBox){
 
                 profileBox.style.display =
@@ -2204,11 +2194,6 @@ document.addEventListener(
         ================================================= */
 
         else{
-
-            /*
-                Giriş/Kayıt yerine kullanıcı
-                işlemleri gösterilir.
-            */
 
             userActions.innerHTML = `
 
@@ -2228,12 +2213,6 @@ document.addEventListener(
 
             `;
 
-
-            /*
-                Profil kutusu SADECE giriş
-                yapılmışsa gösterilir.
-            */
-
             if(profileBox){
 
                 profileBox.style.display =
@@ -2245,13 +2224,248 @@ document.addEventListener(
 
 
         /* =================================================
+           ÇEVRİM İÇİ YETKİLİLER
+        ================================================= */
+
+        const onlineStaff = [];
+
+
+        const onlineStaffList =
+            document.getElementById(
+                "onlineStaffList"
+            );
+
+
+        if(onlineStaff.length === 0){
+
+            onlineStaffList.innerHTML = `
+
+                <div class="empty">
+
+                    <strong
+                        style="
+                            display:block;
+                            color:#e5e7eb;
+                            font-size:20px;
+                            margin-bottom:5px;
+                        "
+                    >
+                        0
+                    </strong>
+
+                    Yetkili yok
+
+                </div>
+
+            `;
+
+        }
+        else{
+
+            onlineStaffList.innerHTML =
+                onlineStaff
+                    .map(
+                        function(member){
+
+                            return `
+
+                                <div class="online-staff">
+
+                                    <div
+                                        style="
+                                            display:flex;
+                                            align-items:center;
+                                            gap:8px;
+                                        "
+                                    >
+
+                                        <span
+                                            class="online-dot"
+                                        ></span>
+
+                                        <span
+                                            class="online-staff-name"
+                                        >
+                                            ${escapeHTML(member.name)}
+                                        </span>
+
+                                    </div>
+
+                                    <div
+                                        class="online-staff-rank"
+                                    >
+                                        ${escapeHTML(member.rank)}
+                                    </div>
+
+                                </div>
+
+                            `;
+
+                        }
+                    )
+                    .join("");
+
+        }
+
+
+        /* =================================================
+           ÇEVRİM İÇİ ÜYELER
+        ================================================= */
+
+        const onlineMembersData = [];
+
+
+        const onlineMembersList =
+            document.getElementById(
+                "onlineMembersList"
+            );
+
+
+        if(onlineMembersData.length === 0){
+
+            onlineMembersList.innerHTML = `
+
+                <div class="empty">
+
+                    <strong
+                        style="
+                            display:block;
+                            color:#e5e7eb;
+                            font-size:20px;
+                            margin-bottom:5px;
+                        "
+                    >
+                        0
+                    </strong>
+
+                    Üye yok
+
+                </div>
+
+            `;
+
+        }
+        else{
+
+            onlineMembersList.innerHTML =
+                onlineMembersData
+                    .map(
+                        function(member){
+
+                            return `
+
+                                <div
+                                    class="online-user"
+                                >
+
+                                    <span
+                                        class="online-dot"
+                                    ></span>
+
+                                    <span>
+                                        ${escapeHTML(member)}
+                                    </span>
+
+                                </div>
+
+                            `;
+
+                        }
+                    )
+                    .join("");
+
+        }
+
+
+        /* =================================================
+           FORUM İSTATİSTİKLERİ
+        ================================================= */
+
+        const forumStats = {
+
+            topics: 0,
+
+            posts: 0,
+
+            members: 0,
+
+            guests: 0,
+
+            lastMember: "Üye yok"
+
+        };
+
+
+        /* =================================================
+           ÇEVRİM İÇİ DURUM
+        ================================================= */
+
+        const onlineMemberCount =
+            onlineMembersData.length;
+
+        const onlineStaffCount =
+            onlineStaff.length;
+
+        const totalOnlineMembers =
+            onlineMemberCount +
+            onlineStaffCount;
+
+
+        document.getElementById(
+            "onlineTotal"
+        ).textContent =
+            totalOnlineMembers;
+
+
+        document.getElementById(
+            "onlineMemberCount"
+        ).textContent =
+            onlineMemberCount;
+
+
+        document.getElementById(
+            "onlineGuestCount"
+        ).textContent =
+            forumStats.guests;
+
+
+        /* =================================================
+           SOSYAL İSTATİSTİKLER
+        ================================================= */
+
+        document.getElementById(
+            "statTopics"
+        ).textContent =
+            formatNumber(
+                forumStats.topics
+            );
+
+
+        document.getElementById(
+            "statPosts"
+        ).textContent =
+            formatNumber(
+                forumStats.posts
+            );
+
+
+        document.getElementById(
+            "statMembers"
+        ).textContent =
+            formatNumber(
+                forumStats.members
+            );
+
+
+        document.getElementById(
+            "statLastMember"
+        ).textContent =
+            forumStats.lastMember ||
+            "Üye yok";
+
+
+        /* =================================================
            TOPICLER
-
-           Burada sadece gerçek DOM'daki konular
-           alınır.
-
-           Şu an topicList boş olduğu için
-           "Yeni bir konu yok." görünür.
         ================================================= */
 
         const topics =
@@ -2260,6 +2474,83 @@ document.addEventListener(
                     "#topicList .topic"
                 )
             );
+
+
+        /* =================================================
+           SAYIYA ÇEVİR
+        ================================================= */
+
+        function numberValue(value){
+
+            const result =
+                Number(value);
+
+            if(
+                !Number.isFinite(result)
+            ){
+
+                return 0;
+
+            }
+
+            return result;
+
+        }
+
+
+        /* =================================================
+           SAYI FORMAT
+        ================================================= */
+
+        function formatNumber(value){
+
+            const number =
+                Number(value);
+
+            if(
+                !Number.isFinite(number)
+            ){
+
+                return "0";
+
+            }
+
+            return number.toLocaleString(
+                "tr-TR"
+            );
+
+        }
+
+
+        /* =================================================
+           HTML GÜVENLİĞİ
+        ================================================= */
+
+        function escapeHTML(value){
+
+            return String(value)
+                .replace(
+                    /&/g,
+                    "&amp;"
+                )
+                .replace(
+                    /</g,
+                    "&lt;"
+                )
+                .replace(
+                    />/g,
+                    "&gt;"
+                )
+                .replace(
+                    /"/g,
+                    "&quot;"
+                )
+                .replace(
+                    /'/g,
+                    "&#039;"
+                );
+
+        }
 
 
         /* =================================================
@@ -2276,7 +2567,6 @@ document.addEventListener(
 
                     const value =
                         element.textContent.trim();
-
 
                     if(
                         value === "" ||
@@ -2295,30 +2585,6 @@ document.addEventListener(
 
                 }
             );
-
-
-        /* =================================================
-           SAYIYA ÇEVİR
-        ================================================= */
-
-        function numberValue(value){
-
-            const result =
-                Number(value);
-
-
-            if(
-                !Number.isFinite(result)
-            ){
-
-                return 0;
-
-            }
-
-
-            return result;
-
-        }
 
 
         /* =================================================
@@ -2434,7 +2700,6 @@ document.addEventListener(
                                     numberValue(
                                         topic.dataset.messages
                                     );
-
 
                                 return (
                                     views > 0 ||
@@ -2694,7 +2959,7 @@ document.addEventListener(
 
 
         /* =================================================
-           SAYFA İLK AÇILDIĞINDA
+           İLK AÇILIŞ
         ================================================= */
 
         showTopics(
@@ -2708,4 +2973,5 @@ document.addEventListener(
 
 
 </body>
+
 </html>
