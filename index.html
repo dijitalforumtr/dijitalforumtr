@@ -805,6 +805,35 @@ button{
 }
 
 </style>
+
+<style id="section-page-style">
+.section-page{background:#111827;border:1px solid #1f2937;border-radius:12px;overflow:hidden;margin-bottom:20px}
+.section-page-head{padding:18px;background:linear-gradient(135deg,#071426,#0b1d32);border-bottom:1px solid #1f2937}
+.section-page-head h2{color:#60a5fa;font-size:22px;margin:0 0 6px}
+.section-page-head p{color:#94a3b8;font-size:12px;margin:0;line-height:1.5}
+.section-page-actions{display:flex;gap:8px;flex-wrap:wrap;padding:12px 14px;border-bottom:1px solid #1f2937;background:#0f172a}
+.section-page-btn{border:1px solid #334155;background:#1e293b;color:#cbd5e1;border-radius:7px;padding:8px 12px;font-size:11px;cursor:pointer}
+.section-page-btn:hover,.section-page-btn.active{background:#2563eb;color:#fff;border-color:#2563eb}
+.section-page-back{margin-right:auto}
+.section-subsection{padding:14px;border-bottom:1px solid #1f2937}
+.section-subsection h3{color:#e5e7eb;font-size:14px;margin-bottom:5px}
+.section-subsection p{color:#94a3b8;font-size:11px;margin-bottom:9px}
+.section-stats{display:flex;gap:20px;color:#94a3b8;font-size:11px}
+.section-stats strong{color:#e5e7eb;font-size:13px;margin-left:4px}
+.section-topics{padding:0}.section-topic-list{padding:0}
+.section-topic{display:grid;grid-template-columns:minmax(0,1fr) 90px 90px minmax(150px,220px);gap:12px;align-items:center;padding:14px;border-bottom:1px solid #1f2937}
+.section-topic:last-child{border-bottom:0}
+.section-topic-title{color:#60a5fa;font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.section-topic-meta{color:#64748b;font-size:10px;margin-top:4px}
+.section-topic-stat{text-align:center;color:#94a3b8;font-size:10px}.section-topic-stat strong{display:block;color:#e5e7eb;font-size:13px;margin-top:3px}
+.section-topic-last{color:#94a3b8;font-size:10px}.section-topic-last strong{display:block;color:#60a5fa;font-size:11px;margin-bottom:3px}
+.section-empty{padding:34px 20px;text-align:center;color:#64748b;font-size:12px}.section-empty strong{display:block;color:#94a3b8;font-size:13px}.section-empty span{display:block;margin-top:6px}
+.forum-row.section-clickable{cursor:pointer}
+.forum-row.section-clickable:hover{background:#172033}
+@media(max-width:1000px){.section-topic{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:650px){.section-page-head h2{font-size:19px}.section-page-actions{overflow-x:auto;flex-wrap:nowrap}.section-page-btn{white-space:nowrap}}
+</style>
+
 </head>
 <body>
 <!-- =====================================================
@@ -4454,6 +4483,127 @@ document
 
     }
 );
+
+
+/* =========================================================
+   BÖLÜM SAYFASI — TECHOLAY MANTIĞI / DİJİTALFORUM TEMASI
+========================================================= */
+(function(){
+    const rows = Array.from(document.querySelectorAll('.forum-row'));
+    const main = document.querySelector('.main');
+    if(!main || !rows.length) return;
+
+    function clean(v){ return (v || '').replace(/\s+/g,' ').trim(); }
+    function esc(v){
+        return String(v).replace(/[&<>"']/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});
+    }
+    function rowData(row){
+        const name=clean(row.querySelector('.forum-name')?.textContent) || 'Bölüm';
+        const desc=clean(row.querySelector('.forum-desc')?.textContent) || 'Bu bölümde konularınızı paylaşabilirsiniz.';
+        const stats=row.querySelectorAll('.forum-stat strong');
+        const topics=clean(stats[0]?.textContent) || '0';
+        const messages=clean(stats[1]?.textContent) || '0';
+        const lastTitle=clean(row.querySelector('.forum-last-title')?.textContent) || 'Henüz konu yok';
+        const lastMeta=clean(row.querySelector('.forum-last-meta')?.textContent) || 'Henüz yorum yok';
+        return {name,desc,topics,messages,lastTitle,lastMeta};
+    }
+
+    rows.forEach(function(row){
+        row.classList.add('section-clickable');
+        row.setAttribute('role','button');
+        row.setAttribute('tabindex','0');
+        row.addEventListener('click', function(e){
+            if(e.target.closest('a,button,input,select,textarea')) return;
+            openSection(rowData(row));
+        });
+        row.addEventListener('keydown', function(e){
+            if(e.key==='Enter' || e.key===' '){e.preventDefault();openSection(rowData(row));}
+        });
+    });
+
+    function sectionKey(name){
+        return 'section-' + String(name).toLowerCase().replace(/[^a-z0-9çğıöşü]+/gi,'-').replace(/^-+|-+$/g,'');
+    }
+
+    function openSection(d){
+        const left=main.firstElementChild;
+        if(!left) return;
+        const homeHTML=left.innerHTML;
+        main.dataset.homeHTML=homeHTML;
+        const key=sectionKey(d.name);
+        const topicExists = d.topics && !/^0(?:,0|B)?$/i.test(d.topics.trim());
+        const title = d.lastTitle && !/^Henüz/i.test(d.lastTitle) ? d.lastTitle : '';
+        const meta = d.lastMeta && !/^Henüz/i.test(d.lastMeta) ? d.lastMeta : '';
+
+        left.innerHTML = `
+        <div class="section-page" id="${esc(key)}" data-section="${esc(d.name)}">
+          <div class="section-page-head">
+            <h2>${esc(d.name)}</h2>
+            <p>${esc(d.desc || 'Bu bölümde ilgili konuları paylaşabilir ve tartışabilirsiniz.')}</p>
+          </div>
+          <div class="section-page-actions">
+            <button class="section-page-btn section-page-back" type="button">← Ana bölümlere dön</button>
+            <button class="section-page-btn active" type="button">Tümü</button>
+            <button class="section-page-btn" type="button">Çözüldü</button>
+            <button class="section-page-btn" type="button">Çözüm</button>
+            <button class="section-page-btn" type="button">Rehber</button>
+            <button class="section-page-btn section-create-topic" type="button">＋ Konu Oluştur</button>
+          </div>
+          <div class="section-subsection">
+            <h3>${esc(d.name)}</h3>
+            <p>${esc(d.desc || '')}</p>
+            <div class="section-stats"><span>Konular <strong>${esc(d.topics)}</strong></span><span>Mesajlar <strong>${esc(d.messages)}</strong></span></div>
+          </div>
+          <div class="section-topic-list" id="${esc(key)}-topics">
+            ${topicExists && title ? `
+            <div class="section-topic">
+              <div><div class="section-topic-title">${esc(title)}</div><div class="section-topic-meta">${esc(meta || 'Son konu')}</div></div>
+              <div class="section-topic-stat">Cevap<strong>${esc(d.messages)}</strong></div>
+              <div class="section-topic-stat">Görüntüleme<strong>0</strong></div>
+              <div class="section-topic-last"><strong>${esc(meta || 'Son mesaj')}</strong>${esc(d.name)}</div>
+            </div>` : `
+            <div class="section-empty">
+              <strong>Henüz konu yok</strong>
+              <span>Henüz yorum yok</span>
+            </div>`}
+          </div>
+        </div>`;
+
+        left.querySelector('.section-page-back').addEventListener('click', function(){closeSection();});
+        left.querySelectorAll('.section-page-actions .section-page-btn:not(.section-page-back)').forEach(function(btn){
+            btn.addEventListener('click', function(){
+                left.querySelectorAll('.section-page-actions .section-page-btn').forEach(function(b){b.classList.remove('active')});
+                btn.classList.add('active');
+            });
+        });
+        window.scrollTo({top:0,behavior:'smooth'});
+        history.pushState({section:d.name},'',location.pathname+'#bolum='+encodeURIComponent(d.name));
+    }
+
+    function closeSection(){
+        const left=main.firstElementChild;
+        if(!left || !main.dataset.homeHTML) return;
+        left.innerHTML=main.dataset.homeHTML;
+        delete main.dataset.homeHTML;
+        history.pushState({},'',location.pathname);
+        window.scrollTo({top:0,behavior:'smooth'});
+        // Re-bind rows because the original DOM was restored from HTML.
+        bindRestoredRows();
+    }
+
+    function bindRestoredRows(){
+        document.querySelectorAll('.forum-row').forEach(function(row){
+            if(row.dataset.sectionBound==='1') return;
+            row.dataset.sectionBound='1';
+            row.classList.add('section-clickable');
+            row.setAttribute('role','button'); row.setAttribute('tabindex','0');
+            row.addEventListener('click',function(e){if(!e.target.closest('a,button,input,select,textarea')) openSection(rowData(row));});
+            row.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openSection(rowData(row));}});
+        });
+    }
+    rows.forEach(r=>r.dataset.sectionBound='1');
+    window.addEventListener('popstate',function(){ if(location.hash.startsWith('#bolum=')){ const name=decodeURIComponent(location.hash.slice(7)); const r=rows.find(x=>rowData(x).name===name); if(r) openSection(rowData(r)); } else if(main.dataset.homeHTML) closeSection(); });
+})();
 
 </script>
 </div></body>
