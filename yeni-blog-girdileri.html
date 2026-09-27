@@ -130,20 +130,7 @@ button{
   align-items:start
 }
 
-.card{
-  background:#111827;
-  border-radius:12px;
-  border:1px solid #1f2937;
-  overflow:hidden;
-  margin-bottom:20px
-}
-
-.card-title{
-  background:linear-gradient(135deg,#1e3a8a,#2563eb);
-  padding:15px;
-  font-size:18px;
-  font-weight:bold
-}
+/* NE VAR NE YOK SEKME MENÜSÜ */
 
 .new-tabs{
   display:flex;
@@ -189,6 +176,8 @@ button{
   outline-offset:2px
 }
 
+/* BLOG ALANI */
+
 .content-section{
   background:#111827;
   border:1px solid #1f2937;
@@ -198,100 +187,25 @@ button{
 }
 
 .content-section-title{
-  background:linear-gradient(135deg,#1e3a8a,#2563eb);
-  padding:14px 16px;
+  background:#07111d;
+  border-bottom:1px solid #172334;
+  color:#5fb8ff;
+  padding:10px 12px;
   font-size:17px;
-  font-weight:700
+  font-weight:500
 }
 
-.content-section-body{
-  padding:0
-}
-
-.blog-list{
-  background:#111827;
-  border:0;
-  border-radius:0;
-  overflow:hidden
-}
-
-.blog-item{
-  display:flex;
-  align-items:flex-start;
-  gap:14px;
-  padding:15px 17px;
-  border-bottom:1px solid #1f2937;
-  min-height:145px;
-  transition:.2s;
-  background:#111827
-}
-
-.blog-item:last-child{
-  border-bottom:0
-}
-
-.blog-item:hover{
-  background:#162033
-}
-
-.blog-thumb{
-  width:160px;
-  height:105px;
-  object-fit:cover;
-  flex:0 0 160px;
-  background:#0b1220;
-  border-radius:8px
-}
-
-.blog-content{
-  min-width:0;
-  flex:1
-}
-
-.blog-category{
-  color:#60a5fa;
-  font-size:12px;
-  font-style:italic;
-  margin-bottom:5px
-}
-
-.blog-title{
-  font-size:20px;
-  color:#38bdf8;
-  margin-bottom:6px
-}
-
-.blog-meta{
-  font-size:12px;
-  color:#64748b;
-  margin-bottom:8px
-}
-
-.blog-desc{
-  font-size:13px;
-  line-height:1.55;
-  color:#cbd5e1
-}
-
-.share{
-  color:#64748b;
-  font-size:20px;
-  align-self:flex-start
-}
-
+/* İSTEDİĞİN YAZI STİLİ */
 .blog-empty{
-  padding:55px 20px;
-  text-align:center;
+  padding:24px 14px;
   color:#64748b;
-  font-size:14px
+  font-size:13px;
+  min-height:58px;
+  display:flex;
+  align-items:center
 }
 
-.blog-empty strong{
-  display:block;
-  color:#e5e7eb;
-  font-size:18px;
-  margin-bottom:7px
-}
+/* SAĞ MENÜ */
 
 .sidebar-box{
   background:#111827;
@@ -492,6 +406,7 @@ button{
 }
 
 @media(max-width:1000px){
+
   .main{
     grid-template-columns:1fr
   }
@@ -503,6 +418,7 @@ button{
 }
 
 @media(max-width:650px){
+
   .container{
     width:94%
   }
@@ -538,20 +454,6 @@ button{
   .stat-grid{
     grid-template-columns:1fr 1fr
   }
-
-  .blog-item{
-    flex-direction:column
-  }
-
-  .blog-thumb{
-    width:100%;
-    height:180px;
-    flex-basis:auto
-  }
-
-  .blog-title{
-    font-size:17px
-  }
 }
 </style>
 </head>
@@ -581,7 +483,6 @@ button{
   </div>
 </nav>
 
-
 <section class="hero">
   <div class="container">
     <h1>📝 Yeni Blog Girdileri</h1>
@@ -589,176 +490,291 @@ button{
   </div>
 </section>
 
-
 <main class="container">
-
   <div class="main">
 
     <section>
 
-      <div class="new-tabs" role="tablist" aria-label="Yeni blog girdileri menüsü">
+      <div class="new-tabs" role="tablist" aria-label="Ne var ne yok menüsü">
 
-        <a href="neler-yeni.html">Ne var ne yok?</a>
+        <a href="neler-yeni.html">
+          Ne var ne yok?
+        </a>
 
-        <a href="featured.html">Öne çıkan içerik</a>
+        <a href="yeni-mesajlar.html">
+          Yeni mesajlar
+        </a>
 
-        <a href="yeni-mesajlar.html">Yeni mesajlar</a>
-
-        <a href="yeni-blog-girdileri.html"
-           class="active"
-           aria-current="page">
+        <a href="yeni-blog-girdileri.html" class="active" aria-current="page">
           Yeni blog girdileri
         </a>
 
-        <a href="yeni-blog-yorumlari.html">Yeni blog yorumları</a>
+        <a href="yeni-blog-yorumlari.html">
+          Yeni blog yorumları
+        </a>
 
-        <a href="yeni-yazilimlar.html">Yeni yazılımlar</a>
+        <a href="yeni-yazilimlar.html">
+          Yeni yazılımlar
+        </a>
 
-        <a href="yeni-profil-mesajlari.html">Yeni profil mesajları</a>
+        <a href="yeni-profil-mesajlari.html">
+          Yeni profil mesajları
+        </a>
 
-        <a href="son-etkinlik.html">Son etkinlik</a>
+        <a href="son-etkinlik.html">
+          Son etkinlik
+        </a>
 
       </div>
 
-
+      <!-- YENİ BLOG GİRDİLERİ -->
       <div class="content-section">
 
         <div class="content-section-title">
-          📝 Yeni Blog Girdileri
+          Yeni Blog Girdileri
         </div>
 
-        <div class="blog-list" id="blogList">
-
-
-          <!-- 1. BLOG GÖNDERİSİ -->
-
-          <article class="blog-item">
-
-            <img
-              alt="Silent Hill Townfall"
-              class="blog-thumb"
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABiAKEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD8xcr/AM8of+/S/wCFGV/55Q/9+l/wrYuvDhtYvMNwCM4xt5z6HmqSWKO6r5pB3FWJTgYz781fJIV0yplf+eUP/fpf8KMr/wA8of8Av0v+FalvoYuZhGkxPqQnT361cs/CYur2S3+17ChXJ8rPyk8tjPahQk9gehz+V/55Q/8Afpf8KMr/AM8of+/S/wCFdbD4BEszL/aG1OMOYep5/wBr29a6zwT8Bf8AhMDchtd+xeSwUZtN+7Of+mg9KpUpuSilqDaUXN7I8myv/PKH/v0v+FGV/wCeUP8A36X/AAr23VP2av7M1E2v/CR+ZhQ277Djr7eZU+n/ALL7X7bR4j2tnH/Hjn/2pWn1are1vyMPb097nheV/wCeUP8A36X/AAoyv/PKH/v0v+Fe6+Pv2ZbXwB4Wi1W78XCa5nbbb2K6ftaU/wAXzebxgc9PSvIW8NzbiIxM+M8+TgHj6+1S6NRdC1Vg1dMyMr/zyh/79L/hRlf+eUP/AH6X/Cut8PeAl1TVre21C/bS7aR9rXBhWQp77N6k84r6Osf2ARdWck0njwwsoyqf2Nu3fj59TKlOKu0ONSMnZM+RMr/zyh/79L/hRlf+eUP/AH6X/CvobV/2SRpF20DeLN5BwG/s3AP/AJFry+9+GU1pcGJLqS4xJJHuit8j5TjP3u9N0Zq10EakZXt0OJyv/PKH/v0v+FGV/wCeUP8A36X/AArpB4Qixdb9QMTWwBlSSA7hlgBjBOeo6VVbQrJRn+1CT6C1ep9nIrmRi5X/AJ5Q/wDfpf8ACjK/88of+/S/4VqSaXZIpP8AaJ+ht2H9aqzWtuqsYrkysBnHllf5mk4NDTTKuV/55Q/9+l/woyv/ADyh/wC/S/4Vbu9P+zWdtcCTes+7AxjGDiqijcrN0AOPrScWtwTvsGV/55Q/9+l/wopKKkZ2eqR+fYpLsJdSI3yc7Tn+YJI+lY8aJ56g4xvbJ/Af41f1HVbW4VHAQOWG8o/3ufQ/zqlAjGRX5VSGbdjqMj86627maRqaHavbXygkSLwVKkYIPrWqIp7bVory3wJI2B55DDuD6giqOkhluYyU6bRz29MV0tjFvdCw49T3opO/MdNaHLCD73/QgO5uVQAZOAO3tXffDp5bVmuVlZdjbTGW+U9wfqP61zEVkXk2gd+1dVomLCHyeVLkOainUiq6ud88LNYGUorex3OoX9pqd01558kd2SqC22AoQOCd+7Oe+Co+tdh4ctIy27odufpXBaXaC4VnkLLkY3LwfwrvvAdg9md1xctcSNwjMxBx2BGcE9eQBXrOdtbnyypt6WPPf2vY3g8J+D5miL26zzxswOMMVQj6cBj+FeQ+HPhLrHiuxE2nrhFUs4eRAQCG9/cV7d+1b42srTwzpPh2a1iup57pZmeUn/R1TjIx/EcsOegzxyMZnh5riO2t7TwdeapaSNZy3Vw9+0dxEAqZCpjJGTk5PQV89jsW6M7xa17n0mXYKNan78Xp2+Z4nqfhK60LXrC2mtxPJPdRwo3n8bi3oBz1/Sv0akvxDY8YVQMcV8UeOvFOj+EZPC+rLY319qYvI7meLVLtZg+M8KFJxg9Cf1r6l0bxPZ+K9Bt7+yuFdLiESrHkb14BIYdiMgVthMR7aHNNmWMwbpVOWktDhPiNr5sLsTwwtcybsCNOT7k+wHNeF6vBImr3720pQLcnBbGTuJr2bxrp8kzQu5CuOSF7E9frXmWsaWFF5sJPzoT+ZNFTEv2iR7FDKF9WlO+tv82eda3orB72SWZhNKqYfJB+9yeBgVzlxohjBL3s44z95iP516FqoCxyLsOF2ZwM/wAQ/wAKbp/gzTvFcF/dXTyRzQgbEjIAPXqK0qVY0/eex5eHy+riZKlT3s/wPM30y1CBZb643dcAH/Gsq7tLNFk8uaaQ7GID+uDXU6noEOjXcMqoJlxuKSDIx9O9WI10+9jLRW8ETEEGMooNXBqpojjq0Z0PjOHvIHk0qzl6RLuTOeh3E9PoRVBmAAHPP3R6D1/GtLXZGju2hYFUQ/JCBhc+uBUC2ZSwmmblzjJ/EVlPewQjeN0UaKKKyJJCMjua6vw3E1xp0puF822RNw4+ZPmCjb+JPFdZ+y/8MtJ+Lnxq8P8AhrXJmi0q4Mks6RvsaYIhfywexbGOOcZxzXs3jLXfhZdaHr3hyP4can8OfFVnPHFp8byu5u1WcZ8wPgDIyeMnngnv0Qkov3thqEqnuwV2fP8Aa28ttdpbMoZQxKTZwSO4/DGMV0Wn5UICPaus+A/hWz8ZfGPwrourW5uNMv7spPCGKEgxzOTkYIPyqKreKtJg0fxZren28W21tdRuIIQGzhElZVGT3AAHNZTfs5ySZ7NCPt6cFJbDrCzLYYHOa2/shM0fYhB078133xi8GaJ4GvfC1vpNq9ut9otveTgyM+6Rs7jyeOnQcVkeAdLg13x5olpOjSWVxdwQyRgkfKXAPI/GuGClKrqfUTqUaeBU4dSG51qDw9of2yeNnjjZR5aYBck9Ofz/AArlNQ+M0moxXdvZyy6eWCYWJwFKDksjABsk44J4HFfRPx3/AOFWeCotQ0HUPB2sl4lZYtRSRzBFIwKoxJbnk9K+S/A3h3TtS+LPhvQ3cX+k6nqNvbyFWKlonmUMuRyDgv0x1r0Z8zp8x8nSqUnX5Yx0t+JW8bW154utJ7u5me5lhfcVJztTPQfhXQ+ABZaZBEt/YP4ghliPlC2VHkiAJBR1IJHTtwQRz6fR3jj9nOy8HfF/wrH4czceB9avY7C+s5pDMI3VxHNH5hO9SVJI56q3YVz+reD9E8E+Mte07w/p32NdPvHtFaGZBJ5B4KEscnj1bPA4rxJ8zvGXc9SVSnFQq01a6627/mfMXiTwxcat4gtZBbm2SRjJDbrgiFM8BscKx5OOvQnAIz2Fr8QL/wAAtYw29zJEU37oAcHyyFx788/lX1V4X8LfCafwp4i1r/hDb6O40C2Sa5jW8O+Rn4LoofCkkE5r4y+Kkehf8JrrN5oFpc2GmySjy4L2ZpplO0Z3uxJYk5PJPWtI3jJK5pRtVpuSj1u3pb0VvI9g8L/E/wD4TyKWCWDy3QErMON4HUt79uM9D0yKp6lD5iz4yNzKc5qp+yDpFt4z8c61peoWjT21no91eQeWxUiWMRqg4IyOTx0Jr2XwP8PYtT8I+MdR1zSbiC5s9HN5aeZuULJhj24PQcGu6rSs4yXz9SsFmMXTqUp/LzT0/N/cfNfiaDyFldHLn5T9Oax9L1q2so7z7ZtldwNhZd3PfHp2r0zwlo1h4j8e6Bouo23nWd5qFvBOgYrlGkAIBHI61578ddDsPB/xT8XaLpq/ZtPtNQkt4YyzMVRWOBk5J/Gok+aNmZuSoYhTja6Xy6o4PX9UDn90wQ7QODisO3JlvUDMWDZ9x0r2D9oD4e6F4L8FfCXUtJtWgvPEHh8X1/I0rv5suU+YAk7fvHgYFeWeDbCLUvF2jWU43W9zfQwSJnqjSBWH5E1vFaHz1So5S5hmradIdNt77PmKuAc8kHGcfTrVW4lUabIoOSwXp9RXvX7QPw70jwV8TfFvhPQ4GsdHspoUtkd2kMYMETnliSfmY96+e7+wmsXlimZV8ptoUfx/T2x3racbK/cwU7rT5lGiiisDM9F+A/gqbx/8UNH0a18TR+Er6QvJa6m8jRssyKWRUZSCGYgAHI/E4B+wNdsPiFbfAXx7F8fv7Mljs7ZR4dvZ5Ld7170EhGieM5OTt54YjdnjNfA8URVwc7SOQa2pdYvtVWNL29ub0R8ILiZpAg9sk4ro5TO9tj3L9kvxDFL8dfA8d18kqXjHzieHAgcDPpgZJPepfFrRr4v8UTP80Uuq3UmV53BriZgw+oK89xXiNjBNaOsiOY2OdpUkHpg/ocV3OnXGpafBDZajbyrBMA0cjqdyZOfx9x1rlrwWnL/XofT5ZWnJznOLsla9tE3tzdr7X+/ufZ/xU+Cev/EmLwhq2kLZSWdtoNrC8lzcrFghSTkHtgjmvOvhXpEcHjvQJF2hRfw/dOV4cdPavOdAmufMCyXMjW7ZO0OcEbjjH4Gu7nvrfQvD19qrOFS2t2ZXB6HGBx9SKmlaT5jtr0alHDunJ3Xe369dzvf2v/CvxC8XeHPEr317YQ+CNPnF9Bm7jQ7EXA3LjczbicAnqR3r4o+C87WXxz8ChJQ8ba/YHIOAP9IUEfr+taF1q9r4j0+a0tYb+5bbuZQWcKM8EjoBkd65TT/AGqXVyl9HHNa2KDzhK7CKVlHJZASD24PT0z0rtqJNKOjfkfLUqdSFqnK1F31a003120666H6J/Cn4u6X4i+PHjzwDqEolgTXH1TSrlSCizRMrOobpyOfwYd6+Xf2iPFmvWXxW8bSvd3qWUGrzqiW7A7IcriTbu+7k4zXgWreIY0soLTTIZLCOIktKsp82Ynu78Z6DCjAHXGSaprZX9kJL+eyvFeIpI1yZCu3d90kkHr2rgUUlqdlTnrvmpxbUVrZX2W/lotfS59e/s7+N21f4QfGGKTVVvH8i0gtvtH7p3Z5HAGOck+gz04r5x+J0N1p1yTKzTR3Tm5SRomi3jgHG77wHHPse4NcLPq9xfXqAt5g85XVVVUZiOmSoGTz1969d8byW/ibT9NXXItS/tDyHeCR8Da5AIVnOcnoT6elTKCUlLrsdmDeJnh6qhpCOrdtL7JaJ6u2h6B+wf4jXS/GniO4SQw3Vp4Zvp0mkICIVMZXg8dcV7N+z58ePF3xd+HvxDg8X6l9rki0Rp4R5MMagNuTgoAckg8H2r4l0fTtX0u3e0GjzszKQ88QaRXjPOCBlduQDntj1r0D4aXWt6f4v06yktmhgL7LkNL8hRkYqCPXCsRnnj616DimtWeJRjNy5lHRNa/16Hpvw/h/4u94VYgKo1W2Oc9hKDXm/7SdsurfG/wAbTWrrNE2qTkOjBlPzdjXfeIdOiM2QWTa2cocEfQ15PquheW7EOevTFcqVnZn0mJoynGNZdbq3XSz1+/T5n0T8SP2c/Fnxs+E/wYufDgsGi0zwxHBcfa7tYirMEIwD14Br5R8KaTJpHxN0izlaOSS11iGJ5IW3IxWcAlW7jjg1szWskGkRlb65E7ylURX+URgDPH1IrDi0QxSGXewZTkAetdEFc+exFKVCSjJ6tJ/fqr/I+xf2lvgB4r1b4g+NvHER0+Pw85S6Ez3iiQxpbxo3ydc7kIA78etfGvjSAW6uSOZIByeTxItdnoFxcz6dte5lkDgEhnJB4Fcz8RbRxaRTAAKqEHJx/EuMetbVIv2VmZUJqEpPya+9HndFFFcZJ1k2iMv3R+lNtdKlRiACPWvUJNCiZs8Hnnipf7CgROEGa9R0WcaqJnE6VZu2A0bSBew64rp1M17eRzhWQu7fKTnA4AH4dKv2lmtuZVVQAQAD6Vo6fBGoiBjO4ZKntXBOn71z6nB1pRo+yT0lq/VOy/Bv7zd8OPmIKwG8dKd8TfEU2keFbW3t1jmjubgRzpKOHUKzbfbJUHp27HFLYkKp2DBIqt4r8OjxLpKW0lx5MkUvnRsBkbgrDB9vmpRgqcro9PEV6mKwfsu23/DnmVp44bwxeapCzOsMpZUa2Rc7gcA4yOOPXjj0rl9f+IN7fSXRhaSP7RsRg5ztReij6nkn+VdBrPgHxB9undNPe78xiUkjCndz7Nx+NcBdaZNb3UyXAEEkbFWViMgg8jj34qHTXPznkf2ji44aOFbtFXW3dNNfc38n5K1SGKaU7UDFDyVBHSt7V9WfU7Sa3S2Nu0siMRuAHloNqL6t1JJPc/SsqGKFiSylv9kNinypEXXyo9oCnIJJz+tHKpNNmVGvUoUpwg9Jb/iu3ZtfMXRvDd5qmoRxpC0kIdfOdBuEaEgFjjsKPEGrHVvEV9eRnZHJMzRAHG1AcKPyAq4bmGFP3dnGgYYYBn5Hoeaypk86TKR7STxtH6VNveuzSpOMMN7Cn1d352ulbRWsm+97nceEvGT6Jp92bmSS7dkEcCJJ9zOdzEjpx0wc/wA69NtPiHZWeq6JrFvaRbdQXybyJkCs7qSI5Dj+IqcZ78Z6mvHfD3gTWtdtXns7Z3tuQX3KMkdQAT19q9M8NfD2/l1fS7m9RLWz09llWJiCZWByBgduOc+vHrXRT9xuRlKtXr0YYbltGLve2vXd/P8ABHqniOFH81s7HU4ZT615prFqJXcksDnsa7XWLiVCS58xmOSx71zV0POJJHOaylG70PdlNcijJbI5C/tleOJYVkRo0wzE/ePJzWXOZjI6iInqASxP412N9biKIkLgkHPFZtjCsswAIOW5FdEIWskfN4qr7STlJL7l0VkQeFrWb7KMjp049hWb8TbI/wBiiYj7n9WWvSNC0+NbMYAFc98XLBYPBVy/G4FP/RiV2zp/umeTCpapY8BoooryDqPZ4fiHoOBv1Db/ANsZP/iavQ/EXwwH+bU8D1+zy/8AxNeFUV2fWp9kc/sI9z3k/ETwmWY/2mP/AAHl5/8AHKkT4meFgyf8TPAHX/R5f/ia8CorN1pPojrpzlTtyvY+jLb4r+E4Tzqw/wDAab/4ipp/i54RdBjVst/17Tf/ABFfNtFQ6jl0OmGKqU48qPpKD4weFFIDargD/p3l/wDiK8g17V9J1e8u3WdVZ5pZEmKPtKltwXG3OTXGUVHMKpiZ1VaVjRW5gVgwfDD2NSS3ls77h8pwc4B61lUUXMfaO1jUnvoZQADtA7YPNP0+ay+1D7TMY4gCcqhOTjgVkUUrjdWTPZfAvxD0PR9He2vdR8pjLvVPIdsZUZ6L6/yrq4Pi34SjTB1fkf8ATtN/8RXzfRVcxpDE1IXsfRF78VPClxGQNWyR0/0eb/4is3/hZPhkf8xP/wAl5f8A4mvCaKfOypYqpLRnuknxC8LSjDap/wCS8v8A8TUMPjjwnBIGGpgjPP8Ao8v/AMTXiNFaKvJdEcM1z7s+gLD4neFraIq2q49P9Hl/+Jrn/iT8QtF8Q+GZ7KxvfOmYrhPKdc4ZT1Kgdq8foq5YmcouNkZKjFPmCiiiuQ3CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q=="
-            />
-
-            <div class="blog-content">
-
-              <div class="blog-category">
-                Türkçe Yama
-              </div>
-
-              <div class="blog-title">
-                Silent Hill Townfall - Türkçe Yama [GÜNCEL]
-              </div>
-
-              <div class="blog-meta">
-                NABERMÜDÜR · 2 dakika önce · Görüntüleme: 32 · Oyun
-              </div>
-
-              <div class="blog-desc">
-                SILENT HILL: Townfall, serinin psikolojik korku anlayışını 1996 İskoçya'sındaki soğuk ve izole St. Amelia adasına taşıyor. Oyuncu, geçmişiyle ve bu kasabayla olan bağını çözmek için geri dönen Simon Ordell'i yönetiyor.
-              </div>
-
-            </div>
-
-            <div class="share">♧</div>
-
-          </article>
-
-
-          <!-- 2. BLOG GÖNDERİSİ -->
-
-          <article class="blog-item">
-
-            <img
-              alt="Trident A5 incelemesi"
-              class="blog-thumb"
-              src="data:image/jpeg;base64,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"
-            />
-
-            <div class="blog-content">
-
-              <div class="blog-category">
-                XFe.Bey
-              </div>
-
-              <div class="blog-title">
-                Trident A5 incelemesi
-              </div>
-
-              <div class="blog-meta">
-                XFe.Bey · 7 Eylül 2026 · Görüntüleme: 71 · Beğeniler: 1 · Teknoloji
-              </div>
-
-              <div class="blog-desc">
-                Trident A5, 2015 yılında satılıyordu. O zamanlar en ucuza satılan Android telefonlardan biriydi. Gittigidiyor gibi alışveriş sitelerinde 150-200 TL arasındaydı. Çok ucuz olması ve Android olması nedeniyle epey satılıyordu.
-              </div>
-
-            </div>
-
-            <div class="share">♧</div>
-
-          </article>
-
-
+        <div class="blog-empty">
+          Yeni Blog Girdileri bulunmamaktadır.
         </div>
 
       </div>
 
     </section>
 
+    <aside>
+
+      <div class="sidebar-box">
+        <h3>🛡️ Çevrim içi yetkililer</h3>
+        <div id="onlineStaffList" class="online-list"></div>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🟢 Çevrim içi üyeler</h3>
+        <div id="onlineMembersList" class="online-list"></div>
+      </div>
+
+      <div class="sidebar-box">
+
+        <h3>👥 Çevrim içi durum</h3>
+
+        <div class="status-grid">
+
+          <div class="status-item">
+            <div class="status-number" id="totalOnline">0</div>
+            <div class="status-label">Toplam</div>
+          </div>
+
+          <div class="status-item">
+            <div class="status-number" id="memberOnline">0</div>
+            <div class="status-label">Üye</div>
+          </div>
+
+          <div class="status-item">
+            <div class="status-number" id="guestOnline">0</div>
+            <div class="status-label">Misafir</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="sidebar-box">
+
+        <h3>📊 Sosyal istatistikleri</h3>
+
+        <div class="stat-grid">
+
+          <div class="stat-item">
+            <div class="stat-number" id="topicCount">0</div>
+            <div class="stat-label">Konular</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number" id="postCount">0</div>
+            <div class="stat-label">Mesajlar</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number" id="memberCount">0</div>
+            <div class="stat-label">Üyeler</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number" id="guestCount">0</div>
+            <div class="stat-label">Misafir</div>
+          </div>
+
+        </div>
+
+        <div class="last-member">
+
+          <div class="last-member-label">
+            Son Üye
+          </div>
+
+          <div class="last-member-name" id="lastMember">
+            Üye yok
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
   </div>
-
 </main>
-
 
 <footer class="footer">
   © 2026 DijitalForum - Tüm Hakları Saklıdır
 </footer>
 
-
 <div class="cookie" id="cookieBox">
   Bu web sitesi deneyimini geliştirmek için çerezleri kullanabilir.
+
   <button
     class="cookie-close"
     onclick="closeCookie()"
-    aria-label="Çerezi kapat">
-    ×
-  </button>
+    aria-label="Çerezi kapat"
+  >×</button>
 </div>
-
 
 <script>
 
-const userActions = document.getElementById("userActions");
+const userActions=document.getElementById("userActions");
 
-let isLoggedIn = false;
+let isLoggedIn=false;
 
-try {
-  isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-} catch(e) {
-  isLoggedIn = false;
+try{
+  isLoggedIn=localStorage.getItem("isLoggedIn")==="true";
+}catch(e){
+  isLoggedIn=false;
 }
 
+userActions.innerHTML=isLoggedIn
+  ? '<a href="yeni-mesajlar.html" class="btn btn-dark">🔥 Yeni Mesajlar</a><a href="konu-olustur.html" class="btn btn-blue">✏️ Konu Aç</a>'
+  : '<a href="register.html" class="btn btn-dark">Kayıt Ol</a><a href="login.html" class="btn btn-blue">Giriş Yap</a>';
 
-if(userActions){
+const onlineStaff=[];
+const onlineMembersData=[];
 
-  userActions.innerHTML = isLoggedIn
+const forumStats={
+  topics:0,
+  posts:0,
+  members:0,
+  guests:0,
+  lastMember:"Üye yok"
+};
 
-    ? '<a href="yeni-mesajlar.html" class="btn btn-dark">🔥 Yeni Mesajlar</a><a href="konu-olustur.html" class="btn btn-blue">✏️ Konu Aç</a>'
+function formatNumber(n){
 
-    : '<a href="register.html" class="btn btn-dark">Kayıt Ol</a><a href="login.html" class="btn btn-blue">Giriş Yap</a>';
+  const v=Number(n);
 
+  return Number.isFinite(v)
+    ? v.toLocaleString("tr-TR")
+    : "0";
 }
 
+function escapeHtml(v){
 
-/* ÇEREZ KAPATMA */
+  return String(v)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+}
+
+function renderOnlineStaff(){
+
+  const a=document.getElementById("onlineStaffList");
+
+  if(!onlineStaff.length){
+
+    a.innerHTML=
+      '<div class="online-empty"><strong>0 yetkili</strong>Çevrim içi yetkili yok.</div>';
+
+    return;
+  }
+
+  a.innerHTML=onlineStaff.map(u=>
+    '<div class="online-user">'+
+      '<div class="online-avatar">🛡️</div>'+
+      '<div class="online-info">'+
+        '<div class="online-name">'+
+          escapeHtml(typeof u==='string'?u:u.name||'Yetkili')+
+        '</div>'+
+        '<div class="online-status">Yetkili</div>'+
+      '</div>'+
+      '<div class="online-dot"></div>'+
+    '</div>'
+  ).join("");
+}
+
+function renderOnlineMembers(){
+
+  const a=document.getElementById("onlineMembersList");
+
+  if(!onlineMembersData.length){
+
+    a.innerHTML=
+      '<div class="online-empty"><strong>0 üye</strong>Çevrim içi üye yok.</div>';
+
+    return;
+  }
+
+  a.innerHTML=onlineMembersData.map(u=>
+    '<div class="online-user">'+
+      '<div class="online-avatar">👤</div>'+
+      '<div class="online-info">'+
+        '<div class="online-name">'+
+          escapeHtml(typeof u==='string'?u:u.name||'Üye')+
+        '</div>'+
+        '<div class="online-status">Çevrim içi</div>'+
+      '</div>'+
+      '<div class="online-dot"></div>'+
+    '</div>'
+  ).join("");
+}
+
+function renderStats(){
+
+  const staff=onlineStaff.length;
+  const members=onlineMembersData.length;
+  const guest=Number(forumStats.guests)||0;
+
+  document.getElementById("totalOnline").textContent=
+    formatNumber(staff+members+guest);
+
+  document.getElementById("memberOnline").textContent=
+    formatNumber(staff+members);
+
+  document.getElementById("guestOnline").textContent=
+    formatNumber(guest);
+
+  document.getElementById("topicCount").textContent=
+    formatNumber(forumStats.topics);
+
+  document.getElementById("postCount").textContent=
+    formatNumber(forumStats.posts);
+
+  document.getElementById("memberCount").textContent=
+    formatNumber(forumStats.members);
+
+  document.getElementById("guestCount").textContent=
+    formatNumber(forumStats.guests);
+
+  document.getElementById("lastMember").textContent=
+    forumStats.lastMember||"Üye yok";
+}
 
 function closeCookie(){
 
-  const c = document.getElementById("cookieBox");
+  const c=document.getElementById("cookieBox");
 
   if(c){
-    c.style.display = "none";
+    c.style.display="none";
   }
 
   try{
@@ -767,76 +783,21 @@ function closeCookie(){
       "true"
     );
   }catch(e){}
-
 }
-
 
 try{
 
   if(
-    localStorage.getItem("dijitalForumCookieClosed")
-    === "true"
+    localStorage.getItem("dijitalForumCookieClosed")==="true"
   ){
-
-    const c = document.getElementById("cookieBox");
-
-    if(c){
-      c.style.display = "none";
-    }
-
+    document.getElementById("cookieBox").style.display="none";
   }
 
 }catch(e){}
 
-
-/*
-==========================================================
- YENİ BLOG GİRDİLERİ BOŞ KONTROLÜ
-==========================================================
-
-Gönderi varsa mevcut gönderiler olduğu gibi kalır.
-
-Hiç .blog-item yoksa otomatik olarak:
-
-"Yeni Blog Girdileri bulunmamaktadır."
-
-mesajı gösterilir.
-
-Mevcut gönderilerin hiçbirisi JavaScript tarafından silinmez.
-*/
-
-document.addEventListener("DOMContentLoaded", function(){
-
-  const blogList = document.getElementById("blogList");
-
-  if(!blogList){
-    return;
-  }
-
-
-  /*
-  .blog-item sayısını kontrol ediyoruz.
-  */
-
-  const blogItems = blogList.querySelectorAll(".blog-item");
-
-
-  /*
-  Hiç gönderi yoksa boş mesajı göster.
-  */
-
-  if(blogItems.length === 0){
-
-    blogList.innerHTML = `
-      <div class="blog-empty">
-        <strong>Yeni Blog Girdileri bulunmamaktadır.</strong>
-      </div>
-    `;
-
-  }
-
-});
-
+renderOnlineStaff();
+renderOnlineMembers();
+renderStats();
 
 </script>
 
