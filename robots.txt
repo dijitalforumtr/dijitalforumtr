@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dijitalforumtr.vercel.app/sitemap.xml
+Sitemap: https://dijitalforumtr.onrender.com/sitemap.xml
