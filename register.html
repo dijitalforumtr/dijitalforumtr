@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kayıt Ol - DijitalForum</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Tahoma,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+min-height:100vh;
+}
+
+.navbar{
+background:#111827;
+border-bottom:1px solid #1f2937;
+padding:15px 0;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#60a5fa;
+}
+
+.hero{
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+padding:50px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#dbeafe;
+}
+
+.register-box{
+max-width:700px;
+margin:40px auto;
+background:#111827;
+border-radius:12px;
+overflow:hidden;
+border:1px solid #1f2937;
+}
+
+.register-title{
+background:#1e3a8a;
+padding:18px;
+font-size:20px;
+font-weight:bold;
+}
+
+.form{
+padding:25px;
+}
+
+.form-group{
+margin-bottom:20px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:600;
+color:#cbd5e1;
+}
+
+input{
+width:100%;
+padding:14px;
+background:#0f172a;
+border:1px solid #334155;
+border-radius:8px;
+color:white;
+font-size:15px;
+}
+
+input:focus{
+outline:none;
+border-color:#2563eb;
+}
+
+.checkbox{
+display:flex;
+gap:10px;
+align-items:center;
+margin-top:10px;
+}
+
+.checkbox input{
+width:auto;
+}
+
+.btn{
+width:100%;
+padding:14px;
+background:#2563eb;
+border:none;
+border-radius:8px;
+color:white;
+font-size:16px;
+font-weight:700;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+.login-link{
+text-align:center;
+margin-top:20px;
+}
+
+.login-link a{
+color:#60a5fa;
+text-decoration:none;
+}
+
+.footer{
+background:#111827;
+margin-top:40px;
+padding:25px;
+text-align:center;
+color:#94a3b8;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="container">
+<div class="logo">
+🚀 DijitalForum
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<h1>📝 Hesap Oluştur</h1>
+<p>DijitalForum topluluğuna katıl</p>
+</section>
+
+<div class="container">
+
+<div class="register-box">
+
+<div class="register-title">
+👤 Yeni Üye Kaydı
+</div>
+
+<div class="form">
+
+<div class="form-group">
+<label>Kullanıcı Adı</label>
+<input type="text" placeholder="Kullanıcı adınız">
+</div>
+
+<div class="form-group">
+<label>E-posta Adresi</label>
+<input type="email" placeholder="ornek@mail.com">
+</div>
+
+<div class="form-group">
+<label>Şifre</label>
+<input type="password" placeholder="Şifreniz">
+</div>
+
+<div class="form-group">
+<label>Şifre Tekrar</label>
+<input type="password" placeholder="Şifreyi tekrar girin">
+</div>
+
+<div class="checkbox">
+<input type="checkbox">
+<span>Kullanım şartlarını kabul ediyorum.</span>
+</div>
+
+<br>
+
+<button class="btn">
+🚀 Kayıt Ol
+</button>
+
+<div class="login-link">
+Zaten hesabın var mı?
+<a href="login.html">Giriş Yap</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+© 2026 DijitalForum - Tüm Hakları Saklıdır
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DijitalForum</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Tahoma,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+.container{
+width:95%;
+max-width:1400px;
+margin:auto;
+}
+
+.navbar{
+background:#111827;
+border-bottom:1px solid #1f2937;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.nav-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#60a5fa;
+}
+
+.menu{
+display:flex;
+gap:20px;
+list-style:none;
+flex-wrap:wrap;
+}
+
+.menu a{
+color:#d1d5db;
+text-decoration:none;
+}
+
+.menu a:hover{
+color:#60a5fa;
+}
+
+.btn{
+padding:10px 15px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-dark{
+background:#1e293b;
+color:#fff;
+}
+
+.btn-blue{
+background:#2563eb;
+color:#fff;
+}
+
+.hero{
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#dbeafe;
+font-size:18px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-top:30px;
+}
+
+.stat{
+background:#111827;
+padding:20px;
+border-radius:12px;
+text-align:center;
+}
+
+.stat h2{
+color:#60a5fa;
+margin-bottom:10px;
+}
+
+.main{
+display:grid;
+grid-template-columns:3fr 1fr;
+gap:20px;
+margin-top:30px;
+}
+
+.category{
+background:#111827;
+border-radius:12px;
+overflow:hidden;
+margin-bottom:20px;
+}
+
+.category-title{
+background:#1e3a8a;
+padding:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+.forum-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+border-top:1px solid #1f2937;
+text-decoration:none;
+color:white;
+}
+
+.forum-row:hover{
+background:#1f2937;
+}
+
+.forum-info p{
+color:#94a3b8;
+font-size:14px;
+margin-top:5px;
+}
+
+.sidebar-box{
+background:#111827;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.sidebar-box h3{
+margin-bottom:15px;
+color:#60a5fa;
+}
+
+.topic{
+padding:10px 0;
+border-bottom:1px solid #1f2937;
+}
+
+.footer{
+background:#111827;
+margin-top:40px;
+padding:25px;
+text-align:center;
+color:#94a3b8;
+}
+
+@media(max-width:1000px){
+
+.main{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="container">
+
+<div class="nav-inner">
+
+<div class="logo">
+🚀 DijitalForum
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Ana Sayfa</a></li>
+<li><a href="yeni-mesajlar.html">Yeni Mesajlar</a></li>
+<li><a href="konu-olustur.html">Konu Oluştur</a></li>
+<li><a href="kategori-sec.html">Kategoriler</a></li>
+<li><a href="profil.html">Profil</a></li>
+<li><a href="bildirimler.html">Bildirimler</a></li>
+<li><a href="login.html">Giriş</a></li>
+<li><a href="register.html">Kayıt Ol</a></li>
+</ul>
+
+<div>
+<a href="yeni-mesajlar.html" class="btn btn-dark">🔥 Yeni Mesajlar</a>
+<a href="konu-olustur.html" class="btn btn-blue">✏️ Konu Aç</a>
+</div>
+
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+
+<h1>Türkiye'nin Teknoloji Topluluğu</h1>
+
+<p>
+Donanım • Yazılım • Oyun • Mobil • Teknoloji
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="stats">
+
+<div class="stat">
+<h2>125.000</h2>
+Üye
+</div>
+
+<div class="stat">
+<h2>1.250.000</h2>
+Mesaj
+</div>
+
+<div class="stat">
+<h2>150.000</h2>
+Konu
+</div>
+
+<div class="stat">
+<h2>1.248</h2>
+Çevrimiçi
+</div>
+
+</div>
+
+<div class="main">
+
+<div>
+
+<div class="category">
+
+<div class="category-title">
+💻 Donanım
+</div>
+
+<a href="thread.html" class="forum-row">
+<div class="forum-info">
+<h3>Masaüstü Bilgisayarlar</h3>
+<p>İşlemci, ekran kartı, sistem toplama</p>
+</div>
+<div>20K Konu</div>
+</a>
+
+<a href="thread.html" class="forum-row">
+<div class="forum-info">
+<h3>Dizüstü Bilgisayarlar</h3>
+<p>Laptop önerileri ve teknik destek</p>
+</div>
+<div>8K Konu</div>
+</a>
+
+<a href="thread.html" class="forum-row">
+<div class="forum-info">
+<h3>Monitörler</h3>
+<p>IPS, OLED, Gaming monitörler</p>
+</div>
+<div>5K Konu</div>
+</a>
+
+</div>
+
+<div class="category">
+
+<div class="category-title">
+🎮 Oyun
+</div>
+
+<a href="thread.html" class="forum-row">
+<div class="forum-info">
+<h3>PC Oyunları</h3>
+<p>Steam, Epic Games ve oyun rehberleri</p>
+</div>
+<div>12K Konu</div>
+</a>
+
+<a href="thread.html" class="forum-row">
+<div class="forum-info">
+<h3>Konsollar</h3>
+<p>PlayStation ve Xbox</p>
+</div>
+<div>4K Konu</div>
+</a>
+
+</div>
+
+<div class="category">
+
+<div class="category-title">
+📱 Mobil Teknoloji
+</div>
+
+<a href="thread.html" class="forum-row">
+<div class="forum-info">
+<h3>Android</h3>
+<p>Telefonlar ve uygulamalar</p>
+</div>
+<div>7K Konu</div>
+</a>
+
+<a href="thread.html" class="forum-row">
+<div class="forum-info">
+<h3>iPhone</h3>
+<p>Apple cihazları ve iOS</p>
+</div>
+<div>5K Konu</div>
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="sidebar-box">
+
+<h3>👤 Profil</h3>
+
+<p>Muhammet</p>
+<p>Uzman Üye</p>
+<p>Mesaj: 9.220</p>
+
+</div>
+
+<div class="sidebar-box">
+
+<h3>📰 Son Konular</h3>
+
+<div class="topic">RTX 6080 Performans Testleri</div>
+<div class="topic">Windows 12 İncelemesi</div>
+<div class="topic">Ryzen 11800X3D</div>
+<div class="topic">Steam Sonbahar İndirimleri</div>
+
+</div>
+
+<div class="sidebar-box">
+
+<h3>🟢 Çevrimiçi Üyeler</h3>
+
+<div class="topic">Admin</div>
+<div class="topic">Toprak</div>
+<div class="topic">Berkay</div>
+<div class="topic">Ahmet</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+© 2026 DijitalForum - Tüm Hakları Saklıdır
+</footer>
+
+</body>
+</html>
