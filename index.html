@@ -2138,6 +2138,286 @@ izninizi istiyor.
 document.addEventListener("DOMContentLoaded", function(){
 
     /* =====================================================
+       BOŞ KONU / MESAJ SAYILARINI 0 YAP
+    ===================================================== */
+
+    document
+        .querySelectorAll(
+            ".forum-stat strong, .question-stat strong, .topic-stats"
+        )
+        .forEach(function(element){
+
+            const text = element.textContent.trim();
+
+            /*
+             * Tamamen boşsa 0 göster
+             */
+            if(!text){
+                element.textContent = "0";
+            }
+
+            /*
+             * "-" veya "—" gibi boş değerler varsa 0 göster
+             */
+            if(text === "-" || text === "—"){
+                element.textContent = "0";
+            }
+
+        });
+
+
+    /* =====================================================
+       GİRİŞ DURUMU
+    ===================================================== */
+
+    const userActions =
+        document.getElementById("userActions");
+
+    const profileBox =
+        document.getElementById("profileBox");
+
+    const isLoggedIn =
+        localStorage.getItem("isLoggedIn") === "true";
+
+
+    if(isLoggedIn){
+
+        userActions.innerHTML = `
+
+            <a
+                href="yeni-mesajlar.html"
+                class="btn btn-dark"
+            >
+                🔥 Yeni Mesajlar
+            </a>
+
+            <a
+                href="konu-olustur.html"
+                class="btn btn-blue"
+            >
+                ✏️ Konu Aç
+            </a>
+
+        `;
+
+        profileBox.style.display = "block";
+
+    }
+
+    else{
+
+        userActions.innerHTML = `
+
+            <a
+                href="register.html"
+                class="btn btn-dark"
+            >
+                Kayıt Ol
+            </a>
+
+            <a
+                href="login.html"
+                class="btn btn-blue"
+            >
+                Giriş Yap
+            </a>
+
+        `;
+
+        profileBox.style.display = "none";
+
+    }
+
+
+    /* =====================================================
+       SEKME SİSTEMİ
+    ===================================================== */
+
+    const tabs =
+        document.querySelectorAll("#tabs button");
+
+    const topics =
+        Array.from(
+            document.querySelectorAll("#topicList .topic")
+        );
+
+    const title =
+        document.getElementById("categoryTitle");
+
+    const list =
+        document.getElementById("topicList");
+
+
+    function showTopics(filter){
+
+        let visibleTopics = [];
+
+
+        if(filter === "new"){
+
+            visibleTopics = topics.slice();
+
+            title.textContent =
+                "🆕 Yeni Konular";
+
+        }
+
+
+        else if(filter === "latest"){
+
+            visibleTopics = topics
+                .slice()
+                .sort(function(a,b){
+
+                    return Number(a.dataset.time)
+                         - Number(b.dataset.time);
+
+                });
+
+            title.textContent =
+                "💬 Son Mesajlar";
+
+        }
+
+
+        else if(filter === "popular"){
+
+            visibleTopics = topics
+                .slice()
+                .sort(function(a,b){
+
+                    const aScore =
+                        Number(a.dataset.views) +
+                        Number(a.dataset.messages) * 10;
+
+                    const bScore =
+                        Number(b.dataset.views) +
+                        Number(b.dataset.messages) * 10;
+
+                    return bScore - aScore;
+
+                });
+
+            title.textContent =
+                "🔥 Popüler Konular";
+
+        }
+
+
+        else if(filter === "unanswered"){
+
+            visibleTopics =
+                topics.filter(function(topic){
+
+                    return Number(
+                        topic.dataset.messages
+                    ) === 0;
+
+                });
+
+            title.textContent =
+                "❓ Cevapsız Sorular";
+
+        }
+
+
+        else if(filter === "deals"){
+
+            visibleTopics =
+                topics.filter(function(topic){
+
+                    return topic.dataset.category === "deals";
+
+                });
+
+            title.textContent =
+                "🏷️ Sıcak Fırsatlar";
+
+        }
+
+
+        else if(filter === "content"){
+
+            visibleTopics =
+                topics.filter(function(topic){
+
+                    return topic.dataset.type === "content";
+
+                });
+
+            title.textContent =
+                "📚 DijitalForum İçerikleri";
+
+        }
+
+
+        else if(filter === "offtopic"){
+
+            visibleTopics =
+                topics.filter(function(topic){
+
+                    return topic.dataset.type === "offtopic";
+
+                });
+
+            title.textContent =
+                "💬 Konu Dışı";
+
+        }
+
+
+        list.innerHTML = "";
+
+
+        if(visibleTopics.length === 0){
+
+            list.innerHTML = `
+
+                <div class="empty">
+                    Bu kategoride henüz konu bulunmuyor.
+                </div>
+
+            `;
+
+            return;
+
+        }
+
+
+        visibleTopics.forEach(function(topic){
+
+            list.appendChild(topic);
+
+        });
+
+    }
+
+
+    tabs.forEach(function(tab){
+
+        tab.addEventListener("click", function(e){
+
+            e.preventDefault();
+
+            tabs.forEach(function(item){
+
+                item.classList.remove("active");
+
+            });
+
+            tab.classList.add("active");
+
+            showTopics(tab.dataset.filter);
+
+        });
+
+    });
+
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    /* =====================================================
        GİRİŞ DURUMU
     ===================================================== */
 
