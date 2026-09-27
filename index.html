@@ -189,6 +189,203 @@ a{
 
 
 /* =========================================================
+   TECHOLAY TARZI ÜST FORUM BÖLÜMLERİ
+========================================================= */
+
+.forum-sections{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.forum-category{
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.forum-category-header{
+    background:linear-gradient(135deg,#0f274f,#132d5b);
+    padding:14px 15px;
+    border-bottom:1px solid #1f2937;
+}
+
+.forum-category-title{
+    color:#60a5fa;
+    font-size:18px;
+    font-weight:700;
+}
+
+.forum-category-desc{
+    color:#94a3b8;
+    font-size:12px;
+    margin-top:4px;
+    line-height:18px;
+}
+
+.forum-row{
+    display:grid;
+    grid-template-columns:45px minmax(0,1fr) 75px 75px minmax(180px,260px);
+    align-items:center;
+    gap:12px;
+    padding:13px 15px;
+    border-top:1px solid #1f2937;
+    transition:.2s;
+}
+
+.forum-row:hover{
+    background:#172033;
+}
+
+.forum-icon{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:#020617;
+    border:1px solid #2563eb;
+    font-size:19px;
+}
+
+.forum-info{
+    min-width:0;
+}
+
+.forum-name{
+    color:#60a5fa;
+    font-size:15px;
+    font-weight:700;
+}
+
+.forum-sub{
+    color:#94a3b8;
+    font-size:12px;
+    margin-top:4px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.forum-stats{
+    text-align:center;
+    color:#94a3b8;
+    font-size:11px;
+}
+
+.forum-stats span{
+    display:block;
+    color:#64748b;
+    margin-bottom:2px;
+}
+
+.forum-stats strong{
+    color:#dbeafe;
+    font-size:13px;
+}
+
+.forum-last{
+    min-width:0;
+    color:#60a5fa;
+    font-size:12px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.forum-last strong{
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.forum-last small{
+    display:block;
+    color:#64748b;
+    margin-top:3px;
+    font-size:10px;
+}
+
+
+/* =========================================================
+   TEK SATIRLIK TECHOLAY BÖLÜMLERİ
+========================================================= */
+
+.compact-forum{
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:12px;
+}
+
+.compact-row{
+    display:grid;
+    grid-template-columns:45px minmax(0,1fr) 70px 70px minmax(180px,260px);
+    align-items:center;
+    gap:12px;
+    padding:12px 15px;
+    transition:.2s;
+}
+
+.compact-row:hover{
+    background:#172033;
+}
+
+.compact-icon{
+    width:40px;
+    height:40px;
+    display:grid;
+    place-items:center;
+    color:#60a5fa;
+    font-size:25px;
+}
+
+.compact-name{
+    color:#60a5fa;
+    font-size:15px;
+    font-weight:700;
+}
+
+.compact-sub{
+    color:#60a5fa;
+    font-size:12px;
+    font-weight:600;
+    margin-top:4px;
+}
+
+.compact-stats{
+    text-align:center;
+    color:#94a3b8;
+    font-size:11px;
+}
+
+.compact-stats strong{
+    display:block;
+    color:#dbeafe;
+    font-size:13px;
+    margin-top:2px;
+}
+
+.compact-last{
+    min-width:0;
+    color:#60a5fa;
+    font-size:12px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.compact-last small{
+    display:block;
+    color:#64748b;
+    font-size:10px;
+    margin-top:3px;
+}
+
+
+/* =========================================================
    CATEGORY / TOPICS
 ========================================================= */
 
@@ -268,126 +465,6 @@ a{
 }
 
 .topic-last small{
-    display:block;
-    color:#64748b;
-    margin-top:4px;
-    font-size:10px;
-}
-
-
-/* =========================================================
-   ALT FORUM KATEGORİLERİ
-========================================================= */
-
-.forum-sections{
-    width:100%;
-    margin-top:20px;
-}
-
-.forum-category{
-    background:#111827;
-    border:1px solid #1f2937;
-    border-radius:12px;
-    overflow:hidden;
-    margin-bottom:20px;
-}
-
-.forum-category-header{
-    background:linear-gradient(135deg,#0f274f,#132d5b);
-    padding:15px;
-    border-bottom:1px solid #1f2937;
-}
-
-.forum-category-title{
-    color:#60a5fa;
-    font-size:18px;
-    font-weight:700;
-}
-
-.forum-category-desc{
-    color:#94a3b8;
-    font-size:12px;
-    margin-top:5px;
-    line-height:18px;
-}
-
-.forum-row{
-    display:grid;
-    grid-template-columns:45px minmax(0,1fr) 75px 75px minmax(180px,260px);
-    align-items:center;
-    gap:12px;
-    padding:14px 15px;
-    border-top:1px solid #1f2937;
-    transition:.2s;
-}
-
-.forum-row:hover{
-    background:#172033;
-}
-
-.forum-icon{
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    display:grid;
-    place-items:center;
-    background:#020617;
-    border:1px solid #2563eb;
-    font-size:19px;
-}
-
-.forum-info{
-    min-width:0;
-}
-
-.forum-name{
-    color:#60a5fa;
-    font-size:15px;
-    font-weight:700;
-}
-
-.forum-sub{
-    color:#94a3b8;
-    font-size:12px;
-    margin-top:5px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-
-.forum-stats{
-    text-align:center;
-    color:#94a3b8;
-    font-size:11px;
-}
-
-.forum-stats span{
-    display:block;
-    color:#64748b;
-    margin-bottom:3px;
-}
-
-.forum-stats strong{
-    color:#dbeafe;
-    font-size:13px;
-}
-
-.forum-last{
-    min-width:0;
-    color:#60a5fa;
-    font-size:12px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-
-.forum-last strong{
-    display:block;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-
-.forum-last small{
     display:block;
     color:#64748b;
     margin-top:4px;
@@ -550,6 +627,14 @@ a{
     .forum-last{
         display:none;
     }
+
+    .compact-row{
+        grid-template-columns:45px minmax(0,1fr) 65px 65px;
+    }
+
+    .compact-last{
+        display:none;
+    }
 }
 
 
@@ -668,6 +753,30 @@ a{
     .forum-last{
         display:none;
     }
+
+    .compact-row{
+        grid-template-columns:38px minmax(0,1fr);
+        padding:11px 12px;
+    }
+
+    .compact-icon{
+        width:35px;
+        height:35px;
+        font-size:21px;
+    }
+
+    .compact-name{
+        font-size:14px;
+    }
+
+    .compact-sub{
+        font-size:10px;
+    }
+
+    .compact-stats,
+    .compact-last{
+        display:none;
+    }
 }
 
 </style>
@@ -684,74 +793,35 @@ a{
 
 <div class="container">
 
-    <div class="nav-inner">
+<div class="nav-inner">
 
-        <div class="logo">
-            🚀 DijitalForum
-        </div>
+<div class="logo">
+🚀 DijitalForum
+</div>
 
+<ul class="menu">
 
-        <ul class="menu">
+<li><a href="index.html">Ana Sayfa</a></li>
 
-            <li>
-                <a href="index.html">
-                    Ana Sayfa
-                </a>
-            </li>
+<li><a href="yeni-mesajlar.html">Yeni Mesajlar</a></li>
 
-            <li>
-                <a href="yeni-mesajlar.html">
-                    Yeni Mesajlar
-                </a>
-            </li>
+<li><a href="konu-olustur.html">Konu Oluştur</a></li>
 
-            <li>
-                <a href="konu-olustur.html">
-                    Konu Oluştur
-                </a>
-            </li>
+<li><a href="kategori-sec.html">Kategoriler</a></li>
 
-            <li>
-                <a href="kategori-sec.html">
-                    Kategoriler
-                </a>
-            </li>
+<li><a href="profil.html">Profil</a></li>
 
-            <li>
-                <a href="profil.html">
-                    Profil
-                </a>
-            </li>
+<li><a href="bildirimler.html">Bildirimler</a></li>
 
-            <li>
-                <a href="bildirimler.html">
-                    Bildirimler
-                </a>
-            </li>
+<li><a href="login.html">Giriş</a></li>
 
-            <li>
-                <a href="login.html">
-                    Giriş
-                </a>
-            </li>
+<li><a href="register.html">Kayıt Ol</a></li>
 
-            <li>
-                <a href="register.html">
-                    Kayıt Ol
-                </a>
-            </li>
+</ul>
 
-        </ul>
+<div class="actions" id="userActions"></div>
 
-
-        <!-- GİRİŞ DURUMUNA GÖRE BUTONLAR -->
-
-        <div
-            class="actions"
-            id="userActions">
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -764,1279 +834,1448 @@ a{
 <section class="hero">
 
 <h1>
-    DijitalForum Sosyal
+DijitalForum Sosyal
 </h1>
 
 <p>
-    Toplulukta yeni konuları, son mesajları ve popüler tartışmaları keşfet
+Toplulukta yeni konuları, son mesajları ve popüler tartışmaları keşfet
 </p>
 
 </section>
 
 <div class="container">
 
-<!-- =====================================================
+<!-- =========================================================
      SEKME BUTONLARI
-====================================================== -->
+========================================================= -->
 
-<div
-    class="tabs"
-    id="tabs">
+<div class="tabs" id="tabs">
 
-    <button
-        type="button"
-        class="active"
-        data-filter="new">
+<button type="button" class="active" data-filter="new">
+Yeni Konular
+</button>
 
-        Yeni Konular
+<button type="button" data-filter="latest">
+Son Mesajlar
+</button>
 
-    </button>
+<button type="button" data-filter="popular">
+Popüler Konular
+</button>
 
+<button type="button" data-filter="unanswered">
+Cevapsız Sorular
+</button>
 
-    <button
-        type="button"
-        data-filter="latest">
+<button type="button" data-filter="deals">
+Sıcak Fırsatlar
+</button>
 
-        Son Mesajlar
+<button type="button" data-filter="content">
+DijitalForum İçerikleri
+</button>
 
-    </button>
-
-
-    <button
-        type="button"
-        data-filter="popular">
-
-        Popüler Konular
-
-    </button>
-
-
-    <button
-        type="button"
-        data-filter="unanswered">
-
-        Cevapsız Sorular
-
-    </button>
-
-
-    <button
-        type="button"
-        data-filter="deals">
-
-        Sıcak Fırsatlar
-
-    </button>
-
-
-    <button
-        type="button"
-        data-filter="content">
-
-        DijitalForum İçerikleri
-
-    </button>
-
-
-    <button
-        type="button"
-        data-filter="offtopic">
-
-        Konu Dışı
-
-    </button>
+<button type="button" data-filter="offtopic">
+Konu Dışı
+</button>
 
 </div>
 
-
-
-<!-- =====================================================
-     MAIN
-====================================================== -->
-
 <div class="main">
 
+<!-- =========================================================
+     SOL
+========================================================= -->
 
-    <!-- =================================================
-         SOL
-    ================================================== -->
+<div>
 
-    <div>
+<!-- =========================================================
+     İLK SIRADA TECHOLAY TARZI BÖLÜMLER
+========================================================= -->
 
+<div class="forum-sections">
 
-        <!-- =================================================
-             KONULAR
-        ================================================== -->
+<!-- TECHOLAY -->
 
-        <div class="category">
+<div class="compact-forum">
 
-            <div
-                class="category-title"
-                id="categoryTitle">
+<a href="thread.html" class="compact-row">
 
-                🆕 Yeni Konular
+<div class="compact-icon">
+t
+</div>
 
-            </div>
+<div>
 
+<div class="compact-name">
+Techolay
+</div>
 
-            <div id="topicList">
+<div class="compact-sub">
+Techolay
+</div>
 
+</div>
 
-                <!-- 1 -->
+<div class="compact-stats">
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="ram"
-                    data-messages="0"
-                    data-views="3"
-                    data-time="4"
-                    data-type="new">
+Konu
 
-                    <div class="topic-avatar">
-                        C
-                    </div>
+<strong>
+16,5B
+</strong>
 
+</div>
 
-                    <div class="topic-main">
+<div class="compact-stats">
 
-                        <div class="topic-title">
-                            KLEVV CRAS V RGB 2x16 GB DDR5 RAM ayarları nasıldır?
-                        </div>
+Mesaj
 
-                        <div class="topic-meta">
-                            CanPatrioTic · 4 dakika önce · RAM
-                        </div>
+<strong>
+57,1B
+</strong>
 
-                    </div>
+</div>
 
+<div class="compact-last">
 
-                    <div class="topic-stats">
+<strong>
+IFA 2026'nın En İyi ve En Yeni Teknolojileri
+</strong>
 
-                        Mesaj: 0<br>
-                        Görüntüleme: 3
+<small>
+45 dakika önce · Techolay
+</small>
 
-                    </div>
+</div>
 
+</a>
 
-                    <div class="topic-last">
+</div>
 
-                        4 dakika önce
+<!-- TECHOLAY İÇERİKLERİ -->
 
-                        <small>
-                            CanPatrioTic
-                        </small>
+<div class="compact-forum">
 
-                    </div>
+<a href="thread.html" class="compact-row">
 
-                </a>
+<div class="compact-icon">
+▤
+</div>
 
+<div>
 
+<div class="compact-name">
+Techolay İçerikleri
+</div>
 
-                <!-- 2 -->
+<div class="compact-sub">
+Techolay Video İçerikleri
+</div>
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="valorant"
-                    data-messages="2"
-                    data-views="20"
-                    data-time="23"
-                    data-type="new">
+</div>
 
-                    <div class="topic-avatar">
-                        V
-                    </div>
+<div class="compact-stats">
 
+Konu
 
-                    <div class="topic-main">
+<strong>
+14,5B
+</strong>
 
-                        <div class="topic-title">
-                            Valorant GO 1. Cilt Bıçağı vs İyon Enerji Kılıcı
-                        </div>
+</div>
 
-                        <div class="topic-meta">
-                            General5306 · 23 dakika önce · Valorant
-                        </div>
+<div class="compact-stats">
 
-                    </div>
+Mesaj
 
+<strong>
+23,2B
+</strong>
 
-                    <div class="topic-stats">
+</div>
 
-                        Mesaj: 2<br>
-                        Görüntüleme: 20
+<div class="compact-last">
 
-                    </div>
+<strong>
+IFA 2026'nın En İyi ve En Yeni Teknolojileri
+</strong>
 
+<small>
+45 dakika önce · Techolay
+</small>
 
-                    <div class="topic-last">
+</div>
 
-                        3 dakika önce
+</a>
 
-                        <small>
-                            LokxER
-                        </small>
+</div>
 
-                    </div>
+<!-- TECHOLAY ÖNERİLERİ -->
 
-                </a>
+<div class="compact-forum">
 
+<a href="thread.html" class="compact-row">
 
+<div class="compact-icon">
+💡
+</div>
 
-                <!-- 3 -->
+<div>
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="monitor"
-                    data-messages="0"
-                    data-views="7"
-                    data-time="28"
-                    data-type="new">
+<div class="compact-name">
+Techolay Önerileri
+</div>
 
-                    <div class="topic-avatar">
-                        M
-                    </div>
+<div class="compact-sub">
+Kapalı Öneriler
+</div>
 
+</div>
 
-                    <div class="topic-main">
+<div class="compact-stats">
 
-                        <div class="topic-title">
-                            Dell AW2723DF ve RTX 4080 sistemde 244 Hz seçince çözünürlük 1080P'ye düşüyor
-                        </div>
+Konu
 
-                        <div class="topic-meta">
-                            magraven · 28 dakika önce · Monitörler ve Görüntüleme Aygıtları
-                        </div>
+<strong>
+1,8B
+</strong>
 
-                    </div>
+</div>
 
+<div class="compact-stats">
 
-                    <div class="topic-stats">
+Mesaj
 
-                        Mesaj: 0<br>
-                        Görüntüleme: 7
+<strong>
+27,3B
+</strong>
 
-                    </div>
+</div>
 
+<div class="compact-last">
 
-                    <div class="topic-last">
+<strong>
+Kullanıcı incelemeleri için ürün türü
+</strong>
 
-                        28 dakika önce
+<small>
+Bugün · DijitalForum
+</small>
 
-                        <small>
-                            magraven
-                        </small>
+</div>
 
-                    </div>
+</a>
 
-                </a>
+</div>
 
+<!-- TECHOLAY İÇERİK ÖNERİLERİ -->
 
+<div class="compact-forum">
 
-                <!-- 4 -->
+<a href="thread.html" class="compact-row">
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="phone"
-                    data-messages="6"
-                    data-views="46"
-                    data-time="30"
-                    data-type="new">
+<div class="compact-icon">
+▶
+</div>
 
-                    <div class="topic-avatar">
-                        D
-                    </div>
+<div>
 
+<div class="compact-name">
+Techolay İçerik Önerileri
+</div>
 
-                    <div class="topic-main">
+<div class="compact-sub">
+Kapalı Öneriler
+</div>
 
-                        <div class="topic-title">
-                            iPhone 16e'den hangi modele geçilmeli?
-                        </div>
+</div>
 
-                        <div class="topic-meta">
-                            darwin. · 30 dakika önce · Telefon Tavsiyeleri
-                        </div>
+<div class="compact-stats">
 
-                    </div>
+Konu
 
+<strong>
+21
+</strong>
 
-                    <div class="topic-stats">
+</div>
 
-                        Mesaj: 6<br>
-                        Görüntüleme: 46
+<div class="compact-stats">
 
-                    </div>
+Mesaj
 
+<strong>
+112
+</strong>
 
-                    <div class="topic-last">
+</div>
 
-                        21 dakika önce
+<div class="compact-last">
 
-                        <small>
-                            Simon
-                        </small>
+<strong>
+İçerik önerileri
+</strong>
 
-                    </div>
+<small>
+Bugün · DijitalForum
+</small>
 
-                </a>
+</div>
 
+</a>
 
+</div>
 
-                <!-- 5 -->
+<!-- CEVAP BEKLEYEN -->
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="deals"
-                    data-messages="0"
-                    data-views="39"
-                    data-time="32"
-                    data-type="deals">
+<div class="compact-forum">
 
-                    <div class="topic-avatar">
-                        K
-                    </div>
+<a href="thread.html" class="compact-row">
 
+<div class="compact-icon">
+⌕
+</div>
 
-                    <div class="topic-main">
+<div>
 
-                        <div class="topic-title">
-                            [Elektronik] KTC H25T7 200 Hz IPS monitör | 3.639 TL!
-                        </div>
+<div class="compact-name">
+Cevap Bekleyen Sorular
+</div>
 
-                        <div class="topic-meta">
-                            Caner Uncu · 32 dakika önce · Sıcak Fırsatlar
-                        </div>
+<div class="compact-sub">
+</div>
 
-                    </div>
+</div>
 
+<div class="compact-stats">
 
-                    <div class="topic-stats">
+Konu
 
-                        Mesaj: 0<br>
-                        Görüntüleme: 39
+<strong>
+36
+</strong>
 
-                    </div>
+</div>
 
+<div class="compact-stats">
 
-                    <div class="topic-last">
+Mesaj
 
-                        32 dakika önce
+<strong>
+36
+</strong>
 
-                        <small>
-                            Caner Uncu
-                        </small>
+</div>
 
-                    </div>
+<div class="compact-last">
 
-                </a>
+<strong>
+Yeni cevap bekleyen soru
+</strong>
 
+<small>
+Bugün · DijitalForum
+</small>
 
+</div>
 
-                <!-- 6 -->
+</a>
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="football"
-                    data-messages="5"
-                    data-views="55"
-                    data-time="43"
-                    data-type="offtopic">
+</div>
 
-                    <div class="topic-avatar">
-                        A
-                    </div>
+<!-- ÇÖZÜME KAVUŞMUŞ -->
 
+<div class="compact-forum">
 
-                    <div class="topic-main">
+<a href="thread.html" class="compact-row">
 
-                        <div class="topic-title">
-                            Aziz Yıldırım, seneye başkanlığı bırakmayacak
-                        </div>
+<div class="compact-icon">
+⌕
+</div>
 
-                        <div class="topic-meta">
-                            Captain Skriniar · 43 dakika önce · Futbol
-                        </div>
+<div>
 
-                    </div>
+<div class="compact-name">
+Çözüme Kavuşmuş Sorular
+</div>
 
+<div class="compact-sub">
+</div>
 
-                    <div class="topic-stats">
+</div>
 
-                        Mesaj: 5<br>
-                        Görüntüleme: 55
+<div class="compact-stats">
 
-                    </div>
+Konu
 
+<strong>
+1B+
+</strong>
 
-                    <div class="topic-last">
+</div>
 
-                        35 dakika önce
+<div class="compact-stats">
 
-                        <small>
-                            PlayStation 3
-                        </small>
+Mesaj
 
-                    </div>
+<strong>
+9,1B
+</strong>
 
-                </a>
+</div>
 
+<div class="compact-last">
 
+<strong>
+Çözüldü · Bully oyunundan atma sorunu
+</strong>
 
-                <!-- 7 -->
+<small>
+Bugün · Lain makura
+</small>
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="case"
-                    data-messages="6"
-                    data-views="36"
-                    data-time="43"
-                    data-type="offtopic">
+</div>
 
-                    <div class="topic-avatar">
-                        H
-                    </div>
+</a>
 
+</div>
 
-                    <div class="topic-main">
+<!-- ÇÖZÜME KAVUŞMAMIŞ -->
 
-                        <div class="topic-title">
-                            Siyah parçalarla beyaz kasa kullanan var mı?
-                        </div>
+<div class="compact-forum">
 
-                        <div class="topic-meta">
-                            Halo · 43 dakika önce · Kasa
-                        </div>
+<a href="thread.html" class="compact-row">
 
-                    </div>
+<div class="compact-icon">
+⌕
+</div>
 
+<div>
 
-                    <div class="topic-stats">
+<div class="compact-name">
+Çözüme Kavuşmamış Sorular
+</div>
 
-                        Mesaj: 6<br>
-                        Görüntüleme: 36
+<div class="compact-sub">
+</div>
 
-                    </div>
+</div>
 
+<div class="compact-stats">
 
-                    <div class="topic-last">
+Konu
 
-                        1 dakika önce
+<strong>
+1B+
+</strong>
 
-                        <small>
-                            Yusuf7878
-                        </small>
+</div>
 
-                    </div>
+<div class="compact-stats">
 
-                </a>
+Mesaj
 
+<strong>
+8,4B
+</strong>
 
+</div>
 
-                <!-- 8 -->
+<div class="compact-last">
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="game-support"
-                    data-messages="3"
-                    data-views="37"
-                    data-time="46"
-                    data-type="content">
+<strong>
+6700XT ekran kartına sorun
+</strong>
 
-                    <div class="topic-avatar">
-                        W
-                    </div>
+<small>
+39 dakika önce · DeadlyMania7
+</small>
 
+</div>
 
-                    <div class="topic-main">
+</a>
 
-                        <div class="topic-title">
+</div>
 
-                            <span
-                                style="
-                                border:1px solid #2563eb;
-                                border-radius:4px;
-                                padding:2px 5px;
-                                font-size:11px;
-                                color:#60a5fa;
-                                ">
+<!-- REHBERLER -->
 
-                                Çözüldü
+<div class="compact-forum">
 
-                            </span>
+<a href="thread.html" class="compact-row">
 
-                            Bully oyunundan atma sorunu için hangi fix indirilmeli?
+<div class="compact-icon">
+⌕
+</div>
 
-                        </div>
+<div>
 
-                        <div class="topic-meta">
-                            Wartz · 46 dakika önce · Oyun Teknik Destek
-                        </div>
+<div class="compact-name">
+Rehberler
+</div>
 
-                    </div>
+<div class="compact-sub">
+</div>
 
+</div>
 
-                    <div class="topic-stats">
+<div class="compact-stats">
 
-                        Mesaj: 3<br>
-                        Görüntüleme: 37
+Konu
 
-                    </div>
+<strong>
+1B+
+</strong>
 
+</div>
 
-                    <div class="topic-last">
+<div class="compact-stats">
 
-                        40 dakika önce
+Mesaj
 
-                        <small>
-                            Lain makura
-                        </small>
+<strong>
+10,1B
+</strong>
 
-                    </div>
+</div>
 
-                </a>
+<div class="compact-last">
 
+<strong>
+Coil Whine nedir, zararlı mı?
+</strong>
 
+<small>
+25 dakika önce · UNS
+</small>
 
-                <!-- 9 -->
+</div>
 
-                <a
-                    class="topic"
-                    href="thread.html"
-                    data-category="gpu"
-                    data-messages="0"
-                    data-views="20"
-                    data-time="46"
-                    data-type="new">
+</a>
 
-                    <div class="topic-avatar">
-                        B
-                    </div>
+</div>
 
+<!-- ATATÜRK -->
 
-                    <div class="topic-main">
+<div class="forum-category">
 
-                        <div class="topic-title">
-                            Temiz RTX 4060 ikinci elde ne kadar eder?
-                        </div>
+<div class="forum-category-header">
 
-                        <div class="topic-meta">
-                            BetterTurnip728 · 46 dakika önce · Ekran Kartı
-                        </div>
+<div class="forum-category-title">
+🇹🇷 Atatürk Köşesi
+</div>
 
-                    </div>
+<div class="forum-category-desc">
+Mustafa Kemal Atatürk'ün hayatı, düşünceleri, videoları ve görselleri hakkında özel içerik alanı.
+</div>
 
+</div>
 
-                    <div class="topic-stats">
+<a href="thread.html" class="forum-row">
 
-                        Mesaj: 0<br>
-                        Görüntüleme: 20
+<div class="forum-icon">
+🇹🇷
+</div>
 
-                    </div>
+<div class="forum-info">
 
+<div class="forum-name">
+Atatürk Köşesi
+</div>
 
-                    <div class="topic-last">
+<div class="forum-sub">
+Atatürk'ün Hayatı · Atatürk Videoları ve Fotoğrafları
+</div>
 
-                        46 dakika önce
+</div>
 
-                        <small>
-                            BetterTurnip728
-                        </small>
+<div class="forum-stats">
 
-                    </div>
+<span>Konu</span>
 
-                </a>
+<strong>
+114
+</strong>
 
+</div>
 
-            </div>
+<div class="forum-stats">
 
-        </div>
+<span>Mesaj</span>
 
+<strong>
+609
+</strong>
 
+</div>
 
-        <!-- =================================================
-             KONULARIN EN ALTINA EKLENEN FORUM BÖLÜMLERİ
-        ================================================== -->
+<div class="forum-last">
 
-        <div class="forum-sections">
+<strong>
+Gökyüzü ve Kalıçlaşma Sanatı
+</strong>
 
+<small>
+Bugün · DijitalForum
+</small>
 
-            <!-- ATATÜRK KÖŞESİ -->
+</div>
 
-            <div class="forum-category">
+</a>
 
-                <div class="forum-category-header">
+</div>
 
-                    <div class="forum-category-title">
-                        🇹🇷 Atatürk Köşesi
-                    </div>
+<!-- DONANIM -->
 
-                    <div class="forum-category-desc">
-                        Mustafa Kemal Atatürk'ün hayatı, düşünceleri, tarihi ve görselleri hakkında içerikler.
-                    </div>
+<div class="forum-category">
 
-                </div>
+<div class="forum-category-header">
 
+<div class="forum-category-title">
+💻 Donanım
+</div>
 
-                <a
-                    href="thread.html"
-                    class="forum-row">
+<div class="forum-category-desc">
+Donanım tavsiyeleri ve bilgisayar sorunlarınıza çözüm bulabileceğiniz bölüm.
+</div>
 
-                    <div class="forum-icon">
-                        🇹🇷
-                    </div>
+</div>
 
+<a href="thread.html" class="forum-row">
 
-                    <div class="forum-info">
+<div class="forum-icon">
+🖥️
+</div>
 
-                        <div class="forum-name">
-                            Atatürk Köşesi
-                        </div>
+<div class="forum-info">
 
-                        <div class="forum-sub">
-                            Atatürk'ün Hayatı · Atatürk Videoları ve Fotoğrafları
-                        </div>
+<div class="forum-name">
+Bilgisayar Donanımı
+</div>
 
-                    </div>
+<div class="forum-sub">
+İşlemci · Ekran Kartı · RAM · Anakart · Depolama
+</div>
 
+</div>
 
-                    <div class="forum-stats">
+<div class="forum-stats">
 
-                        <span>
-                            Konu
-                        </span>
+<span>Konu</span>
 
-                        <strong>
-                            114
-                        </strong>
+<strong>
+1B+
+</strong>
 
-                    </div>
+</div>
 
+<div class="forum-stats">
 
-                    <div class="forum-stats">
+<span>Mesaj</span>
 
-                        <span>
-                            Mesaj
-                        </span>
+<strong>
+8B+
+</strong>
 
-                        <strong>
-                            609
-                        </strong>
+</div>
 
-                    </div>
+<div class="forum-last">
 
+<strong>
+Donanım tavsiyeleri ve sorunlar
+</strong>
 
-                    <div class="forum-last">
+<small>
+Bugün · DijitalForum
+</small>
 
-                        <strong>
-                            Atatürk hakkında yeni içerikler
-                        </strong>
+</div>
 
-                        <small>
-                            Bugün · DijitalForum
-                        </small>
+</a>
 
-                    </div>
+<a href="thread.html" class="forum-row">
 
-                </a>
+<div class="forum-icon">
+🎮
+</div>
 
-            </div>
+<div class="forum-info">
 
+<div class="forum-name">
+Ekran Kartları
+</div>
 
+<div class="forum-sub">
+NVIDIA · AMD · Intel · Ekran Kartı Tavsiyeleri
+</div>
 
-            <!-- DONANIM -->
+</div>
 
-            <div class="forum-category">
+<div class="forum-stats">
 
-                <div class="forum-category-header">
+<span>Konu</span>
 
-                    <div class="forum-category-title">
-                        💻 Donanım
-                    </div>
+<strong>
+500+
+</strong>
 
-                    <div class="forum-category-desc">
-                        Donanım tavsiyeleri, bilgisayar sorunları ve teknoloji hakkında çözüm bulabileceğiniz bölüm.
-                    </div>
+</div>
 
-                </div>
+<div class="forum-stats">
 
+<span>Mesaj</span>
 
-                <a
-                    href="thread.html"
-                    class="forum-row">
+<strong>
+3B+
+</strong>
 
-                    <div class="forum-icon">
-                        🖥️
-                    </div>
+</div>
 
+<div class="forum-last">
 
-                    <div class="forum-info">
+<strong>
+Yeni ekran kartı konuları
+</strong>
 
-                        <div class="forum-name">
-                            Bilgisayar Donanımı
-                        </div>
+<small>
+Bugün · DijitalForum
+</small>
 
-                        <div class="forum-sub">
-                            İşlemci · Ekran Kartı · RAM · Anakart · Depolama
-                        </div>
+</div>
 
-                    </div>
+</a>
 
+</div>
 
-                    <div class="forum-stats">
+<!-- YAZILIM -->
 
-                        <span>
-                            Konu
-                        </span>
+<div class="forum-category">
 
-                        <strong>
-                            1B+
-                        </strong>
+<div class="forum-category-header">
 
-                    </div>
+<div class="forum-category-title">
+💻 Yazılım
+</div>
 
+<div class="forum-category-desc">
+Yazılım, programlama, web geliştirme ve işletim sistemleri hakkında yardım ve bilgi.
+</div>
 
-                    <div class="forum-stats">
+</div>
 
-                        <span>
-                            Mesaj
-                        </span>
+<a href="thread.html" class="forum-row">
 
-                        <strong>
-                            8B+
-                        </strong>
+<div class="forum-icon">
+⌨️
+</div>
 
-                    </div>
+<div class="forum-info">
 
+<div class="forum-name">
+Programlama
+</div>
 
-                    <div class="forum-last">
+<div class="forum-sub">
+HTML · CSS · JavaScript · Kotlin · Python · PHP
+</div>
 
-                        <strong>
-                            Donanım tavsiyeleri ve sorunlar
-                        </strong>
+</div>
 
-                        <small>
-                            Bugün · DijitalForum
-                        </small>
+<div class="forum-stats">
 
-                    </div>
+<span>Konu</span>
 
-                </a>
+<strong>
+700+
+</strong>
 
+</div>
 
-                <a
-                    href="thread.html"
-                    class="forum-row">
+<div class="forum-stats">
 
-                    <div class="forum-icon">
-                        🎮
-                    </div>
+<span>Mesaj</span>
 
+<strong>
+4B+
+</strong>
 
-                    <div class="forum-info">
+</div>
 
-                        <div class="forum-name">
-                            Ekran Kartları
-                        </div>
+<div class="forum-last">
 
-                        <div class="forum-sub">
-                            NVIDIA · AMD · Intel · Ekran Kartı Tavsiyeleri
-                        </div>
+<strong>
+Programlama soruları
+</strong>
 
-                    </div>
+<small>
+Bugün · DijitalForum
+</small>
 
+</div>
 
-                    <div class="forum-stats">
+</a>
 
-                        <span>
-                            Konu
-                        </span>
+<a href="thread.html" class="forum-row">
 
-                        <strong>
-                            500+
-                        </strong>
+<div class="forum-icon">
+🌐
+</div>
 
-                    </div>
+<div class="forum-info">
 
+<div class="forum-name">
+Web Geliştirme
+</div>
 
-                    <div class="forum-stats">
+<div class="forum-sub">
+Web Siteleri · HTML · CSS · JavaScript · Hosting
+</div>
 
-                        <span>
-                            Mesaj
-                        </span>
+</div>
 
-                        <strong>
-                            3B+
-                        </strong>
+<div class="forum-stats">
 
-                    </div>
+<span>Konu</span>
 
+<strong>
+400+
+</strong>
 
-                    <div class="forum-last">
+</div>
 
-                        <strong>
-                            Yeni ekran kartı konuları
-                        </strong>
+<div class="forum-stats">
 
-                        <small>
-                            Bugün · DijitalForum
-                        </small>
+<span>Mesaj</span>
 
-                    </div>
+<strong>
+2B+
+</strong>
 
-                </a>
+</div>
 
-            </div>
+<div class="forum-last">
 
+<strong>
+Web geliştirme konuları
+</strong>
 
+<small>
+Bugün · DijitalForum
+</small>
 
-            <!-- YAZILIM -->
+</div>
 
-            <div class="forum-category">
+</a>
 
-                <div class="forum-category-header">
+</div>
 
-                    <div class="forum-category-title">
-                        💻 Yazılım
-                    </div>
+<!-- MOBİL -->
 
-                    <div class="forum-category-desc">
-                        Yazılım, programlama, web geliştirme ve işletim sistemleri hakkında yardım ve bilgi.
-                    </div>
+<div class="forum-category">
 
-                </div>
+<div class="forum-category-header">
 
+<div class="forum-category-title">
+📱 Mobil
+</div>
 
-                <a
-                    href="thread.html"
-                    class="forum-row">
+<div class="forum-category-desc">
+Android, iPhone, uygulamalar ve mobil cihazlar hakkında tüm konular.
+</div>
 
-                    <div class="forum-icon">
-                        ⌨️
-                    </div>
+</div>
 
+<a href="thread.html" class="forum-row">
 
-                    <div class="forum-info">
+<div class="forum-icon">
+📱
+</div>
 
-                        <div class="forum-name">
-                            Programlama
-                        </div>
+<div class="forum-info">
 
-                        <div class="forum-sub">
-                            HTML · CSS · JavaScript · Kotlin · Python · PHP
-                        </div>
+<div class="forum-name">
+Telefonlar
+</div>
 
-                    </div>
+<div class="forum-sub">
+iPhone · Samsung · Xiaomi · Google Pixel · Diğer Telefonlar
+</div>
 
+</div>
 
-                    <div class="forum-stats">
+<div class="forum-stats">
 
-                        <span>
-                            Konu
-                        </span>
+<span>Konu</span>
 
-                        <strong>
-                            700+
-                        </strong>
+<strong>
+900+
+</strong>
 
-                    </div>
+</div>
 
+<div class="forum-stats">
 
-                    <div class="forum-stats">
+<span>Mesaj</span>
 
-                        <span>
-                            Mesaj
-                        </span>
+<strong>
+5B+
+</strong>
 
-                        <strong>
-                            4B+
-                        </strong>
+</div>
 
-                    </div>
+<div class="forum-last">
 
+<strong>
+Telefon tavsiyeleri
+</strong>
 
-                    <div class="forum-last">
+<small>
+Bugün · DijitalForum
+</small>
 
-                        <strong>
-                            Programlama soruları
-                        </strong>
+</div>
 
-                        <small>
-                            Bugün · DijitalForum
-                        </small>
+</a>
 
-                    </div>
+</div>
 
-                </a>
+<!-- OYUN -->
 
+<div class="forum-category">
 
-                <a
-                    href="thread.html"
-                    class="forum-row">
+<div class="forum-category-header">
 
-                    <div class="forum-icon">
-                        🌐
-                    </div>
+<div class="forum-category-title">
+🎮 Oyun
+</div>
 
+<div class="forum-category-desc">
+PC, konsol, mobil oyunlar ve oyun dünyasındaki gelişmeler.
+</div>
 
-                    <div class="forum-info">
+</div>
 
-                        <div class="forum-name">
-                            Web Geliştirme
-                        </div>
+<a href="thread.html" class="forum-row">
 
-                        <div class="forum-sub">
-                            Web Siteleri · HTML · CSS · JavaScript · Hosting
-                        </div>
+<div class="forum-icon">
+🎮
+</div>
 
-                    </div>
+<div class="forum-info">
 
+<div class="forum-name">
+Oyun Dünyası
+</div>
 
-                    <div class="forum-stats">
+<div class="forum-sub">
+PC Oyunları · PlayStation · Xbox · Nintendo · Mobil Oyunlar
+</div>
 
-                        <span>
-                            Konu
-                        </span>
+</div>
 
-                        <strong>
-                            400+
-                        </strong>
+<div class="forum-stats">
 
-                    </div>
+<span>Konu</span>
 
+<strong>
+1B+
+</strong>
 
-                    <div class="forum-stats">
+</div>
 
-                        <span>
-                            Mesaj
-                        </span>
+<div class="forum-stats">
 
-                        <strong>
-                            2B+
-                        </strong>
+<span>Mesaj</span>
 
-                    </div>
+<strong>
+9B+
+</strong>
 
+</div>
 
-                    <div class="forum-last">
+<div class="forum-last">
 
-                        <strong>
-                            Web geliştirme konuları
-                        </strong>
+<strong>
+Oyun hakkında yeni konular
+</strong>
 
-                        <small>
-                            Bugün · DijitalForum
-                        </small>
+<small>
+Bugün · DijitalForum
+</small>
 
-                    </div>
+</div>
 
-                </a>
-
-            </div>
-
-
-
-            <!-- MOBİL -->
-
-            <div class="forum-category">
-
-                <div class="forum-category-header">
-
-                    <div class="forum-category-title">
-                        📱 Mobil
-                    </div>
-
-                    <div class="forum-category-desc">
-                        Android, iPhone, uygulamalar ve mobil cihazlar hakkında tüm konular.
-                    </div>
-
-                </div>
-
-
-                <a
-                    href="thread.html"
-                    class="forum-row">
-
-                    <div class="forum-icon">
-                        📱
-                    </div>
-
-
-                    <div class="forum-info">
-
-                        <div class="forum-name">
-                            Telefonlar
-                        </div>
-
-                        <div class="forum-sub">
-                            iPhone · Samsung · Xiaomi · Google Pixel · Diğer Telefonlar
-                        </div>
-
-                    </div>
-
-
-                    <div class="forum-stats">
-
-                        <span>
-                            Konu
-                        </span>
-
-                        <strong>
-                            900+
-                        </strong>
-
-                    </div>
-
-
-                    <div class="forum-stats">
-
-                        <span>
-                            Mesaj
-                        </span>
-
-                        <strong>
-                            5B+
-                        </strong>
-
-                    </div>
-
-
-                    <div class="forum-last">
-
-                        <strong>
-                            Telefon tavsiyeleri
-                        </strong>
-
-                        <small>
-                            Bugün · DijitalForum
-                        </small>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-
-            <!-- OYUN -->
-
-            <div class="forum-category">
-
-                <div class="forum-category-header">
-
-                    <div class="forum-category-title">
-                        🎮 Oyun
-                    </div>
-
-                    <div class="forum-category-desc">
-                        PC, konsol, mobil oyunlar ve oyun dünyasındaki gelişmeler.
-                    </div>
-
-                </div>
-
-
-                <a
-                    href="thread.html"
-                    class="forum-row">
-
-                    <div class="forum-icon">
-                        🎮
-                    </div>
-
-
-                    <div class="forum-info">
-
-                        <div class="forum-name">
-                            Oyun Dünyası
-                        </div>
-
-                        <div class="forum-sub">
-                            PC Oyunları · PlayStation · Xbox · Nintendo · Mobil Oyunlar
-                        </div>
-
-                    </div>
-
-
-                    <div class="forum-stats">
-
-                        <span>
-                            Konu
-                        </span>
-
-                        <strong>
-                            1B+
-                        </strong>
-
-                    </div>
-
-
-                    <div class="forum-stats">
-
-                        <span>
-                            Mesaj
-                        </span>
-
-                        <strong>
-                            9B+
-                        </strong>
-
-                    </div>
-
-
-                    <div class="forum-last">
-
-                        <strong>
-                            Oyun hakkında yeni konular
-                        </strong>
-
-                        <small>
-                            Bugün · DijitalForum
-                        </small>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================================
-         SIDEBAR
-    ================================================== -->
-
-    <div>
-
-
-        <!-- PROFİL -->
-
-        <div
-            class="sidebar-box"
-            id="profileBox">
-
-            <h3>
-                👤 Profil
-            </h3>
-
-
-            <div class="profile">
-
-                <div class="profile-avatar">
-                </div>
-
-
-                <div>
-
-                    <div class="profile-name">
-                        muhammetaktas122
-                    </div>
-
-                    <div class="profile-rank">
-                        Uzman Üye
-                    </div>
-
-                    <div class="profile-stat">
-                        Mesajlar: 781
-                    </div>
-
-                    <div class="profile-stat">
-                        Beğeniler: 190
-                    </div>
-
-                    <div class="profile-stat">
-                        Ödül Puanları: 444
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- SOSYAL MENÜ -->
-
-        <div class="sidebar-box">
-
-            <h3>
-                📰 Sosyal Menü
-            </h3>
-
-
-            <div class="side-topic">
-                Konuları bul
-            </div>
-
-            <div class="side-topic">
-                Takip
-            </div>
-
-            <div class="side-topic">
-                Sosyal'de ara
-            </div>
-
-            <div class="side-topic">
-                Sosyal ağı okundu olarak işaretle
-            </div>
-
-            <div class="side-topic">
-                Sosyal kuralları
-            </div>
-
-        </div>
-
-
-
-        <!-- POPÜLER -->
-
-        <div class="sidebar-box">
-
-            <h3>
-                🔥 Popüler
-            </h3>
-
-
-            <div class="side-topic">
-                Valorant
-            </div>
-
-            <div class="side-topic">
-                Sıcak Fırsatlar
-            </div>
-
-            <div class="side-topic">
-                Ekran Kartları
-            </div>
-
-            <div class="side-topic">
-                Telefon Tavsiyeleri
-            </div>
-
-        </div>
-
-    </div>
+</a>
 
 </div>
 
 </div>
 
 <!-- =========================================================
-     FOOTER
+     MEVCUT KONULAR
 ========================================================= -->
+
+<div class="category">
+
+<div class="category-title" id="categoryTitle">
+🆕 Yeni Konular
+</div>
+
+<div id="topicList">
+
+<a
+class="topic"
+href="thread.html"
+data-category="ram"
+data-messages="0"
+data-views="3"
+data-time="4"
+data-type="new">
+
+<div class="topic-avatar">
+C
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+KLEVV CRAS V RGB 2x16 GB DDR5 RAM ayarları nasıldır?
+</div>
+
+<div class="topic-meta">
+CanPatrioTic · 4 dakika önce · RAM
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 0<br>
+Görüntüleme: 3
+</div>
+
+<div class="topic-last">
+4 dakika önce
+<small>CanPatrioTic</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="valorant"
+data-messages="2"
+data-views="20"
+data-time="23"
+data-type="new">
+
+<div class="topic-avatar">
+V
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+Valorant GO 1. Cilt Bıçağı vs İyon Enerji Kılıcı
+</div>
+
+<div class="topic-meta">
+General5306 · 23 dakika önce · Valorant
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 2<br>
+Görüntüleme: 20
+</div>
+
+<div class="topic-last">
+3 dakika önce
+<small>LokxER</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="monitor"
+data-messages="0"
+data-views="7"
+data-time="28"
+data-type="new">
+
+<div class="topic-avatar">
+M
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+Dell AW2723DF ve RTX 4080 sistemde 244 Hz seçince çözünürlük 1080P'ye düşüyor
+</div>
+
+<div class="topic-meta">
+magraven · 28 dakika önce · Monitörler ve Görüntüleme Aygıtları
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 0<br>
+Görüntüleme: 7
+</div>
+
+<div class="topic-last">
+28 dakika önce
+<small>magraven</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="phone"
+data-messages="6"
+data-views="46"
+data-time="30"
+data-type="new">
+
+<div class="topic-avatar">
+D
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+iPhone 16e'den hangi modele geçilmeli?
+</div>
+
+<div class="topic-meta">
+darwin. · 30 dakika önce · Telefon Tavsiyeleri
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 6<br>
+Görüntüleme: 46
+</div>
+
+<div class="topic-last">
+21 dakika önce
+<small>Simon</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="deals"
+data-messages="0"
+data-views="39"
+data-time="32"
+data-type="deals">
+
+<div class="topic-avatar">
+K
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+[Elektronik] KTC H25T7 200 Hz IPS monitör | 3.639 TL!
+</div>
+
+<div class="topic-meta">
+Caner Uncu · 32 dakika önce · Sıcak Fırsatlar
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 0<br>
+Görüntüleme: 39
+</div>
+
+<div class="topic-last">
+32 dakika önce
+<small>Caner Uncu</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="football"
+data-messages="5"
+data-views="55"
+data-time="43"
+data-type="offtopic">
+
+<div class="topic-avatar">
+A
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+Aziz Yıldırım, seneye başkanlığı bırakmayacak
+</div>
+
+<div class="topic-meta">
+Captain Skriniar · 43 dakika önce · Futbol
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 5<br>
+Görüntüleme: 55
+</div>
+
+<div class="topic-last">
+35 dakika önce
+<small>PlayStation 3</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="case"
+data-messages="6"
+data-views="36"
+data-time="43"
+data-type="offtopic">
+
+<div class="topic-avatar">
+H
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+Siyah parçalarla beyaz kasa kullanan var mı?
+</div>
+
+<div class="topic-meta">
+Halo · 43 dakika önce · Kasa
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 6<br>
+Görüntüleme: 36
+</div>
+
+<div class="topic-last">
+1 dakika önce
+<small>Yusuf7878</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="game-support"
+data-messages="3"
+data-views="37"
+data-time="46"
+data-type="content">
+
+<div class="topic-avatar">
+W
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+
+<span style="
+border:1px solid #2563eb;
+border-radius:4px;
+padding:2px 5px;
+font-size:11px;
+color:#60a5fa;
+">
+Çözüldü </span>
+
+Bully oyunundan atma sorunu için hangi fix indirilmeli?
+
+</div>
+
+<div class="topic-meta">
+Wartz · 46 dakika önce · Oyun Teknik Destek
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 3<br>
+Görüntüleme: 37
+</div>
+
+<div class="topic-last">
+40 dakika önce
+<small>Lain makura</small>
+</div>
+
+</a>
+
+<a
+class="topic"
+href="thread.html"
+data-category="gpu"
+data-messages="0"
+data-views="20"
+data-time="46"
+data-type="new">
+
+<div class="topic-avatar">
+B
+</div>
+
+<div class="topic-main">
+
+<div class="topic-title">
+Temiz RTX 4060 ikinci elde ne kadar eder?
+</div>
+
+<div class="topic-meta">
+BetterTurnip728 · 46 dakika önce · Ekran Kartı
+</div>
+
+</div>
+
+<div class="topic-stats">
+Mesaj: 0<br>
+Görüntüleme: 20
+</div>
+
+<div class="topic-last">
+46 dakika önce
+<small>BetterTurnip728</small>
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<div>
+
+<div
+class="sidebar-box"
+id="profileBox">
+
+<h3>
+👤 Profil
+</h3>
+
+<div class="profile">
+
+<div class="profile-avatar"></div>
+
+<div>
+
+<div class="profile-name">
+muhammetaktas122
+</div>
+
+<div class="profile-rank">
+Uzman Üye
+</div>
+
+<div class="profile-stat">
+Mesajlar: 781
+</div>
+
+<div class="profile-stat">
+Beğeniler: 190
+</div>
+
+<div class="profile-stat">
+Ödül Puanları: 444
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="sidebar-box">
+
+<h3>
+📰 Sosyal Menü
+</h3>
+
+<div class="side-topic">
+Konuları bul
+</div>
+
+<div class="side-topic">
+Takip
+</div>
+
+<div class="side-topic">
+Sosyal'de ara
+</div>
+
+<div class="side-topic">
+Sosyal ağı okundu olarak işaretle
+</div>
+
+<div class="side-topic">
+Sosyal kuralları
+</div>
+
+</div>
+
+<div class="sidebar-box">
+
+<h3>
+🔥 Popüler
+</h3>
+
+<div class="side-topic">
+Valorant
+</div>
+
+<div class="side-topic">
+Sıcak Fırsatlar
+</div>
+
+<div class="side-topic">
+Ekran Kartları
+</div>
+
+<div class="side-topic">
+Telefon Tavsiyeleri
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 <footer class="footer">
 
@@ -2044,372 +2283,275 @@ a{
 
 </footer>
 
-<!-- =========================================================
-     COOKIE
-========================================================= -->
-
 <div
-    class="cookie"
-    id="cookie">
+class="cookie"
+id="cookie">
 
 DijitalForum Sosyal, anlık bildirimleri etkinleştirmek için izninizi istiyor.
 
 <button
-    class="cookie-close"
-    onclick="document.getElementById('cookie').remove()">
+class="cookie-close"
+onclick="document.getElementById('cookie').remove()">
 
-    ×
+×
 
 </button>
 
 </div>
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
 <script>
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded",function(){
 
 
-    /* =====================================================
-       GİRİŞ DURUMU
-    ===================================================== */
+/* =========================================================
+   GİRİŞ DURUMU
+========================================================= */
 
-    const userActions =
-        document.getElementById("userActions");
+const userActions =
+document.getElementById("userActions");
 
-    const profileBox =
-        document.getElementById("profileBox");
+const profileBox =
+document.getElementById("profileBox");
 
+const isLoggedIn =
+localStorage.getItem("isLoggedIn") === "true";
 
-    const isLoggedIn =
-        localStorage.getItem("isLoggedIn") === "true";
 
+if(isLoggedIn){
 
-    /* =====================================================
-       GİRİŞ YAPILDIYSA
-    ===================================================== */
+userActions.innerHTML = `
 
-    if(isLoggedIn){
+<a
+href="https://dijitalforumtr.onrender.com/yeni-mesajlar.html"
+class="btn btn-dark">
 
-        userActions.innerHTML = `
+🔥 Yeni Mesajlar
 
-            <a
-                href="https://dijitalforumtr.onrender.com/yeni-mesajlar.html"
-                class="btn btn-dark">
+</a>
 
-                🔥 Yeni Mesajlar
+<a
+href="https://dijitalforumtr.onrender.com/konu-olustur.html"
+class="btn btn-blue">
 
-            </a>
+✏️ Konu Aç
 
+</a>
 
-            <a
-                href="https://dijitalforumtr.onrender.com/konu-olustur.html"
-                class="btn btn-blue">
+`;
 
-                ✏️ Konu Aç
+profileBox.style.display="block";
 
-            </a>
+}
 
-        `;
+else{
 
+userActions.innerHTML = `
 
-        profileBox.style.display = "block";
+<a
+href="https://dijitalforumtr.onrender.com/register.html"
+class="btn btn-dark">
 
-    }
+Kayıt Ol
 
+</a>
 
-    /* =====================================================
-       GİRİŞ YAPILMADIYSA
-    ===================================================== */
+<a
+href="https://dijitalforumtr.onrender.com/login.html"
+class="btn btn-blue">
 
-    else{
+Giriş Yap
 
-        userActions.innerHTML = `
+</a>
 
-            <a
-                href="https://dijitalforumtr.onrender.com/register.html"
-                class="btn btn-dark">
+`;
 
-                Kayıt Ol
+profileBox.style.display="none";
 
-            </a>
+}
 
 
-            <a
-                href="https://dijitalforumtr.onrender.com/login.html"
-                class="btn btn-blue">
+/* =========================================================
+   SEKME SİSTEMİ
+========================================================= */
 
-                Giriş Yap
+const tabs =
+document.querySelectorAll("#tabs button");
 
-            </a>
+const topics =
+Array.from(
+document.querySelectorAll("#topicList .topic")
+);
 
-        `;
+const title =
+document.getElementById("categoryTitle");
 
+const list =
+document.getElementById("topicList");
 
-        profileBox.style.display = "none";
 
-    }
+function showTopics(filter){
 
+let visibleTopics=[];
 
 
-    /* =====================================================
-       SEKME SİSTEMİ
-    ===================================================== */
+if(filter==="new"){
 
-    const tabs =
-        document.querySelectorAll("#tabs button");
+visibleTopics=topics.slice();
 
+title.textContent="🆕 Yeni Konular";
 
-    const topics =
-        Array.from(
-            document.querySelectorAll("#topicList .topic")
-        );
+}
 
 
-    const title =
-        document.getElementById("categoryTitle");
+else if(filter==="latest"){
 
+visibleTopics=
+topics
+.slice()
+.sort(function(a,b){
 
-    const list =
-        document.getElementById("topicList");
+return Number(a.dataset.time)
+-
+Number(b.dataset.time);
 
+});
 
+title.textContent="💬 Son Mesajlar";
 
-    function showTopics(filter){
+}
 
 
-        let visibleTopics = [];
+else if(filter==="popular"){
 
+visibleTopics=
+topics
+.slice()
+.sort(function(a,b){
 
-        /* =================================================
-           YENİ
-        ================================================= */
+const aScore=
+Number(a.dataset.views)
++
+Number(a.dataset.messages)*10;
 
-        if(filter === "new"){
+const bScore=
+Number(b.dataset.views)
++
+Number(b.dataset.messages)*10;
 
-            visibleTopics =
-                topics.slice();
+return bScore-aScore;
 
-            title.textContent =
-                "🆕 Yeni Konular";
+});
 
-        }
+title.textContent="🔥 Popüler Konular";
 
+}
 
-        /* =================================================
-           SON MESAJLAR
-        ================================================= */
 
-        else if(filter === "latest"){
+else if(filter==="unanswered"){
 
-            visibleTopics =
-                topics
-                    .slice()
-                    .sort(function(a,b){
+visibleTopics=
+topics.filter(function(topic){
 
-                        return Number(a.dataset.time)
-                             -
-                               Number(b.dataset.time);
+return Number(topic.dataset.messages)===0;
 
-                    });
+});
 
+title.textContent="❓ Cevapsız Sorular";
 
-            title.textContent =
-                "💬 Son Mesajlar";
+}
 
-        }
 
+else if(filter==="deals"){
 
-        /* =================================================
-           POPÜLER
-        ================================================= */
+visibleTopics=
+topics.filter(function(topic){
 
-        else if(filter === "popular"){
+return topic.dataset.category==="deals";
 
-            visibleTopics =
-                topics
-                    .slice()
-                    .sort(function(a,b){
+});
 
-                        const aScore =
-                            Number(a.dataset.views)
-                            +
-                            Number(a.dataset.messages) * 10;
+title.textContent="🏷️ Sıcak Fırsatlar";
 
+}
 
-                        const bScore =
-                            Number(b.dataset.views)
-                            +
-                            Number(b.dataset.messages) * 10;
 
+else if(filter==="content"){
 
-                        return bScore - aScore;
+visibleTopics=
+topics.filter(function(topic){
 
-                    });
+return topic.dataset.type==="content";
 
+});
 
-            title.textContent =
-                "🔥 Popüler Konular";
+title.textContent="📚 DijitalForum İçerikleri";
 
-        }
+}
 
 
-        /* =================================================
-           CEVAPSIZ
-        ================================================= */
+else if(filter==="offtopic"){
 
-        else if(filter === "unanswered"){
+visibleTopics=
+topics.filter(function(topic){
 
-            visibleTopics =
-                topics.filter(function(topic){
+return topic.dataset.type==="offtopic";
 
-                    return Number(
-                        topic.dataset.messages
-                    ) === 0;
+});
 
-                });
+title.textContent="💬 Konu Dışı";
 
+}
 
-            title.textContent =
-                "❓ Cevapsız Sorular";
 
-        }
+list.innerHTML="";
 
 
-        /* =================================================
-           SICAK FIRSATLAR
-        ================================================= */
+if(visibleTopics.length===0){
 
-        else if(filter === "deals"){
+list.innerHTML=`
 
-            visibleTopics =
-                topics.filter(function(topic){
+<div class="empty">
 
-                    return topic.dataset.category === "deals";
+Bu kategoride henüz konu bulunmuyor.
 
-                });
+</div>
 
+`;
 
-            title.textContent =
-                "🏷️ Sıcak Fırsatlar";
+return;
 
-        }
+}
 
 
-        /* =================================================
-           İÇERİK
-        ================================================= */
+visibleTopics.forEach(function(topic){
 
-        else if(filter === "content"){
+list.appendChild(topic);
 
-            visibleTopics =
-                topics.filter(function(topic){
+});
 
-                    return topic.dataset.type === "content";
+}
 
-                });
 
+tabs.forEach(function(tab){
 
-            title.textContent =
-                "📚 DijitalForum İçerikleri";
+tab.addEventListener("click",function(e){
 
-        }
+e.preventDefault();
 
+tabs.forEach(function(item){
 
-        /* =================================================
-           KONU DIŞI
-        ================================================= */
+item.classList.remove("active");
 
-        else if(filter === "offtopic"){
+});
 
-            visibleTopics =
-                topics.filter(function(topic){
+tab.classList.add("active");
 
-                    return topic.dataset.type === "offtopic";
+showTopics(tab.dataset.filter);
 
-                });
+});
 
-
-            title.textContent =
-                "💬 Konu Dışı";
-
-        }
-
-
-        /* =================================================
-           LİSTEYİ TEMİZLE
-        ================================================= */
-
-        list.innerHTML = "";
-
-
-        /* =================================================
-           BOŞSA
-        ================================================= */
-
-        if(visibleTopics.length === 0){
-
-            list.innerHTML = `
-
-                <div class="empty">
-
-                    Bu kategoride henüz konu bulunmuyor.
-
-                </div>
-
-            `;
-
-            return;
-
-        }
-
-
-        /* =================================================
-           KONULARI EKLE
-        ================================================= */
-
-        visibleTopics.forEach(function(topic){
-
-            list.appendChild(topic);
-
-        });
-
-    }
-
-
-
-    /* =====================================================
-       SEKME TIKLAMA
-    ===================================================== */
-
-    tabs.forEach(function(tab){
-
-        tab.addEventListener("click", function(e){
-
-            e.preventDefault();
-
-
-            tabs.forEach(function(item){
-
-                item.classList.remove("active");
-
-            });
-
-
-            tab.classList.add("active");
-
-
-            showTopics(
-                tab.dataset.filter
-            );
-
-        });
-
-    });
-
+});
 
 });
 
