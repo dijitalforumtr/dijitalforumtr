@@ -1,48 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
-<article lang="">
-  <para>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;</para>
-  <para>&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/login.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/register.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/profil.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/yeni-mesajlar.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/bildirimler.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/konu-olustur.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/kategori-sec.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/thread.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;url&gt;&#13;</para>
-  <para>&lt;loc&gt;https://dijitalforumtr.vercel.app/mesajlar.html&lt;/loc&gt;&#13;</para>
-  <para>&lt;/url&gt;&#13;</para>
-  <para>&#13;</para>
-  <para>&lt;/urlset&gt;</para>
-</article>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/login.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/register.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/profil.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/yeni-mesajlar.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/bildirimler.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/konu-olustur.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/kategori-sec.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/thread.html</loc>
+</url>
+
+<url>
+<loc>https://dijitalforumtr.vercel.app/mesajlar.html</loc>
+</url>
+
+</urlset>
