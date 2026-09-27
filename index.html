@@ -807,6 +807,7 @@ button{
 </style>
 
 <style id="section-page-style">
+.section-question-box{padding:12px}.section-question-btn{display:block;text-align:center;text-decoration:none;border:1px solid #2563eb;background:#2563eb;color:#fff;border-radius:7px;padding:10px 12px;font-size:12px;font-weight:600}.section-question-btn:hover{background:#1d4ed8;border-color:#1d4ed8}
 .section-page{background:#111827;border:1px solid #1f2937;border-radius:12px;overflow:hidden;margin-bottom:20px}
 .section-page-head{padding:18px;background:linear-gradient(135deg,#071426,#0b1d32);border-bottom:1px solid #1f2937}
 .section-page-head h2{color:#60a5fa;font-size:22px;margin:0 0 6px}
@@ -828,6 +829,7 @@ button{
 .section-topic-stat{text-align:center;color:#94a3b8;font-size:10px}.section-topic-stat strong{display:block;color:#e5e7eb;font-size:13px;margin-top:3px}
 .section-topic-last{color:#94a3b8;font-size:10px}.section-topic-last strong{display:block;color:#60a5fa;font-size:11px;margin-bottom:3px}
 .section-empty{padding:34px 20px;text-align:center;color:#64748b;font-size:12px}.section-empty strong{display:block;color:#94a3b8;font-size:13px}.section-empty span{display:block;margin-top:6px}
+.section-pagination{display:flex;justify-content:center;align-items:center;gap:7px;flex-wrap:wrap;padding:14px;border-top:1px solid #1f2937;background:#0f172a}.section-page-number,.section-page-next{border:1px solid #334155;background:#1e293b;color:#cbd5e1;border-radius:6px;padding:7px 10px;font-size:10px;cursor:pointer;text-decoration:none}.section-page-number.active,.section-page-number:hover,.section-page-next:hover{background:#2563eb;color:#fff;border-color:#2563eb}.section-page-dots{color:#64748b;font-size:11px;padding:0 2px}
 .forum-row.section-clickable{cursor:pointer}
 .forum-row.section-clickable:hover{background:#172033}
 @media(max-width:1000px){.section-topic{grid-template-columns:minmax(0,1fr)}}
@@ -3475,6 +3477,14 @@ için izninizi istiyor.
 
 const socialData = {
 
+    new: [],
+    latest: [],
+    popular: [],
+    unanswered: [],
+    deals: [],
+    content: [],
+    offtopic: [],
+
     news: [],
 
     featured: [],
@@ -4448,6 +4458,52 @@ function fallbackCopy(text){
    SEKME SİSTEMİ
 ========================================================= */
 
+function renderTabContent(filter){
+
+    const titleBox = document.getElementById("categoryTitle");
+    const listBox = document.getElementById("topicList");
+    if(!titleBox || !listBox) return;
+
+    const labels = {
+        new: "🆕 Yeni Konular",
+        latest: "💬 Son Mesajlar",
+        popular: "🔥 Popüler Konular",
+        unanswered: "❓ Cevapsız Sorular",
+        deals: "🏷️ Sıcak Fırsatlar",
+        content: "📚 DijitalForum İçerikleri",
+        offtopic: "💬 Konu Dışı"
+    };
+
+    const emptyMessages = {
+        new: "Yeni konu bulunmamaktadır.",
+        latest: "Yeni mesaj bulunmamaktadır.",
+        popular: "Popüler konu bulunmamaktadır.",
+        unanswered: "Cevapsız soru bulunmamaktadır.",
+        deals: "Sıcak fırsat bulunmamaktadır.",
+        content: "DijitalForum içeriği bulunmamaktadır.",
+        offtopic: "Konu dışı içerik bulunmamaktadır."
+    };
+
+    titleBox.textContent = labels[filter] || labels.new;
+
+    const data = Array.isArray(socialData[filter]) ? socialData[filter] : [];
+
+    if(data.length === 0){
+        listBox.innerHTML = '<div class="empty">' + escapeHTML(emptyMessages[filter] || "Herhangi bir içerik bulunmamaktadır.") + '</div>';
+        return;
+    }
+
+    listBox.innerHTML = data.map(function(item){
+        return `
+            <div class="news-item">
+                <div class="news-source">${escapeHTML(item.user || item.source || "DijitalForum")}</div>
+                <div class="news-title">${escapeHTML(item.title || "")}</div>
+                <div class="news-meta">${escapeHTML(item.meta || "")}</div>
+                <div class="news-category">${escapeHTML(item.category || "")}</div>
+            </div>`;
+    }).join("");
+}
+
 document
 .querySelectorAll(
     ".tabs button"
@@ -4473,16 +4529,18 @@ document
                         }
                     );
 
-
                 button.classList.add(
                     "active"
                 );
 
+                renderTabContent(button.dataset.filter);
             }
         );
 
     }
 );
+
+renderTabContent("new");
 
 
 /* =========================================================
@@ -4525,11 +4583,37 @@ document
         return 'section-' + String(name).toLowerCase().replace(/[^a-z0-9çğıöşü]+/gi,'-').replace(/^-+|-+$/g,'');
     }
 
+    const sidebar = document.querySelector('.sidebar');
+
+    function showSectionSidebar(){
+        if(!sidebar) return;
+        if(!sidebar.dataset.homeHTML) sidebar.dataset.homeHTML = sidebar.innerHTML;
+        sidebar.innerHTML = `
+          <div class="sidebar-box">
+            <h3>Yeni konular</h3>
+            <div class="empty">Yazan biri olmadığı için yeni konu bulunmamaktadır.</div>
+          </div>
+          <div class="sidebar-box">
+            <h3>Yeni mesajlar</h3>
+            <div class="empty">Yazan biri olmadığı için yeni mesajlar bulunmamaktadır.</div>
+          </div>
+          <div class="sidebar-box section-question-box">
+            <a class="section-question-btn" href="https://techolay.net/sosyal/bolum/teknik-destek.10/post-thread" target="_blank" rel="noopener">Soru gönder</a>
+          </div>`;
+    }
+
+    function restoreHomeSidebar(){
+        if(!sidebar || !sidebar.dataset.homeHTML) return;
+        sidebar.innerHTML = sidebar.dataset.homeHTML;
+        delete sidebar.dataset.homeHTML;
+    }
+
     function openSection(d){
         const left=main.firstElementChild;
         if(!left) return;
         const homeHTML=left.innerHTML;
         main.dataset.homeHTML=homeHTML;
+        showSectionSidebar();
         const key=sectionKey(d.name);
         const topicExists = d.topics && !/^0(?:,0|B)?$/i.test(d.topics.trim());
         const title = d.lastTitle && !/^Henüz/i.test(d.lastTitle) ? d.lastTitle : '';
@@ -4567,6 +4651,15 @@ document
               <span>Henüz yorum yok</span>
             </div>`}
           </div>
+          ${topicExists ? `
+          <div class="section-pagination" aria-label="Sayfalama">
+            <a class="section-page-number active" href="#" data-page="1">1</a>
+            <a class="section-page-number" href="#" data-page="2">2</a>
+            <a class="section-page-number" href="#" data-page="3">3</a>
+            <span class="section-page-dots">…</span>
+            <a class="section-page-number" href="#" data-page="354">354</a>
+            <a class="section-page-next" href="#" data-page="2">Sonraki</a>
+          </div>` : ''}
         </div>`;
 
         left.querySelector('.section-page-back').addEventListener('click', function(){closeSection();});
@@ -4574,6 +4667,14 @@ document
             btn.addEventListener('click', function(){
                 left.querySelectorAll('.section-page-actions .section-page-btn').forEach(function(b){b.classList.remove('active')});
                 btn.classList.add('active');
+            });
+        });
+        left.querySelectorAll('.section-pagination a').forEach(function(link){
+            link.addEventListener('click', function(e){
+                e.preventDefault();
+                left.querySelectorAll('.section-pagination a').forEach(function(a){a.classList.remove('active')});
+                if(link.classList.contains('section-page-number')) link.classList.add('active');
+                window.scrollTo({top:0,behavior:'smooth'});
             });
         });
         window.scrollTo({top:0,behavior:'smooth'});
@@ -4585,6 +4686,7 @@ document
         if(!left || !main.dataset.homeHTML) return;
         left.innerHTML=main.dataset.homeHTML;
         delete main.dataset.homeHTML;
+        restoreHomeSidebar();
         history.pushState({},'',location.pathname);
         window.scrollTo({top:0,behavior:'smooth'});
         // Re-bind rows because the original DOM was restored from HTML.
