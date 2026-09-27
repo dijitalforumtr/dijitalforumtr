@@ -8,23 +8,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta
-    name="description"
-    content="DijitalForum - Türkiye'nin teknoloji, yazılım, donanım, mobil ve oyun topluluğu."
+name="description"
+content="DijitalForum - Türkiye'nin teknoloji, yazılım, donanım, mobil ve oyun topluluğu."
 >
 
 <meta
-    name="keywords"
-    content="forum, teknoloji, oyun, yazılım, donanım, mobil, bilgisayar"
+name="keywords"
+content="forum, teknoloji, oyun, yazılım, donanım, mobil, bilgisayar"
 >
 
 <meta
-    name="robots"
-    content="index, follow"
+name="robots"
+content="index, follow"
 >
 
 <link
-    rel="canonical"
-    href="https://dijitalforumtr.onrender.com/"
+rel="canonical"
+href="https://dijitalforumtr.onrender.com/"
 >
 
 <title>DijitalForum Sosyal</title>
@@ -33,7 +33,7 @@
 <style>
 
 /* =========================================================
-   RESET
+   TEMEL
 ========================================================= */
 
 *{
@@ -61,11 +61,6 @@ a{
 button{
     font-family:inherit;
 }
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
 
 .container{
     width:95%;
@@ -204,7 +199,7 @@ button{
 
 
 /* =========================================================
-   MAIN
+   ANA
 ========================================================= */
 
 .main{
@@ -216,7 +211,7 @@ button{
 
 
 /* =========================================================
-   CATEGORY
+   KATEGORİ
 ========================================================= */
 
 .category{
@@ -236,74 +231,19 @@ button{
 
 
 /* =========================================================
-   TOPIC
+   BOŞ MESAJ
 ========================================================= */
 
-.topic{
-    display:grid;
-    grid-template-columns:42px minmax(0,1fr) 100px 130px;
-    gap:15px;
-    align-items:center;
-    padding:15px;
-    border-top:1px solid #1f2937;
-}
-
-.topic:hover{
-    background:#1f2937;
-}
-
-.topic-avatar{
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    display:grid;
-    place-items:center;
-    background:#1e3a8a;
-    color:#fff;
-    font-weight:700;
-    border:1px solid #2563eb;
-}
-
-.topic-main{
-    min-width:0;
-}
-
-.topic-title{
-    color:#60a5fa;
-    font-size:15px;
-    font-weight:600;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-
-.topic-meta{
-    color:#94a3b8;
-    font-size:12px;
-    margin-top:5px;
-}
-
-.topic-stats{
-    color:#94a3b8;
-    font-size:12px;
-    line-height:20px;
-}
-
-.topic-last{
-    text-align:right;
-    color:#60a5fa;
-    font-size:12px;
-}
-
-.topic-last small{
-    display:block;
+.empty{
+    padding:25px 15px;
+    text-align:center;
     color:#64748b;
-    margin-top:4px;
+    font-size:13px;
 }
 
 
 /* =========================================================
-   FORUM BLOCK
+   FORUM
 ========================================================= */
 
 .forum-block{
@@ -315,26 +255,25 @@ button{
 }
 
 .forum-block-header{
-    padding:12px 14px;
-    background:linear-gradient(135deg,#071426,#0b1d32);
+    padding:14px;
+    background:linear-gradient(
+        135deg,
+        #071426,
+        #0b1d32
+    );
     border-bottom:1px solid #1f2937;
 }
 
 .forum-block-header h2{
     color:#60a5fa;
     font-size:18px;
-    margin-bottom:4px;
 }
 
 .forum-block-header p{
     color:#94a3b8;
     font-size:12px;
+    margin-top:4px;
 }
-
-
-/* =========================================================
-   FORUM ROW
-========================================================= */
 
 .forum-row{
     display:grid;
@@ -365,7 +304,7 @@ button{
     background:#020617;
     color:#60a5fa;
     border:1px solid #2563eb;
-    font-size:22px;
+    font-size:20px;
 }
 
 .forum-name{
@@ -400,7 +339,6 @@ button{
 .forum-last-title{
     color:#60a5fa;
     font-size:12px;
-    font-weight:600;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -414,81 +352,12 @@ button{
 
 
 /* =========================================================
-   QUESTION
-========================================================= */
-
-.question-row{
-    display:grid;
-    grid-template-columns:
-        50px
-        minmax(0,1fr)
-        90px
-        90px
-        minmax(180px,1fr);
-
-    align-items:center;
-    gap:12px;
-    min-height:76px;
-    padding:12px;
-    border-top:1px solid #1f2937;
-}
-
-.question-icon{
-    width:42px;
-    height:42px;
-    border-radius:50%;
-    border:2px solid #60a5fa;
-    display:grid;
-    place-items:center;
-    color:#60a5fa;
-    font-size:25px;
-}
-
-.question-name{
-    color:#60a5fa;
-    font-size:15px;
-    font-weight:600;
-}
-
-.question-stat{
-    color:#94a3b8;
-    font-size:11px;
-    text-align:center;
-}
-
-.question-stat strong{
-    display:block;
-    color:#e5e7eb;
-    font-size:14px;
-    margin-top:3px;
-}
-
-.question-last{
-    min-width:0;
-}
-
-.question-last-title{
-    color:#60a5fa;
-    font-size:12px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-
-.question-last-meta{
-    color:#64748b;
-    font-size:10px;
-    margin-top:4px;
-}
-
-
-/* =========================================================
-   SIDEBAR
+   SAĞ KUTULAR
 ========================================================= */
 
 .sidebar-box{
     background:#111827;
-    padding:20px;
+    padding:18px;
     border-radius:12px;
     margin-bottom:20px;
     border:1px solid #1f2937;
@@ -500,80 +369,178 @@ button{
     font-size:16px;
 }
 
-.profile{
-    display:grid;
-    grid-template-columns:55px 1fr;
-    gap:12px;
-    align-items:center;
-}
 
-.profile-avatar{
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    background:#020617;
-    border:2px solid #2563eb;
-}
+/* =========================================================
+   NE VAR NE YOK
+========================================================= */
 
-.profile-name{
-    color:#60a5fa;
-    font-weight:700;
-    word-break:break-word;
-}
-
-.profile-rank{
-    color:#94a3b8;
-    font-size:12px;
-    margin-top:3px;
-}
-
-.profile-stat{
-    color:#64748b;
-    font-size:11px;
-    margin-top:3px;
-}
-
-.side-topic{
-    padding:10px 0;
+.news-item{
+    padding:13px 0;
     border-bottom:1px solid #1f2937;
-    color:#cbd5e1;
-    font-size:13px;
 }
 
-.side-topic:last-child{
+.news-item:last-child{
     border-bottom:0;
+}
+
+.news-source{
+    color:#94a3b8;
+    font-size:11px;
+    margin-bottom:4px;
+}
+
+.news-title{
+    color:#60a5fa;
+    font-size:13px;
+    line-height:1.4;
+    font-weight:600;
+}
+
+.news-meta{
+    color:#64748b;
+    font-size:10px;
+    margin-top:6px;
+}
+
+.news-category{
+    color:#94a3b8;
+    font-size:10px;
+    margin-top:3px;
 }
 
 
 /* =========================================================
-   ONLINE USER
+   TAKİP
 ========================================================= */
 
-.online-user{
+.follow-box{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.follow-btn{
+    flex:1;
+    min-width:90px;
+    text-align:center;
+    padding:9px 8px;
+    border-radius:7px;
+    background:#1e293b;
+    color:#cbd5e1;
+    border:1px solid #334155;
+    font-size:11px;
+    cursor:pointer;
+}
+
+.follow-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+
+/* =========================================================
+   ÖNE ÇIKAN
+========================================================= */
+
+.feature-item{
+    padding:13px 0;
+    border-bottom:1px solid #1f2937;
+}
+
+.feature-item:last-child{
+    border-bottom:0;
+}
+
+.feature-user{
+    color:#94a3b8;
+    font-size:11px;
+    margin-bottom:4px;
+}
+
+.feature-title{
+    color:#60a5fa;
+    font-size:13px;
+    font-weight:600;
+    line-height:1.4;
+}
+
+.feature-meta{
+    color:#64748b;
+    font-size:10px;
+    margin-top:5px;
+}
+
+
+/* =========================================================
+   REHBERLER
+========================================================= */
+
+.guide-tabs{
+    display:flex;
+    gap:5px;
+    margin-bottom:10px;
+}
+
+.guide-tab{
+    flex:1;
+    border:1px solid #334155;
+    background:#1e293b;
+    color:#94a3b8;
+    border-radius:6px;
+    padding:7px 4px;
+    font-size:10px;
+    cursor:pointer;
+}
+
+.guide-tab.active{
+    background:#2563eb;
+    color:#fff;
+    border-color:#2563eb;
+}
+
+.guide-item{
+    padding:12px 0;
+    border-bottom:1px solid #1f2937;
+}
+
+.guide-item:last-child{
+    border-bottom:0;
+}
+
+.guide-user{
+    color:#94a3b8;
+    font-size:10px;
+    margin-bottom:3px;
+}
+
+.guide-title{
+    color:#60a5fa;
+    font-size:12px;
+    line-height:1.4;
+}
+
+.guide-meta{
+    color:#64748b;
+    font-size:10px;
+    margin-top:4px;
+}
+
+.guide-category{
+    color:#94a3b8;
+    font-size:10px;
+    margin-top:3px;
+}
+
+
+/* =========================================================
+   ÇEVRİM İÇİ YETKİLİLER
+========================================================= */
+
+.online-staff{
     display:flex;
     align-items:center;
     gap:9px;
     padding:9px 0;
-    border-bottom:1px solid #1f2937;
-    color:#cbd5e1;
-    font-size:13px;
-}
-
-.online-user:last-child{
-    border-bottom:0;
-}
-
-.online-dot{
-    width:8px;
-    height:8px;
-    background:#22c55e;
-    border-radius:50%;
-    display:inline-block;
-    flex-shrink:0;
-}
-
-.online-staff{
-    padding:10px 0;
     border-bottom:1px solid #1f2937;
 }
 
@@ -581,44 +548,150 @@ button{
     border-bottom:0;
 }
 
-.online-staff-name{
+.online-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#22c55e;
+    flex-shrink:0;
+}
+
+.online-name{
     color:#60a5fa;
-    font-weight:600;
     font-size:13px;
+    font-weight:600;
 }
 
-.online-staff-rank{
+.online-rank{
     color:#64748b;
-    font-size:11px;
-    margin-top:3px;
-}
-
-.stat-number{
-    display:block;
-    color:#e5e7eb;
-    font-size:17px;
-    font-weight:700;
-    margin-top:4px;
-}
-
-.stat-blue{
-    color:#60a5fa;
-}
-
-.stat-muted{
-    color:#94a3b8;
+    font-size:10px;
+    margin-top:2px;
 }
 
 
 /* =========================================================
-   EMPTY
+   ÇEVRİM İÇİ ÜYELER
 ========================================================= */
 
-.empty{
-    padding:40px 20px;
-    text-align:center;
+.member-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+}
+
+.member-name{
+    display:inline-block;
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:6px;
+    padding:6px 8px;
+    color:#cbd5e1;
+    font-size:10px;
+}
+
+.member-more{
     color:#64748b;
-    font-size:15px;
+    font-size:11px;
+    margin-top:10px;
+}
+
+
+/* =========================================================
+   YAZILIMLAR
+========================================================= */
+
+.software-item{
+    padding:13px 0;
+    border-bottom:1px solid #1f2937;
+}
+
+.software-item:last-child{
+    border-bottom:0;
+}
+
+.software-name{
+    color:#60a5fa;
+    font-size:14px;
+    font-weight:700;
+}
+
+.software-description{
+    color:#cbd5e1;
+    font-size:11px;
+    line-height:1.5;
+    margin-top:5px;
+}
+
+.software-meta{
+    color:#64748b;
+    font-size:10px;
+    margin-top:6px;
+}
+
+
+/* =========================================================
+   İSTATİSTİK
+========================================================= */
+
+.stats-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    padding:11px 0;
+    border-bottom:1px solid #1f2937;
+}
+
+.stats-row:last-child{
+    border-bottom:0;
+}
+
+.stats-label{
+    color:#94a3b8;
+    font-size:12px;
+}
+
+.stats-value{
+    color:#e5e7eb;
+    font-size:14px;
+    font-weight:700;
+    text-align:right;
+}
+
+.stats-last{
+    color:#60a5fa;
+}
+
+
+/* =========================================================
+   PAYLAŞ
+========================================================= */
+
+.share-title{
+    color:#94a3b8;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.share-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+}
+
+.share-btn{
+    border:1px solid #334155;
+    background:#1e293b;
+    color:#cbd5e1;
+    border-radius:6px;
+    padding:7px 9px;
+    font-size:10px;
+    cursor:pointer;
+}
+
+.share-btn:hover{
+    background:#2563eb;
+    color:#fff;
 }
 
 
@@ -686,17 +759,6 @@ button{
         width:100%;
     }
 
-    .topic{
-        grid-template-columns:
-            42px
-            minmax(0,1fr);
-    }
-
-    .topic-stats,
-    .topic-last{
-        display:none;
-    }
-
     .forum-row{
         grid-template-columns:
             45px
@@ -705,17 +767,6 @@ button{
 
     .forum-stat,
     .forum-last{
-        display:none;
-    }
-
-    .question-row{
-        grid-template-columns:
-            50px
-            minmax(0,1fr);
-    }
-
-    .question-stat,
-    .question-last{
         display:none;
     }
 
@@ -761,22 +812,6 @@ button{
         white-space:nowrap;
     }
 
-    .topic{
-        padding:13px 12px;
-    }
-
-    .forum-row{
-        grid-template-columns:
-            42px
-            minmax(0,1fr);
-    }
-
-    .question-row{
-        grid-template-columns:
-            42px
-            minmax(0,1fr);
-    }
-
 }
 
 </style>
@@ -793,76 +828,76 @@ button{
 
 <nav class="navbar">
 
-    <div class="container">
+<div class="container">
 
-        <div class="nav-inner">
+<div class="nav-inner">
 
-            <div class="logo">
-                🚀 DijitalForum
-            </div>
-
-
-            <ul class="menu">
-
-                <li>
-                    <a href="index.html">
-                        Ana Sayfa
-                    </a>
-                </li>
-
-                <li>
-                    <a href="yeni-mesajlar.html">
-                        Yeni Mesajlar
-                    </a>
-                </li>
-
-                <li>
-                    <a href="konu-olustur.html">
-                        Konu Oluştur
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kategori-sec.html">
-                        Kategoriler
-                    </a>
-                </li>
-
-                <li>
-                    <a href="profil.html">
-                        Profil
-                    </a>
-                </li>
-
-                <li>
-                    <a href="bildirimler.html">
-                        Bildirimler
-                    </a>
-                </li>
-
-                <li>
-                    <a href="login.html">
-                        Giriş
-                    </a>
-                </li>
-
-                <li>
-                    <a href="register.html">
-                        Kayıt Ol
-                    </a>
-                </li>
-
-            </ul>
+<div class="logo">
+🚀 DijitalForum
+</div>
 
 
-            <div
-                class="actions"
-                id="userActions"
-            ></div>
+<ul class="menu">
 
-        </div>
+<li>
+<a href="index.html">
+Ana Sayfa
+</a>
+</li>
 
-    </div>
+<li>
+<a href="yeni-mesajlar.html">
+Yeni Mesajlar
+</a>
+</li>
+
+<li>
+<a href="konu-olustur.html">
+Konu Oluştur
+</a>
+</li>
+
+<li>
+<a href="kategori-sec.html">
+Kategoriler
+</a>
+</li>
+
+<li>
+<a href="profil.html">
+Profil
+</a>
+</li>
+
+<li>
+<a href="bildirimler.html">
+Bildirimler
+</a>
+</li>
+
+<li>
+<a href="login.html">
+Giriş
+</a>
+</li>
+
+<li>
+<a href="register.html">
+Kayıt Ol
+</a>
+</li>
+
+</ul>
+
+
+<div
+class="actions"
+id="userActions"
+></div>
+
+</div>
+
+</div>
 
 </nav>
 
@@ -873,13 +908,13 @@ button{
 
 <section class="hero">
 
-    <h1>
-        DijitalForum Sosyal
-    </h1>
+<h1>
+DijitalForum Sosyal
+</h1>
 
-    <p>
-        Teknoloji, yazılım, donanım, mobil ve oyun topluluğu
-    </p>
+<p>
+Teknoloji, yazılım, donanım, mobil ve oyun topluluğu
+</p>
 
 </section>
 
@@ -891,66 +926,44 @@ button{
      TABS
 ===================================================== -->
 
-<div
-    class="tabs"
-    id="tabs"
+<div class="tabs">
+
+<button
+class="active"
+data-filter="new"
 >
+🆕 Yeni Konular
+</button>
 
-    <button
-        type="button"
-        class="active"
-        data-filter="new"
-    >
-        🆕 Yeni Konular
-    </button>
+<button data-filter="latest">
+💬 Son Mesajlar
+</button>
 
-    <button
-        type="button"
-        data-filter="latest"
-    >
-        💬 Son Mesajlar
-    </button>
+<button data-filter="popular">
+🔥 Popüler Konular
+</button>
 
-    <button
-        type="button"
-        data-filter="popular"
-    >
-        🔥 Popüler Konular
-    </button>
+<button data-filter="unanswered">
+❓ Cevapsız Sorular
+</button>
 
-    <button
-        type="button"
-        data-filter="unanswered"
-    >
-        ❓ Cevapsız Sorular
-    </button>
+<button data-filter="deals">
+🏷️ Sıcak Fırsatlar
+</button>
 
-    <button
-        type="button"
-        data-filter="deals"
-    >
-        🏷️ Sıcak Fırsatlar
-    </button>
+<button data-filter="content">
+📚 DijitalForum İçerikleri
+</button>
 
-    <button
-        type="button"
-        data-filter="content"
-    >
-        📚 DijitalForum İçerikleri
-    </button>
-
-    <button
-        type="button"
-        data-filter="offtopic"
-    >
-        💬 Konu Dışı
-    </button>
+<button data-filter="offtopic">
+💬 Konu Dışı
+</button>
 
 </div>
 
 
 <!-- =====================================================
-     MAIN
+     ANA
 ===================================================== -->
 
 <div class="main">
@@ -963,26 +976,22 @@ button{
 <div>
 
 
-<!-- =====================================================
-     YENİ KONULAR
-===================================================== -->
-
 <div class="category">
 
-    <div
-        class="category-title"
-        id="categoryTitle"
-    >
-        🆕 Yeni Konular
-    </div>
+<div
+class="category-title"
+id="categoryTitle"
+>
+🆕 Yeni Konular
+</div>
 
-    <div id="topicList">
+<div id="topicList">
 
-        <div class="empty">
-            Yeni bir konu yok.
-        </div>
+<div class="empty">
+Yeni bir konu yok.
+</div>
 
-    </div>
+</div>
 
 </div>
 
@@ -993,118 +1002,98 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            D
-        </div>
+<div class="forum-icon">
+D
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Dijital Forum TR
-            </div>
+<div class="forum-name">
+Dijital Forum TR
+</div>
 
-            <div class="forum-desc">
-                Dijital Forum TR
-            </div>
+<div class="forum-desc">
+Dijital Forum TR
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Yeni konu oluşturulmadı
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Yeni konu oluşturulmadı
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
 
 <!-- =====================================================
-     DİJİTAL FORUM İÇERİKLERİ
+     İÇERİKLER
 ===================================================== -->
 
 <div class="forum-block">
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            ▤
-        </div>
+<div class="forum-icon">
+▤
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Dijital Forum TR İçerikleri
-            </div>
+<div class="forum-name">
+Dijital Forum TR İçerikleri
+</div>
 
-            <div class="forum-desc">
-                Dijital Forum TR Video İçerikleri
-            </div>
+<div class="forum-desc">
+Dijital Forum TR Video İçerikleri
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Yeni içerik bulunmuyor
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Yeni içerik bulunmuyor
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1115,57 +1104,47 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            💡
-        </div>
+<div class="forum-icon">
+💡
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Dijital Forum TR Önerileri
-            </div>
+<div class="forum-name">
+Dijital Forum TR Önerileri
+</div>
 
-            <div class="forum-desc">
-                Öneriler
-            </div>
+<div class="forum-desc">
+Öneriler
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Henüz mesaj yok
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Henüz mesaj yok
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1176,110 +1155,110 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            ▶
-        </div>
+<div class="forum-icon">
+▶
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Dijital Forum TR İçerik Önerileri
-            </div>
+<div class="forum-name">
+Dijital Forum TR İçerik Önerileri
+</div>
 
-            <div class="forum-desc">
-                İçerik önerileri
-            </div>
+<div class="forum-desc">
+İçerik önerileri
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Henüz mesaj yok
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Henüz mesaj yok
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
 
 <!-- =====================================================
-     SORULAR
+     CEVAP BEKLEYEN
 ===================================================== -->
 
 <div class="forum-block">
 
-    <div class="question-row">
+<div class="forum-block-header">
 
-        <div class="question-icon">
-            ?
-        </div>
+<h2>
+❓ Cevap Bekleyen Sorular
+</h2>
 
-        <div class="question-name">
-            Cevap Bekleyen Sorular
-        </div>
+<p>
+Cevap bekleyen sorular
+</p>
 
-        <div class="question-stat">
+</div>
 
-            Konular
+<div class="forum-row">
 
-            <strong>
-                0
-            </strong>
+<div class="forum-icon">
+?
+</div>
 
-        </div>
+<div>
 
-        <div class="question-stat">
+<div class="forum-name">
+Cevap Bekleyen Sorular
+</div>
 
-            Mesajlar
+<div class="forum-desc">
+Henüz cevaplanmamış sorular
+</div>
 
-            <strong>
-                0
-            </strong>
+</div>
 
-        </div>
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-        <div class="question-last">
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <div class="question-last-title">
-                Henüz soru yok
-            </div>
+<div class="forum-last">
 
-            <div class="question-last-meta">
-                Henüz veri yok
-            </div>
+<div class="forum-last-title">
+Henüz soru yok
+</div>
 
-        </div>
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-    </div>
+</div>
+
+</div>
 
 </div>
 
@@ -1290,49 +1269,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="question-row">
+<div class="forum-block-header">
 
-        <div class="question-icon">
-            ✓
-        </div>
+<h2>
+✓ Çözüme Kavuşmuş Sorular
+</h2>
 
-        <div class="question-name">
-            Çözüme Kavuşmuş Sorular
-        </div>
+<p>
+Çözüm bulunan sorular
+</p>
 
-        <div class="question-stat">
+</div>
 
-            Konular
+<div class="forum-row">
 
-            <strong>
-                0
-            </strong>
+<div class="forum-icon">
+✓
+</div>
 
-        </div>
+<div>
 
-        <div class="question-stat">
+<div class="forum-name">
+Çözüme Kavuşmuş Sorular
+</div>
 
-            Mesajlar
+<div class="forum-desc">
+Çözüm bulunan sorular
+</div>
 
-            <strong>
-                0
-            </strong>
+</div>
 
-        </div>
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-        <div class="question-last">
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <div class="question-last-title">
-                Henüz soru yok
-            </div>
+<div class="forum-last">
 
-            <div class="question-last-meta">
-                Henüz veri yok
-            </div>
+<div class="forum-last-title">
+Henüz soru yok
+</div>
 
-        </div>
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-    </div>
+</div>
+
+</div>
 
 </div>
 
@@ -1343,49 +1332,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="question-row">
+<div class="forum-block-header">
 
-        <div class="question-icon">
-            !
-        </div>
+<h2>
+! Çözüme Kavuşmamış Sorular
+</h2>
 
-        <div class="question-name">
-            Çözüme Kavuşmamış Sorular
-        </div>
+<p>
+Çözüm bekleyen sorular
+</p>
 
-        <div class="question-stat">
+</div>
 
-            Konular
+<div class="forum-row">
 
-            <strong>
-                0
-            </strong>
+<div class="forum-icon">
+!
+</div>
 
-        </div>
+<div>
 
-        <div class="question-stat">
+<div class="forum-name">
+Çözüme Kavuşmamış Sorular
+</div>
 
-            Mesajlar
+<div class="forum-desc">
+Henüz çözülemeyen sorular
+</div>
 
-            <strong>
-                0
-            </strong>
+</div>
 
-        </div>
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-        <div class="question-last">
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <div class="question-last-title">
-                Henüz soru yok
-            </div>
+<div class="forum-last">
 
-            <div class="question-last-meta">
-                Henüz veri yok
-            </div>
+<div class="forum-last-title">
+Henüz soru yok
+</div>
 
-        </div>
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-    </div>
+</div>
+
+</div>
 
 </div>
 
@@ -1396,49 +1395,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="question-row">
+<div class="forum-block-header">
 
-        <div class="question-icon">
-            ?
-        </div>
+<h2>
+📚 Rehberler
+</h2>
 
-        <div class="question-name">
-            Rehberler
-        </div>
+<p>
+Faydalı rehberler ve anlatımlar
+</p>
 
-        <div class="question-stat">
+</div>
 
-            Konular
+<div class="forum-row">
 
-            <strong>
-                0
-            </strong>
+<div class="forum-icon">
+📚
+</div>
 
-        </div>
+<div>
 
-        <div class="question-stat">
+<div class="forum-name">
+Rehberler
+</div>
 
-            Mesajlar
+<div class="forum-desc">
+Teknoloji ve oyun rehberleri
+</div>
 
-            <strong>
-                0
-            </strong>
+</div>
 
-        </div>
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-        <div class="question-last">
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <div class="question-last-title">
-                Henüz rehber yok
-            </div>
+<div class="forum-last">
 
-            <div class="question-last-meta">
-                Henüz veri yok
-            </div>
+<div class="forum-last-title">
+Henüz rehber yok
+</div>
 
-        </div>
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-    </div>
+</div>
+
+</div>
 
 </div>
 
@@ -1449,70 +1458,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-block-header">
+<div class="forum-block-header">
 
-        <h2>
-            🇹🇷 Atatürk Köşesi
-        </h2>
+<h2>
+🇹🇷 Atatürk Köşesi
+</h2>
 
-        <p>
-            Atatürk'ün hayatı, düşünceleri, videoları
-            ve fotoğrafları.
-        </p>
+<p>
+Atatürk'ün hayatı, düşünceleri, videoları ve fotoğrafları.
+</p>
 
-    </div>
+</div>
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            🇹🇷
-        </div>
+<div class="forum-icon">
+🇹🇷
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Atatürk Köşesi
-            </div>
+<div class="forum-name">
+Atatürk Köşesi
+</div>
 
-            <div class="forum-desc">
-                Atatürk'ün Hayatı · Videolar · Fotoğraflar
-            </div>
+<div class="forum-desc">
+Atatürk'ün Hayatı · Videolar · Fotoğraflar
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Henüz veri yok
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1523,69 +1521,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-block-header">
+<div class="forum-block-header">
 
-        <h2>
-            💻 Donanım
-        </h2>
+<h2>
+💻 Donanım
+</h2>
 
-        <p>
-            Bilgisayar donanımı hakkında konular.
-        </p>
+<p>
+Bilgisayar donanımı hakkında konular.
+</p>
 
-    </div>
+</div>
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            🖥️
-        </div>
+<div class="forum-icon">
+🖥️
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Bilgisayar Donanımı
-            </div>
+<div class="forum-name">
+Bilgisayar Donanımı
+</div>
 
-            <div class="forum-desc">
-                İşlemci · Ekran Kartı · RAM · Anakart · SSD
-            </div>
+<div class="forum-desc">
+İşlemci · Ekran Kartı · RAM · Anakart · SSD
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Henüz veri yok
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1596,69 +1584,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-block-header">
+<div class="forum-block-header">
 
-        <h2>
-            💻 Yazılım
-        </h2>
+<h2>
+💻 Yazılım
+</h2>
 
-        <p>
-            Programlama ve yazılım geliştirme.
-        </p>
+<p>
+Programlama ve yazılım geliştirme.
+</p>
 
-    </div>
+</div>
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            ⌨️
-        </div>
+<div class="forum-icon">
+⌨️
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Programlama
-            </div>
+<div class="forum-name">
+Programlama
+</div>
 
-            <div class="forum-desc">
-                HTML · CSS · JavaScript · Kotlin · Python
-            </div>
+<div class="forum-desc">
+HTML · CSS · JavaScript · Kotlin · Python
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Henüz veri yok
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1669,69 +1647,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-block-header">
+<div class="forum-block-header">
 
-        <h2>
-            📱 Mobil
-        </h2>
+<h2>
+📱 Mobil
+</h2>
 
-        <p>
-            Telefonlar ve mobil uygulamalar.
-        </p>
+<p>
+Telefonlar ve mobil uygulamalar.
+</p>
 
-    </div>
+</div>
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            📱
-        </div>
+<div class="forum-icon">
+📱
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Telefonlar
-            </div>
+<div class="forum-name">
+Telefonlar
+</div>
 
-            <div class="forum-desc">
-                iPhone · Samsung · Xiaomi · Android
-            </div>
+<div class="forum-desc">
+iPhone · Samsung · Xiaomi · Android
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Henüz veri yok
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1742,69 +1710,59 @@ button{
 
 <div class="forum-block">
 
-    <div class="forum-block-header">
+<div class="forum-block-header">
 
-        <h2>
-            🎮 Oyun
-        </h2>
+<h2>
+🎮 Oyun
+</h2>
 
-        <p>
-            PC, konsol ve mobil oyunlar.
-        </p>
+<p>
+PC, konsol ve mobil oyunlar.
+</p>
 
-    </div>
+</div>
 
-    <div class="forum-row">
+<div class="forum-row">
 
-        <div class="forum-icon">
-            🎮
-        </div>
+<div class="forum-icon">
+🎮
+</div>
 
-        <div>
+<div>
 
-            <div class="forum-name">
-                Oyun Dünyası
-            </div>
+<div class="forum-name">
+Oyun Dünyası
+</div>
 
-            <div class="forum-desc">
-                PC · PlayStation · Xbox · Nintendo · Mobil
-            </div>
+<div class="forum-desc">
+PC · PlayStation · Xbox · Nintendo · Mobil
+</div>
 
-        </div>
+</div>
 
-        <div class="forum-stat">
+<div class="forum-stat">
+Konular
+<strong>0</strong>
+</div>
 
-            Konular
+<div class="forum-stat">
+Mesajlar
+<strong>0</strong>
+</div>
 
-            <strong>
-                0
-            </strong>
+<div class="forum-last">
 
-        </div>
+<div class="forum-last-title">
+Henüz konu yok
+</div>
 
-        <div class="forum-stat">
+<div class="forum-last-meta">
+Henüz veri yok
+</div>
 
-            Mesajlar
+</div>
 
-            <strong>
-                0
-            </strong>
-
-        </div>
-
-        <div class="forum-last">
-
-            <div class="forum-last-title">
-                Henüz konu yok
-            </div>
-
-            <div class="forum-last-meta">
-                Henüz veri yok
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1820,48 +1778,190 @@ button{
 
 
 <!-- =====================================================
-     PROFİL
+     NE VAR NE YOK
 ===================================================== -->
 
-<div
-    class="sidebar-box"
-    id="profileBox"
-    style="display:none;"
+<div class="sidebar-box">
+
+<h3>
+📰 Ne var ne yok?
+</h3>
+
+<div id="newsList">
+
+<div class="empty">
+Henüz bir şey bulunmamaktadır.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     TAKİP ET ABONE OL
+===================================================== -->
+
+<div class="sidebar-box">
+
+<h3>
+📣 Takip et, abone ol
+</h3>
+
+<div class="follow-box">
+
+<button
+class="follow-btn"
+onclick="followAction('Mastodon')"
 >
+Mastodon
+</button>
 
-    <h3>
-        👤 Profil
-    </h3>
+<button
+class="follow-btn"
+onclick="followAction('Facebook')"
+>
+Facebook
+</button>
 
-    <div class="profile">
+<button
+class="follow-btn"
+onclick="followAction('X')"
+>
+X
+</button>
 
-        <div class="profile-avatar"></div>
+<button
+class="follow-btn"
+onclick="followAction('Bluesky')"
+>
+Bluesky
+</button>
 
-        <div>
+<button
+class="follow-btn"
+onclick="followAction('LinkedIn')"
+>
+LinkedIn
+</button>
 
-            <div class="profile-name">
-                muhammetaktas122
-            </div>
+<button
+class="follow-btn"
+onclick="followAction('Reddit')"
+>
+Reddit
+</button>
 
-            <div class="profile-rank">
-                Uzman Üye
-            </div>
+<button
+class="follow-btn"
+onclick="followAction('Pinterest')"
+>
+Pinterest
+</button>
 
-            <div class="profile-stat">
-                Mesajlar: 0
-            </div>
+<button
+class="follow-btn"
+onclick="followAction('Tumblr')"
+>
+Tumblr
+</button>
 
-            <div class="profile-stat">
-                Beğeniler: 0
-            </div>
+<button
+class="follow-btn"
+onclick="followAction('WhatsApp')"
+>
+WhatsApp
+</button>
 
-            <div class="profile-stat">
-                Ödül Puanları: 0
-            </div>
+<button
+class="follow-btn"
+onclick="followAction('Telegram')"
+>
+Telegram
+</button>
 
-        </div>
+<button
+class="follow-btn"
+onclick="followAction('E-posta')"
+>
+E-posta
+</button>
 
-    </div>
+<button
+class="follow-btn"
+onclick="followAction('Google')"
+>
+Google
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     ÖNE ÇIKARILAN
+===================================================== -->
+
+<div class="sidebar-box">
+
+<h3>
+⭐ Öne çıkarılan konular
+</h3>
+
+<div id="featuredList">
+
+<div class="empty">
+Öne çıkarılan konular bulunmamaktadır.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     POPÜLER REHBERLER
+===================================================== -->
+
+<div class="sidebar-box">
+
+<h3>
+📚 Popüler Rehberler
+</h3>
+
+<div class="guide-tabs">
+
+<button
+class="guide-tab active"
+data-guide="weekly"
+>
+Haftalık
+</button>
+
+<button
+class="guide-tab"
+data-guide="monthly"
+>
+Aylık
+</button>
+
+<button
+class="guide-tab"
+data-guide="all"
+>
+Tümü
+</button>
+
+</div>
+
+<div id="guideList">
+
+<div class="empty">
+Popüler rehberinde bir konu bulunmamaktadır.
+</div>
+
+</div>
 
 </div>
 
@@ -1872,30 +1972,17 @@ button{
 
 <div class="sidebar-box">
 
-    <h3>
-        🛡️ Çevrim içi yetkililer
-    </h3>
+<h3>
+🛡️ Çevrim içi yetkililer
+</h3>
 
-    <div id="onlineStaffList">
+<div id="onlineStaffList">
 
-        <div class="empty">
+<div class="empty">
+Çevrim içi yetkili yok
+</div>
 
-            <strong
-                style="
-                    display:block;
-                    color:#e5e7eb;
-                    font-size:20px;
-                    margin-bottom:5px;
-                "
-            >
-                0
-            </strong>
-
-            Yetkili yok
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -1906,82 +1993,58 @@ button{
 
 <div class="sidebar-box">
 
-    <h3>
-        🟢 Çevrim içi üyeler
-    </h3>
+<h3>
+🟢 Çevrim içi üyeler
+</h3>
 
-    <div id="onlineMembersList">
+<div id="onlineMembersList">
 
-        <div class="empty">
+<div class="empty">
+Çevrim içi üyeler yok
+</div>
 
-            <strong
-                style="
-                    display:block;
-                    color:#e5e7eb;
-                    font-size:20px;
-                    margin-bottom:5px;
-                "
-            >
-                0
-            </strong>
+</div>
 
-            Üye yok
+<div
+id="otherOnlineUsers"
+class="member-more"
+>
+0 diğer kullanıcı.
+</div>
 
-        </div>
-
-    </div>
+<div
+id="onlineTotalText"
+style="
+margin-top:10px;
+padding-top:10px;
+border-top:1px solid #1f2937;
+color:#94a3b8;
+font-size:11px;
+"
+>
+Toplam: 0 (üye: 0, misafir: 0)
+</div>
 
 </div>
 
 
 <!-- =====================================================
-     ÇEVRİM İÇİ DURUM
+     YENİ YAZILIMLAR
 ===================================================== -->
 
 <div class="sidebar-box">
 
-    <h3>
-        👥 Çevrim içi durum
-    </h3>
+<h3>
+💿 Yeni yazılımlar
+</h3>
 
-    <div class="side-topic">
+<div id="softwareList">
 
-        Toplam
+<div class="empty">
+Henüz yeni yazılım bulunmamaktadır.
+</div>
 
-        <strong
-            id="onlineTotal"
-            class="stat-number"
-        >
-            0
-        </strong>
-
-    </div>
-
-    <div class="side-topic">
-
-        Üye
-
-        <strong
-            id="onlineMemberCount"
-            class="stat-number stat-blue"
-        >
-            0
-        </strong>
-
-    </div>
-
-    <div class="side-topic">
-
-        Misafir
-
-        <strong
-            id="onlineGuestCount"
-            class="stat-number stat-muted"
-        >
-            0
-        </strong>
-
-    </div>
+</div>
 
 </div>
 
@@ -1992,70 +2055,180 @@ button{
 
 <div class="sidebar-box">
 
-    <h3>
-        📊 Sosyal istatistikleri
-    </h3>
+<h3>
+📊 Sosyal istatistikleri
+</h3>
 
-    <div class="side-topic">
+<div class="stats-row">
 
-        Konular
+<div class="stats-label">
+Konular
+</div>
 
-        <strong
-            id="statTopics"
-            class="stat-number"
-        >
-            0
-        </strong>
+<div
+class="stats-value"
+id="socialTopics"
+>
+0
+</div>
 
-    </div>
+</div>
 
-    <div class="side-topic">
 
-        Mesajlar
+<div class="stats-row">
 
-        <strong
-            id="statPosts"
-            class="stat-number"
-        >
-            0
-        </strong>
+<div class="stats-label">
+Mesajlar
+</div>
 
-    </div>
+<div
+class="stats-value"
+id="socialPosts"
+>
+0
+</div>
 
-    <div class="side-topic">
+</div>
 
-        Üyeler
 
-        <strong
-            id="statMembers"
-            class="stat-number"
-        >
-            0
-        </strong>
+<div class="stats-row">
 
-    </div>
+<div class="stats-label">
+Üyeler
+</div>
 
-    <div class="side-topic">
+<div
+class="stats-value"
+id="socialMembers"
+>
+0
+</div>
 
-        Son Üye
+</div>
 
-        <strong
-            id="statLastMember"
-            class="stat-number stat-blue"
-        >
-            Üye yok
-        </strong>
 
-    </div>
+<div class="stats-row">
+
+<div class="stats-label">
+Son Üye
+</div>
+
+<div
+class="stats-value stats-last"
+id="socialLastMember"
+>
+Son üye bulunmamaktadır
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     PAYLAŞ
+===================================================== -->
+
+<div class="sidebar-box">
+
+<div class="share-title">
+Bu sayfayı paylaş
+</div>
+
+<div class="share-buttons">
+
+<button
+class="share-btn"
+onclick="sharePage('Mastodon')"
+>
+Mastodon
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('Facebook')"
+>
+Facebook
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('X')"
+>
+X
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('Bluesky')"
+>
+Bluesky
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('LinkedIn')"
+>
+LinkedIn
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('Reddit')"
+>
+Reddit
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('Pinterest')"
+>
+Pinterest
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('Tumblr')"
+>
+Tumblr
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('WhatsApp')"
+>
+WhatsApp
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('Telegram')"
+>
+Telegram
+</button>
+
+<button
+class="share-btn"
+onclick="sharePage('E-posta')"
+>
+E-posta
+</button>
+
+<button
+class="share-btn"
+onclick="copyPageLink()"
+>
+🔗 Link
+</button>
+
+</div>
 
 </div>
 
 
 </div>
 
-
 </div>
-
 
 </div>
 
@@ -2066,7 +2239,7 @@ button{
 
 <footer class="footer">
 
-    © 2026 DijitalForum - Tüm Hakları Saklıdır
+© 2026 DijitalForum - Tüm Hakları Saklıdır
 
 </footer>
 
@@ -2076,894 +2249,1034 @@ button{
 ===================================================== -->
 
 <div
-    class="cookie"
-    id="cookie"
+class="cookie"
+id="cookie"
 >
 
-    DijitalForum Sosyal, anlık bildirimleri etkinleştirmek
-    için izninizi istiyor.
+DijitalForum Sosyal, anlık bildirimleri etkinleştirmek
+için izninizi istiyor.
 
-    <button
-        class="cookie-close"
-        type="button"
-        onclick="document.getElementById('cookie').remove()"
-    >
-        ×
-    </button>
+<button
+class="cookie-close"
+onclick="document.getElementById('cookie').remove()"
+>
+×
+</button>
 
 </div>
 
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
 <script>
 
+/* =========================================================
+   VERİLER
+   ŞU ANDA VERİ YOK.
+   Veri geldiğinde sadece bu diziler doldurulacak.
+========================================================= */
+
+const socialData = {
+
+    news: [],
+
+    featured: [],
+
+    guides: {
+        weekly: [],
+        monthly: [],
+        all: []
+    },
+
+    onlineStaff: [],
+
+    onlineMembers: [],
+
+    otherOnlineUsers: 0,
+
+    totalMembersOnline: 0,
+
+    totalGuestsOnline: 0,
+
+    software: [],
+
+    stats: {
+        topics: 0,
+        posts: 0,
+        members: 0,
+        lastMember: ""
+    }
+
+};
+
+
+/* =========================================================
+   HTML GÜVENLİĞİ
+========================================================= */
+
+function escapeHTML(value){
+
+    return String(value ?? "")
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================================================
+   GİRİŞ DURUMU
+========================================================= */
+
 document.addEventListener(
-    "DOMContentLoaded",
-    function(){
+"DOMContentLoaded",
+function(){
 
-        /* =================================================
-           ELEMENTLER
-        ================================================= */
-
-        const userActions =
-            document.getElementById(
-                "userActions"
-            );
-
-        const profileBox =
-            document.getElementById(
-                "profileBox"
-            );
-
-        const tabs =
-            document.querySelectorAll(
-                "#tabs button"
-            );
-
-        const title =
-            document.getElementById(
-                "categoryTitle"
-            );
-
-        const list =
-            document.getElementById(
-                "topicList"
-            );
-
-
-        /* =================================================
-           GİRİŞ DURUMU
-        ================================================= */
-
-        let isLoggedIn = false;
-
-        try{
-
-            isLoggedIn =
-                localStorage.getItem(
-                    "isLoggedIn"
-                ) === "true";
-
-        }
-        catch(error){
-
-            isLoggedIn = false;
-
-        }
-
-
-        /* =================================================
-           GİRİŞ YAPILMAMIŞSA
-        ================================================= */
-
-        if(!isLoggedIn){
-
-            userActions.innerHTML = `
-
-                <a
-                    href="register.html"
-                    class="btn btn-dark"
-                >
-                    Kayıt Ol
-                </a>
-
-                <a
-                    href="login.html"
-                    class="btn btn-blue"
-                >
-                    Giriş Yap
-                </a>
-
-            `;
-
-            if(profileBox){
-
-                profileBox.style.display =
-                    "none";
-
-            }
-
-        }
-
-
-        /* =================================================
-           GİRİŞ YAPILMIŞSA
-        ================================================= */
-
-        else{
-
-            userActions.innerHTML = `
-
-                <a
-                    href="yeni-mesajlar.html"
-                    class="btn btn-dark"
-                >
-                    🔥 Yeni Mesajlar
-                </a>
-
-                <a
-                    href="konu-olustur.html"
-                    class="btn btn-blue"
-                >
-                    ✏️ Konu Aç
-                </a>
-
-            `;
-
-            if(profileBox){
-
-                profileBox.style.display =
-                    "block";
-
-            }
-
-        }
-
-
-        /* =================================================
-           ÇEVRİM İÇİ YETKİLİLER
-        ================================================= */
-
-        const onlineStaff = [];
-
-
-        const onlineStaffList =
-            document.getElementById(
-                "onlineStaffList"
-            );
-
-
-        if(onlineStaff.length === 0){
-
-            onlineStaffList.innerHTML = `
-
-                <div class="empty">
-
-                    <strong
-                        style="
-                            display:block;
-                            color:#e5e7eb;
-                            font-size:20px;
-                            margin-bottom:5px;
-                        "
-                    >
-                        0
-                    </strong>
-
-                    Yetkili yok
-
-                </div>
-
-            `;
-
-        }
-        else{
-
-            onlineStaffList.innerHTML =
-                onlineStaff
-                    .map(
-                        function(member){
-
-                            return `
-
-                                <div class="online-staff">
-
-                                    <div
-                                        style="
-                                            display:flex;
-                                            align-items:center;
-                                            gap:8px;
-                                        "
-                                    >
-
-                                        <span
-                                            class="online-dot"
-                                        ></span>
-
-                                        <span
-                                            class="online-staff-name"
-                                        >
-                                            ${escapeHTML(member.name)}
-                                        </span>
-
-                                    </div>
-
-                                    <div
-                                        class="online-staff-rank"
-                                    >
-                                        ${escapeHTML(member.rank)}
-                                    </div>
-
-                                </div>
-
-                            `;
-
-                        }
-                    )
-                    .join("");
-
-        }
-
-
-        /* =================================================
-           ÇEVRİM İÇİ ÜYELER
-        ================================================= */
-
-        const onlineMembersData = [];
-
-
-        const onlineMembersList =
-            document.getElementById(
-                "onlineMembersList"
-            );
-
-
-        if(onlineMembersData.length === 0){
-
-            onlineMembersList.innerHTML = `
-
-                <div class="empty">
-
-                    <strong
-                        style="
-                            display:block;
-                            color:#e5e7eb;
-                            font-size:20px;
-                            margin-bottom:5px;
-                        "
-                    >
-                        0
-                    </strong>
-
-                    Üye yok
-
-                </div>
-
-            `;
-
-        }
-        else{
-
-            onlineMembersList.innerHTML =
-                onlineMembersData
-                    .map(
-                        function(member){
-
-                            return `
-
-                                <div
-                                    class="online-user"
-                                >
-
-                                    <span
-                                        class="online-dot"
-                                    ></span>
-
-                                    <span>
-                                        ${escapeHTML(member)}
-                                    </span>
-
-                                </div>
-
-                            `;
-
-                        }
-                    )
-                    .join("");
-
-        }
-
-
-        /* =================================================
-           FORUM İSTATİSTİKLERİ
-        ================================================= */
-
-        const forumStats = {
-
-            topics: 0,
-
-            posts: 0,
-
-            members: 0,
-
-            guests: 0,
-
-            lastMember: "Üye yok"
-
-        };
-
-
-        /* =================================================
-           ÇEVRİM İÇİ DURUM
-        ================================================= */
-
-        const onlineMemberCount =
-            onlineMembersData.length;
-
-        const onlineStaffCount =
-            onlineStaff.length;
-
-        const totalOnlineMembers =
-            onlineMemberCount +
-            onlineStaffCount;
-
-
+    const userActions =
         document.getElementById(
-            "onlineTotal"
-        ).textContent =
-            totalOnlineMembers;
+            "userActions"
+        );
+
+    let isLoggedIn = false;
+
+    try{
+
+        isLoggedIn =
+            localStorage.getItem(
+                "isLoggedIn"
+            ) === "true";
+
+    }
+    catch(error){
+
+        isLoggedIn = false;
+
+    }
 
 
+    if(!isLoggedIn){
+
+        userActions.innerHTML = `
+
+            <a
+                href="register.html"
+                class="btn btn-dark"
+            >
+                Kayıt Ol
+            </a>
+
+            <a
+                href="login.html"
+                class="btn btn-blue"
+            >
+                Giriş Yap
+            </a>
+
+        `;
+
+    }
+    else{
+
+        userActions.innerHTML = `
+
+            <a
+                href="yeni-mesajlar.html"
+                class="btn btn-dark"
+            >
+                🔥 Yeni Mesajlar
+            </a>
+
+            <a
+                href="konu-olustur.html"
+                class="btn btn-blue"
+            >
+                ✏️ Konu Aç
+            </a>
+
+        `;
+
+    }
+
+
+    renderAllSocialData();
+
+});
+
+
+/* =========================================================
+   TÜM SAĞ TARAFI RENDER ET
+========================================================= */
+
+function renderAllSocialData(){
+
+    renderNews();
+
+    renderFeatured();
+
+    renderGuides("weekly");
+
+    renderOnlineStaff();
+
+    renderOnlineMembers();
+
+    renderSoftware();
+
+    renderStats();
+
+}
+
+
+/* =========================================================
+   NE VAR NE YOK
+========================================================= */
+
+function renderNews(){
+
+    const box =
         document.getElementById(
-            "onlineMemberCount"
-        ).textContent =
-            onlineMemberCount;
+            "newsList"
+        );
 
+    const data =
+        Array.isArray(
+            socialData.news
+        )
+        ?
+        socialData.news
+        :
+        [];
 
-        document.getElementById(
-            "onlineGuestCount"
-        ).textContent =
-            forumStats.guests;
 
+    if(data.length === 0){
 
-        /* =================================================
-           SOSYAL İSTATİSTİKLER
-        ================================================= */
+        box.innerHTML = `
 
-        document.getElementById(
-            "statTopics"
-        ).textContent =
-            formatNumber(
-                forumStats.topics
-            );
+            <div class="empty">
+                Henüz bir şey bulunmamaktadır.
+            </div>
 
+        `;
 
-        document.getElementById(
-            "statPosts"
-        ).textContent =
-            formatNumber(
-                forumStats.posts
-            );
+        return;
 
+    }
 
-        document.getElementById(
-            "statMembers"
-        ).textContent =
-            formatNumber(
-                forumStats.members
-            );
 
+    box.innerHTML =
+        data.map(
+            function(item){
 
-        document.getElementById(
-            "statLastMember"
-        ).textContent =
-            forumStats.lastMember ||
-            "Üye yok";
+                return `
 
+                    <div class="news-item">
 
-        /* =================================================
-           TOPICLER
-        ================================================= */
+                        <div class="news-source">
+                            ${escapeHTML(item.source || "DijitalForum")}
+                        </div>
 
-        const topics =
-            Array.from(
-                document.querySelectorAll(
-                    "#topicList .topic"
-                )
-            );
+                        <div class="news-title">
+                            ${escapeHTML(item.title)}
+                        </div>
 
+                        <div class="news-meta">
+                            ${escapeHTML(item.meta || "")}
+                        </div>
 
-        /* =================================================
-           SAYIYA ÇEVİR
-        ================================================= */
+                        <div class="news-category">
+                            ${escapeHTML(item.category || "")}
+                        </div>
 
-        function numberValue(value){
-
-            const result =
-                Number(value);
-
-            if(
-                !Number.isFinite(result)
-            ){
-
-                return 0;
-
-            }
-
-            return result;
-
-        }
-
-
-        /* =================================================
-           SAYI FORMAT
-        ================================================= */
-
-        function formatNumber(value){
-
-            const number =
-                Number(value);
-
-            if(
-                !Number.isFinite(number)
-            ){
-
-                return "0";
-
-            }
-
-            return number.toLocaleString(
-                "tr-TR"
-            );
-
-        }
-
-
-        /* =================================================
-           HTML GÜVENLİĞİ
-        ================================================= */
-
-        function escapeHTML(value){
-
-            return String(value)
-                .replace(
-                    /&/g,
-                    "&amp;"
-                )
-                .replace(
-                    /</g,
-                    "&lt;"
-                )
-                .replace(
-                    />/g,
-                    "&gt;"
-                )
-                .replace(
-                    /"/g,
-                    "&quot;"
-                )
-                .replace(
-                    /'/g,
-                    "&#039;"
-                );
-
-        }
-
-
-        /* =================================================
-           SAYI KONTROLÜ
-        ================================================= */
-
-        document
-            .querySelectorAll(
-                ".forum-stat strong, " +
-                ".question-stat strong"
-            )
-            .forEach(
-                function(element){
-
-                    const value =
-                        element.textContent.trim();
-
-                    if(
-                        value === "" ||
-                        value === "-" ||
-                        value === "—" ||
-                        value === "–" ||
-                        value.toLowerCase() === "null" ||
-                        value.toLowerCase() === "undefined" ||
-                        value.toLowerCase() === "nan"
-                    ){
-
-                        element.textContent =
-                            "0";
-
-                    }
-
-                }
-            );
-
-
-        /* =================================================
-           KONULARI GÖSTER
-        ================================================= */
-
-        function showTopics(filter){
-
-            let visibleTopics = [];
-
-            let emptyMessage =
-                "Yeni bir konu yok.";
-
-
-            /* =================================================
-               YENİ
-            ================================================= */
-
-            if(
-                filter === "new"
-            ){
-
-                visibleTopics =
-                    topics.filter(
-                        function(topic){
-
-                            return (
-                                topic.dataset.type ===
-                                "new"
-                            );
-
-                        }
-                    );
-
-
-                title.textContent =
-                    "🆕 Yeni Konular";
-
-
-                emptyMessage =
-                    "Yeni bir konu yok.";
-
-            }
-
-
-            /* =================================================
-               SON MESAJLAR
-            ================================================= */
-
-            else if(
-                filter === "latest"
-            ){
-
-                visibleTopics =
-                    topics
-                        .filter(
-                            function(topic){
-
-                                return (
-                                    numberValue(
-                                        topic.dataset.messages
-                                    ) > 0
-                                );
-
-                            }
-                        )
-                        .sort(
-                            function(a,b){
-
-                                return (
-                                    numberValue(
-                                        b.dataset.time
-                                    )
-                                    -
-                                    numberValue(
-                                        a.dataset.time
-                                    )
-                                );
-
-                            }
-                        );
-
-
-                title.textContent =
-                    "💬 Son Mesajlar";
-
-
-                emptyMessage =
-                    "Henüz son mesaj bulunmuyor.";
-
-            }
-
-
-            /* =================================================
-               POPÜLER
-            ================================================= */
-
-            else if(
-                filter === "popular"
-            ){
-
-                visibleTopics =
-                    topics
-                        .filter(
-                            function(topic){
-
-                                const views =
-                                    numberValue(
-                                        topic.dataset.views
-                                    );
-
-                                const messages =
-                                    numberValue(
-                                        topic.dataset.messages
-                                    );
-
-                                return (
-                                    views > 0 ||
-                                    messages > 0
-                                );
-
-                            }
-                        )
-                        .sort(
-                            function(a,b){
-
-                                const aScore =
-                                    numberValue(
-                                        a.dataset.views
-                                    )
-                                    +
-                                    numberValue(
-                                        a.dataset.messages
-                                    ) * 10;
-
-
-                                const bScore =
-                                    numberValue(
-                                        b.dataset.views
-                                    )
-                                    +
-                                    numberValue(
-                                        b.dataset.messages
-                                    ) * 10;
-
-
-                                return (
-                                    bScore -
-                                    aScore
-                                );
-
-                            }
-                        );
-
-
-                title.textContent =
-                    "🔥 Popüler Konular";
-
-
-                emptyMessage =
-                    "Henüz popüler konu yok.";
-
-            }
-
-
-            /* =================================================
-               CEVAPSIZ
-            ================================================= */
-
-            else if(
-                filter === "unanswered"
-            ){
-
-                visibleTopics =
-                    topics.filter(
-                        function(topic){
-
-                            return (
-                                numberValue(
-                                    topic.dataset.messages
-                                ) === 0
-                            );
-
-                        }
-                    );
-
-
-                title.textContent =
-                    "❓ Cevapsız Sorular";
-
-
-                emptyMessage =
-                    "Cevapsız soru yok.";
-
-            }
-
-
-            /* =================================================
-               SICAK FIRSATLAR
-            ================================================= */
-
-            else if(
-                filter === "deals"
-            ){
-
-                visibleTopics =
-                    topics.filter(
-                        function(topic){
-
-                            return (
-                                topic.dataset.category ===
-                                "deals"
-                            );
-
-                        }
-                    );
-
-
-                title.textContent =
-                    "🏷️ Sıcak Fırsatlar";
-
-
-                emptyMessage =
-                    "Sıcak fırsat yok.";
-
-            }
-
-
-            /* =================================================
-               İÇERİK
-            ================================================= */
-
-            else if(
-                filter === "content"
-            ){
-
-                visibleTopics =
-                    topics.filter(
-                        function(topic){
-
-                            return (
-                                topic.dataset.type ===
-                                "content"
-                            );
-
-                        }
-                    );
-
-
-                title.textContent =
-                    "📚 DijitalForum İçerikleri";
-
-
-                emptyMessage =
-                    "DijitalForum içeriği yok.";
-
-            }
-
-
-            /* =================================================
-               KONU DIŞI
-            ================================================= */
-
-            else if(
-                filter === "offtopic"
-            ){
-
-                visibleTopics =
-                    topics.filter(
-                        function(topic){
-
-                            return (
-                                topic.dataset.type ===
-                                "offtopic"
-                            );
-
-                        }
-                    );
-
-
-                title.textContent =
-                    "💬 Konu Dışı";
-
-
-                emptyMessage =
-                    "Konu dışı konu yok.";
-
-            }
-
-
-            /* =================================================
-               LİSTEYİ TEMİZLE
-            ================================================= */
-
-            list.innerHTML = "";
-
-
-            /* =================================================
-               HİÇ KONU YOK
-            ================================================= */
-
-            if(
-                visibleTopics.length === 0
-            ){
-
-                list.innerHTML = `
-
-                    <div class="empty">
-                        ${emptyMessage}
                     </div>
 
                 `;
 
-                return;
+            }
+        ).join("");
+
+}
+
+
+/* =========================================================
+   ÖNE ÇIKARILAN
+========================================================= */
+
+function renderFeatured(){
+
+    const box =
+        document.getElementById(
+            "featuredList"
+        );
+
+    const data =
+        Array.isArray(
+            socialData.featured
+        )
+        ?
+        socialData.featured
+        :
+        [];
+
+
+    if(data.length === 0){
+
+        box.innerHTML = `
+
+            <div class="empty">
+                Öne çıkarılan konular bulunmamaktadır.
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    box.innerHTML =
+        data.map(
+            function(item){
+
+                return `
+
+                    <div class="feature-item">
+
+                        <div class="feature-user">
+                            ${escapeHTML(item.user || "")}
+                        </div>
+
+                        <div class="feature-title">
+                            ${escapeHTML(item.title || "")}
+                        </div>
+
+                        <div class="feature-meta">
+                            ${escapeHTML(item.meta || "")}
+                        </div>
+
+                    </div>
+
+                `;
 
             }
+        ).join("");
+
+}
 
 
-            /* =================================================
-               KONULARI EKLE
-            ================================================= */
+/* =========================================================
+   POPÜLER REHBERLER
+========================================================= */
 
-            visibleTopics.forEach(
-                function(topic){
+function renderGuides(type){
 
-                    list.appendChild(
-                        topic
-                    );
+    const box =
+        document.getElementById(
+            "guideList"
+        );
 
-                }
-            );
-
-        }
-
-
-        /* =================================================
-           SEKME TIKLAMALARI
-        ================================================= */
-
-        tabs.forEach(
-            function(tab){
-
-                tab.addEventListener(
-                    "click",
-                    function(){
-
-                        tabs.forEach(
-                            function(item){
-
-                                item.classList.remove(
-                                    "active"
-                                );
-
-                            }
-                        );
+    const guides =
+        socialData.guides &&
+        Array.isArray(
+            socialData.guides[type]
+        )
+        ?
+        socialData.guides[type]
+        :
+        [];
 
 
-                        tab.classList.add(
-                            "active"
-                        );
+    if(guides.length === 0){
+
+        box.innerHTML = `
+
+            <div class="empty">
+                Popüler rehberinde bir konu bulunmamaktadır.
+            </div>
+
+        `;
+
+        return;
+
+    }
 
 
-                        showTopics(
-                            tab.dataset.filter
-                        );
+    box.innerHTML =
+        guides.map(
+            function(item){
 
-                    }
+                return `
+
+                    <div class="guide-item">
+
+                        <div class="guide-user">
+                            ${escapeHTML(item.user || "")}
+                        </div>
+
+                        <div class="guide-title">
+                            📖 ${escapeHTML(item.title || "")}
+                        </div>
+
+                        <div class="guide-meta">
+                            ${escapeHTML(item.meta || "")}
+                        </div>
+
+                        <div class="guide-category">
+                            ${escapeHTML(item.category || "")}
+                        </div>
+
+                    </div>
+
+                `;
+
+            }
+        ).join("");
+
+}
+
+
+/* =========================================================
+   REHBER SEKME BUTONLARI
+========================================================= */
+
+document.addEventListener(
+"click",
+function(event){
+
+    const button =
+        event.target.closest(
+            ".guide-tab"
+        );
+
+
+    if(!button){
+
+        return;
+
+    }
+
+
+    document
+        .querySelectorAll(
+            ".guide-tab"
+        )
+        .forEach(
+            function(item){
+
+                item.classList.remove(
+                    "active"
                 );
 
             }
         );
 
 
-        /* =================================================
-           İLK AÇILIŞ
-        ================================================= */
+    button.classList.add(
+        "active"
+    );
 
-        showTopics(
-            "new"
+
+    renderGuides(
+        button.dataset.guide
+    );
+
+});
+
+
+/* =========================================================
+   ÇEVRİM İÇİ YETKİLİLER
+========================================================= */
+
+function renderOnlineStaff(){
+
+    const box =
+        document.getElementById(
+            "onlineStaffList"
+        );
+
+    const data =
+        Array.isArray(
+            socialData.onlineStaff
+        )
+        ?
+        socialData.onlineStaff
+        :
+        [];
+
+
+    if(data.length === 0){
+
+        box.innerHTML = `
+
+            <div class="empty">
+                Çevrim içi yetkili yok
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    box.innerHTML =
+        data.map(
+            function(item){
+
+                return `
+
+                    <div class="online-staff">
+
+                        <span
+                            class="online-dot"
+                        ></span>
+
+                        <div>
+
+                            <div class="online-name">
+                                ${escapeHTML(item.name || item)}
+                            </div>
+
+                            <div class="online-rank">
+                                ${escapeHTML(item.rank || "Moderasyon Üyesi")}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+            }
+        ).join("");
+
+}
+
+
+/* =========================================================
+   ÇEVRİM İÇİ ÜYELER
+========================================================= */
+
+function renderOnlineMembers(){
+
+    const box =
+        document.getElementById(
+            "onlineMembersList"
+        );
+
+    const data =
+        Array.isArray(
+            socialData.onlineMembers
+        )
+        ?
+        socialData.onlineMembers
+        :
+        [];
+
+
+    const otherUsers =
+        Number(
+            socialData.otherOnlineUsers
+        ) || 0;
+
+
+    const members =
+        Number(
+            socialData.totalMembersOnline
+        ) || 0;
+
+
+    const guests =
+        Number(
+            socialData.totalGuestsOnline
+        ) || 0;
+
+
+    if(data.length === 0){
+
+        box.innerHTML = `
+
+            <div class="empty">
+                Çevrim içi üyeler yok
+            </div>
+
+        `;
+
+    }
+    else{
+
+        box.innerHTML =
+
+            `<div class="member-list">`
+
+            +
+
+            data.map(
+                function(member){
+
+                    const name =
+                        typeof member === "string"
+                        ?
+                        member
+                        :
+                        member.name || "";
+
+                    return `
+
+                        <span class="member-name">
+                            ${escapeHTML(name)}
+                        </span>
+
+                    `;
+
+                }
+            ).join("")
+
+            +
+
+            `</div>`;
+
+    }
+
+
+    document.getElementById(
+        "otherOnlineUsers"
+    ).textContent =
+        otherUsers +
+        " diğer kullanıcı.";
+
+
+    document.getElementById(
+        "onlineTotalText"
+    ).textContent =
+        "Toplam: " +
+        (
+            members +
+            guests
+        ) +
+        " (üye: " +
+        members +
+        ", misafir: " +
+        guests +
+        ")";
+
+}
+
+
+/* =========================================================
+   YENİ YAZILIMLAR
+========================================================= */
+
+function renderSoftware(){
+
+    const box =
+        document.getElementById(
+            "softwareList"
+        );
+
+    const data =
+        Array.isArray(
+            socialData.software
+        )
+        ?
+        socialData.software
+        :
+        [];
+
+
+    if(data.length === 0){
+
+        box.innerHTML = `
+
+            <div class="empty">
+                Henüz yeni yazılım bulunmamaktadır.
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    box.innerHTML =
+        data.map(
+            function(item){
+
+                return `
+
+                    <div class="software-item">
+
+                        <div class="software-name">
+                            ${escapeHTML(item.name || "")}
+                        </div>
+
+                        <div class="software-description">
+                            ${escapeHTML(item.description || "")}
+                        </div>
+
+                        <div class="software-meta">
+                            ${escapeHTML(item.meta || "")}
+                        </div>
+
+                    </div>
+
+                `;
+
+            }
+        ).join("");
+
+}
+
+
+/* =========================================================
+   SOSYAL İSTATİSTİKLERİ
+========================================================= */
+
+function renderStats(){
+
+    const stats =
+        socialData.stats || {};
+
+
+    const topics =
+        Number(stats.topics) || 0;
+
+    const posts =
+        Number(stats.posts) || 0;
+
+    const members =
+        Number(stats.members) || 0;
+
+    const lastMember =
+        String(
+            stats.lastMember || ""
+        ).trim();
+
+
+    document.getElementById(
+        "socialTopics"
+    ).textContent =
+        topics.toLocaleString(
+            "tr-TR"
+        );
+
+
+    document.getElementById(
+        "socialPosts"
+    ).textContent =
+        posts.toLocaleString(
+            "tr-TR"
+        );
+
+
+    document.getElementById(
+        "socialMembers"
+    ).textContent =
+        members.toLocaleString(
+            "tr-TR"
+        );
+
+
+    document.getElementById(
+        "socialLastMember"
+    ).textContent =
+        lastMember ||
+        "Son üye bulunmamaktadır";
+
+}
+
+
+/* =========================================================
+   TAKİP
+========================================================= */
+
+function followAction(name){
+
+    alert(
+        name +
+        " takip sistemi yakında aktif olacak."
+    );
+
+}
+
+
+/* =========================================================
+   PAYLAŞ
+========================================================= */
+
+function sharePage(name){
+
+    const url =
+        window.location.href;
+
+    const title =
+        "DijitalForum Sosyal";
+
+
+    if(name === "WhatsApp"){
+
+        window.open(
+            "https://wa.me/?text=" +
+            encodeURIComponent(
+                title +
+                " " +
+                url
+            ),
+            "_blank"
+        );
+
+        return;
+
+    }
+
+
+    if(name === "Telegram"){
+
+        window.open(
+            "https://t.me/share/url?url=" +
+            encodeURIComponent(url) +
+            "&text=" +
+            encodeURIComponent(title),
+            "_blank"
+        );
+
+        return;
+
+    }
+
+
+    if(name === "Facebook"){
+
+        window.open(
+            "https://www.facebook.com/sharer/sharer.php?u=" +
+            encodeURIComponent(url),
+            "_blank"
+        );
+
+        return;
+
+    }
+
+
+    if(name === "X"){
+
+        window.open(
+            "https://twitter.com/intent/tweet?url=" +
+            encodeURIComponent(url) +
+            "&text=" +
+            encodeURIComponent(title),
+            "_blank"
+        );
+
+        return;
+
+    }
+
+
+    if(name === "LinkedIn"){
+
+        window.open(
+            "https://www.linkedin.com/sharing/share-offsite/?url=" +
+            encodeURIComponent(url),
+            "_blank"
+        );
+
+        return;
+
+    }
+
+
+    if(name === "Reddit"){
+
+        window.open(
+            "https://www.reddit.com/submit?url=" +
+            encodeURIComponent(url) +
+            "&title=" +
+            encodeURIComponent(title),
+            "_blank"
+        );
+
+        return;
+
+    }
+
+
+    if(name === "Pinterest"){
+
+        window.open(
+            "https://pinterest.com/pin/create/button/?url=" +
+            encodeURIComponent(url),
+            "_blank"
+        );
+
+        return;
+
+    }
+
+
+    if(name === "E-posta"){
+
+        window.location.href =
+            "mailto:?subject=" +
+            encodeURIComponent(title) +
+            "&body=" +
+            encodeURIComponent(url);
+
+        return;
+
+    }
+
+
+    if(
+        name === "Mastodon" ||
+        name === "Bluesky" ||
+        name === "Tumblr"
+    ){
+
+        copyPageLink();
+
+    }
+
+}
+
+
+/* =========================================================
+   LINK KOPYALA
+========================================================= */
+
+function copyPageLink(){
+
+    const url =
+        window.location.href;
+
+
+    if(
+        navigator.clipboard &&
+        navigator.clipboard.writeText
+    ){
+
+        navigator.clipboard
+            .writeText(url)
+            .then(
+                function(){
+
+                    alert(
+                        "Sayfa bağlantısı kopyalandı."
+                    );
+
+                }
+            )
+            .catch(
+                function(){
+
+                    fallbackCopy(url);
+
+                }
+            );
+
+    }
+    else{
+
+        fallbackCopy(url);
+
+    }
+
+}
+
+
+/* =========================================================
+   YEDEK KOPYALAMA
+========================================================= */
+
+function fallbackCopy(text){
+
+    const input =
+        document.createElement(
+            "textarea"
+        );
+
+
+    input.value =
+        text;
+
+
+    input.style.position =
+        "fixed";
+
+
+    input.style.opacity =
+        "0";
+
+
+    document.body.appendChild(
+        input
+    );
+
+
+    input.select();
+
+
+    try{
+
+        document.execCommand(
+            "copy"
+        );
+
+        alert(
+            "Sayfa bağlantısı kopyalandı."
+        );
+
+    }
+    catch(error){
+
+        alert(
+            "Bağlantı kopyalanamadı."
+        );
+
+    }
+
+
+    document.body.removeChild(
+        input
+    );
+
+}
+
+
+/* =========================================================
+   SEKME SİSTEMİ
+========================================================= */
+
+document
+.querySelectorAll(
+    ".tabs button"
+)
+.forEach(
+    function(button){
+
+        button.addEventListener(
+            "click",
+            function(){
+
+                document
+                    .querySelectorAll(
+                        ".tabs button"
+                    )
+                    .forEach(
+                        function(item){
+
+                            item.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+            }
         );
 
     }
