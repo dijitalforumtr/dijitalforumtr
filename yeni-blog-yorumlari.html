@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yeni Blog Yorumları - DijitalForum</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",Tahoma,sans-serif
+}
+
+html,body{
+  min-height:100%
+}
+
+body{
+  background:#0f172a;
+  color:#fff
+}
+
+a{
+  color:inherit;
+  text-decoration:none
+}
+
+button{
+  font-family:inherit
+}
+
+.container{
+  width:95%;
+  max-width:1400px;
+  margin:auto
+}
+
+/* NAVBAR */
+
+.navbar{
+  background:#111827;
+  border-bottom:1px solid #1f2937;
+  position:sticky;
+  top:0;
+  z-index:999
+}
+
+.nav-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+  gap:20px;
+  flex-wrap:wrap
+}
+
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#60a5fa;
+  white-space:nowrap
+}
+
+.menu{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  flex-wrap:wrap
+}
+
+.menu a{
+  color:#d1d5db;
+  transition:.2s
+}
+
+.menu a:hover{
+  color:#60a5fa
+}
+
+.actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap
+}
+
+.btn{
+  padding:10px 15px;
+  border-radius:8px;
+  font-weight:600;
+  display:inline-block;
+  cursor:pointer;
+  border:0
+}
+
+.btn-dark{
+  background:#1e293b;
+  color:#fff
+}
+
+.btn-blue{
+  background:#2563eb;
+  color:#fff
+}
+
+.btn:hover{
+  opacity:.9
+}
+
+/* HERO */
+
+.hero{
+  background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  padding:45px 20px;
+  text-align:center
+}
+
+.hero h1{
+  font-size:38px;
+  margin-bottom:10px
+}
+
+.hero p{
+  color:#dbeafe;
+  font-size:17px
+}
+
+/* ANA ALAN */
+
+.main{
+  display:block;
+  margin-top:20px
+}
+
+/* NE VAR NE YOK SEKME MENÜSÜ */
+
+.new-tabs{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:18px;
+  overflow-x:auto;
+  white-space:nowrap;
+  padding:2px 0
+}
+
+.new-tabs a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  min-height:36px;
+  border:1px solid #1f2937;
+  border-radius:8px;
+  background:#111827;
+  color:#cbd5e1;
+  font-size:13px;
+  font-weight:600;
+  transition:.18s;
+  cursor:pointer;
+  box-shadow:0 1px 2px rgba(0,0,0,.15)
+}
+
+.new-tabs a:hover{
+  background:#162033;
+  border-color:#2563eb;
+  color:#fff
+}
+
+.new-tabs a.active{
+  background:#2563eb;
+  border-color:#2563eb;
+  color:#fff
+}
+
+.new-tabs a:focus-visible{
+  outline:2px solid #60a5fa;
+  outline-offset:2px
+}
+
+/* BLOG YORUMLARI ALANI */
+
+.content-section{
+  background:#111827;
+  border:1px solid #1f2937;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:20px
+}
+
+.content-section-title{
+  background:#07111d;
+  border-bottom:1px solid #172334;
+  color:#5fb8ff;
+  padding:10px 12px;
+  font-size:17px;
+  font-weight:500
+}
+
+.blog-empty{
+  padding:24px 14px;
+  color:#64748b;
+  font-size:13px;
+  min-height:58px;
+  display:flex;
+  align-items:center
+}
+
+/* FOOTER */
+
+.footer{
+  background:#111827;
+  margin-top:40px;
+  padding:25px;
+  text-align:center;
+  color:#94a3b8;
+  border-top:1px solid #1f2937
+}
+
+/* COOKIE */
+
+.cookie{
+  position:fixed;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  background:#111827;
+  border:1px solid #2563eb;
+  border-radius:10px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 50px 10px 15px;
+  color:#cbd5e1;
+  font-size:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  z-index:1000
+}
+
+.cookie-close{
+  position:absolute;
+  right:12px;
+  top:7px;
+  border:0;
+  background:transparent;
+  color:#60a5fa;
+  font-size:22px;
+  cursor:pointer
+}
+
+/* MOBİL */
+
+@media(max-width:1000px){
+
+  .menu{
+    order:3;
+    width:100%
+  }
+}
+
+@media(max-width:650px){
+
+  .container{
+    width:94%
+  }
+
+  .logo{
+    font-size:24px
+  }
+
+  .menu{
+    gap:12px;
+    font-size:13px;
+    overflow-x:auto;
+    flex-wrap:nowrap
+  }
+
+  .actions{
+    width:100%
+  }
+
+  .actions .btn{
+    flex:1;
+    text-align:center
+  }
+
+  .hero h1{
+    font-size:28px
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+  <div class="container">
+
+    <div class="nav-inner">
+
+      <div class="logo">
+        🚀 DijitalForum
+      </div>
+
+      <ul class="menu">
+
+        <li>
+          <a href="index.html">
+            Ana Sayfa
+          </a>
+        </li>
+
+        <li>
+          <a href="yeni-mesajlar.html">
+            Yeni Mesajlar
+          </a>
+        </li>
+
+        <li>
+          <a href="konu-olustur.html">
+            Konu Oluştur
+          </a>
+        </li>
+
+        <li>
+          <a href="kategori-sec.html">
+            Kategoriler
+          </a>
+        </li>
+
+        <li>
+          <a href="profil.html">
+            Profil
+          </a>
+        </li>
+
+        <li>
+          <a href="bildirimler.html">
+            Bildirimler
+          </a>
+        </li>
+
+        <li>
+          <a href="login.html">
+            Giriş
+          </a>
+        </li>
+
+        <li>
+          <a href="register.html">
+            Kayıt Ol
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="actions" id="userActions"></div>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <h1>
+      💬 Yeni Blog Yorumları
+    </h1>
+
+    <p>
+      Forumda yayınlanan en yeni blog yorumlarını buradan takip edebilirsin.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ANA İÇERİK -->
+
+<main class="container">
+
+  <div class="main">
+
+    <!-- SEKME MENÜSÜ -->
+
+    <div class="new-tabs" role="tablist" aria-label="Ne var ne yok menüsü">
+
+      <a href="neler-yeni.html">
+        Ne var ne yok?
+      </a>
+
+      <a href="yeni-mesajlar.html">
+        Yeni mesajlar
+      </a>
+
+      <a href="yeni-blog-girdileri.html">
+        Yeni blog girdileri
+      </a>
+
+      <a
+        href="yeni-blog-yorumlari.html"
+        class="active"
+        aria-current="page"
+      >
+        Yeni blog yorumları
+      </a>
+
+      <a href="yeni-yazilimlar.html">
+        Yeni yazılımlar
+      </a>
+
+      <a href="yeni-profil-mesajlari.html">
+        Yeni profil mesajları
+      </a>
+
+      <a href="son-etkinlik.html">
+        Son etkinlik
+      </a>
+
+    </div>
+
+
+    <!-- YENİ BLOG YORUMLARI -->
+
+    <div class="content-section">
+
+      <div class="content-section-title">
+        Yeni Blog Yorumları
+      </div>
+
+      <div class="blog-empty">
+        Yeni Blog Yorumları bulunmamaktadır.
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  © 2026 DijitalForum - Tüm Hakları Saklıdır
+</footer>
+
+
+<!-- COOKIE -->
+
+<div class="cookie" id="cookieBox">
+
+  Bu web sitesi deneyimini geliştirmek için çerezleri kullanabilir.
+
+  <button
+    class="cookie-close"
+    onclick="closeCookie()"
+    aria-label="Çerezi kapat"
+  >
+    ×
+  </button>
+
+</div>
+
+
+<script>
+
+/* GİRİŞ / KAYIT BUTONLARI */
+
+const userActions =
+  document.getElementById("userActions");
+
+let isLoggedIn = false;
+
+try{
+
+  isLoggedIn =
+    localStorage.getItem("isLoggedIn") === "true";
+
+}catch(e){
+
+  isLoggedIn = false;
+
+}
+
+
+if(isLoggedIn){
+
+  userActions.innerHTML =
+    '<a href="yeni-mesajlar.html" class="btn btn-dark">🔥 Yeni Mesajlar</a>' +
+    '<a href="konu-olustur.html" class="btn btn-blue">✏️ Konu Aç</a>';
+
+}else{
+
+  userActions.innerHTML =
+    '<a href="register.html" class="btn btn-dark">Kayıt Ol</a>' +
+    '<a href="login.html" class="btn btn-blue">Giriş Yap</a>';
+
+}
+
+
+/* COOKIE */
+
+function closeCookie(){
+
+  const cookie =
+    document.getElementById("cookieBox");
+
+  if(cookie){
+
+    cookie.style.display = "none";
+
+  }
+
+  try{
+
+    localStorage.setItem(
+      "dijitalForumCookieClosed",
+      "true"
+    );
+
+  }catch(e){}
+
+}
+
+
+try{
+
+  if(
+    localStorage.getItem(
+      "dijitalForumCookieClosed"
+    ) === "true"
+  ){
+
+    const cookie =
+      document.getElementById("cookieBox");
+
+    if(cookie){
+
+      cookie.style.display = "none";
+
+    }
+
+  }
+
+}catch(e){}
+
+</script>
+
+</body>
+</html>
