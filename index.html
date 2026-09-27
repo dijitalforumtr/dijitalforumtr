@@ -1,45 +1,24 @@
-<!DOCTYPE html>
-<html lang="tr">
+\<!DOCTYPE html>
 
-<head>
+\<html lang="tr">
+\<head>
+\<meta charset="utf-8"/>
+\<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+\<meta content="DijitalForum - Türkiye'nin teknoloji, yazılım, donanım, mobil ve oyun topluluğu." name="description"/>
+\<meta content="forum, teknoloji, oyun, yazılım, donanım, mobil, bilgisayar" name="keywords"/>
+\<meta content="index, follow" name="robots"/>
+\<link href="[https://dijitalforumtr.onrender.com/](https://dijitalforumtr.onrender.com/)" rel="canonical"/>
+\<title>DijitalForum Sosyal\</title>
+\<style>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta
-name="description"
-content="DijitalForum - Türkiye'nin teknoloji, yazılım, donanım, mobil ve oyun topluluğu."
->
-
-<meta
-name="keywords"
-content="forum, teknoloji, oyun, yazılım, donanım, mobil, bilgisayar"
->
-
-<meta
-name="robots"
-content="index, follow"
->
-
-<link
-rel="canonical"
-href="https://dijitalforumtr.onrender.com/"
->
-
-<title>DijitalForum Sosyal</title>
-
-
-<style>
-
-/* =========================================================
+/\* =========================================================
    TEMEL
-========================================================= */
+\========================================================= \*/
 
-*{
+\*{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing\:border-box;
     font-family:"Segoe UI",Tahoma,sans-serif;
 }
 
@@ -54,54 +33,55 @@ body{
 }
 
 a{
-    color:inherit;
-    text-decoration:none;
+    color\:inherit;
+    text-decoration\:none;
 }
 
 button{
-    font-family:inherit;
+    font-family\:inherit;
 }
 
 .container{
     width:95%;
     max-width:1400px;
-    margin:auto;
+    margin\:auto;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    NAVBAR
-========================================================= */
+\========================================================= \*/
 
 .navbar{
     background:#111827;
     border-bottom:1px solid #1f2937;
-    position:sticky;
+    position\:sticky;
     top:0;
     z-index:999;
 }
 
 .nav-inner{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display\:flex;
+    justify-content\:space-between;
+    align-items\:center;
     padding:15px 0;
     gap:20px;
-    flex-wrap:wrap;
+    flex-wrap\:wrap;
 }
 
 .logo{
     font-size:28px;
     font-weight:700;
     color:#60a5fa;
-    white-space:nowrap;
+    white-space\:nowrap;
 }
 
 .menu{
-    display:flex;
+    display\:flex;
     gap:20px;
-    list-style:none;
-    flex-wrap:wrap;
+    list-style\:none;
+    flex-wrap\:wrap;
 }
 
 .menu a{
@@ -109,22 +89,22 @@ button{
     transition:.2s;
 }
 
-.menu a:hover{
+.menu a\:hover{
     color:#60a5fa;
 }
 
 .actions{
-    display:flex;
+    display\:flex;
     gap:8px;
-    flex-wrap:wrap;
+    flex-wrap\:wrap;
 }
 
 .btn{
     padding:10px 15px;
     border-radius:8px;
     font-weight:600;
-    display:inline-block;
-    cursor:pointer;
+    display\:inline-block;
+    cursor\:pointer;
     border:0;
 }
 
@@ -138,19 +118,20 @@ button{
     color:#fff;
 }
 
-.btn:hover{
+.btn\:hover{
     opacity:.9;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    HERO
-========================================================= */
+\========================================================= \*/
 
 .hero{
-    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    background\:linear-gradient(135deg,#1e3a8a,#2563eb);
     padding:45px 20px;
-    text-align:center;
+    text-align\:center;
 }
 
 .hero h1{
@@ -164,14 +145,15 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    TABS
-========================================================= */
+\========================================================= \*/
 
 .tabs{
-    display:flex;
+    display\:flex;
     gap:8px;
-    flex-wrap:wrap;
+    flex-wrap\:wrap;
     margin-top:25px;
 }
 
@@ -182,11 +164,11 @@ button{
     padding:10px 14px;
     border-radius:8px;
     font-size:13px;
-    cursor:pointer;
+    cursor\:pointer;
     transition:.2s;
 }
 
-.tabs button:hover{
+.tabs button\:hover{
     background:#1e3a8a;
     color:#fff;
 }
@@ -198,68 +180,72 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    ANA
-========================================================= */
+\========================================================= \*/
 
 .main{
-    display:grid;
+    display\:grid;
     grid-template-columns:3fr 1fr;
     gap:20px;
     margin-top:20px;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    KATEGORİ
-========================================================= */
+\========================================================= \*/
 
 .category{
     background:#111827;
     border-radius:12px;
-    overflow:hidden;
+    overflow\:hidden;
     margin-bottom:20px;
     border:1px solid #1f2937;
 }
 
 .category-title{
-    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    background\:linear-gradient(135deg,#1e3a8a,#2563eb);
     padding:15px;
     font-size:18px;
-    font-weight:bold;
+    font-weight\:bold;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    BOŞ MESAJ
-========================================================= */
+\========================================================= \*/
 
 .empty{
     padding:25px 15px;
-    text-align:center;
+    text-align\:center;
     color:#64748b;
     font-size:13px;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    FORUM
-========================================================= */
+\========================================================= \*/
 
 .forum-block{
     background:#111827;
     border:1px solid #1f2937;
     border-radius:10px;
-    overflow:hidden;
+    overflow\:hidden;
     margin-bottom:18px;
 }
 
 .forum-block-header{
     padding:14px;
-    background:linear-gradient(
+    background\:linear-gradient(
         135deg,
-        #071426,
-        #0b1d32
+        \#071426,
+        \#0b1d32
     );
     border-bottom:1px solid #1f2937;
 }
@@ -276,7 +262,7 @@ button{
 }
 
 .forum-row{
-    display:grid;
+    display\:grid;
     grid-template-columns:
         45px
         minmax(0,1fr)
@@ -284,14 +270,14 @@ button{
         85px
         minmax(180px,1fr);
 
-    align-items:center;
+    align-items\:center;
     gap:12px;
     min-height:78px;
     padding:12px;
     border-top:1px solid #1f2937;
 }
 
-.forum-row:hover{
+.forum-row\:hover{
     background:#172033;
 }
 
@@ -299,8 +285,8 @@ button{
     width:40px;
     height:40px;
     border-radius:8px;
-    display:grid;
-    place-items:center;
+    display\:grid;
+    place-items\:center;
     background:#020617;
     color:#60a5fa;
     border:1px solid #2563eb;
@@ -322,11 +308,11 @@ button{
 .forum-stat{
     color:#94a3b8;
     font-size:11px;
-    text-align:center;
+    text-align\:center;
 }
 
 .forum-stat strong{
-    display:block;
+    display\:block;
     color:#e5e7eb;
     font-size:14px;
     margin-top:3px;
@@ -339,9 +325,9 @@ button{
 .forum-last-title{
     color:#60a5fa;
     font-size:12px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    white-space\:nowrap;
+    overflow\:hidden;
+    text-overflow\:ellipsis;
 }
 
 .forum-last-meta{
@@ -351,9 +337,10 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    SAĞ KUTULAR
-========================================================= */
+\========================================================= \*/
 
 .sidebar-box{
     background:#111827;
@@ -370,16 +357,17 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    NE VAR NE YOK
-========================================================= */
+\========================================================= \*/
 
 .news-item{
     padding:13px 0;
     border-bottom:1px solid #1f2937;
 }
 
-.news-item:last-child{
+.news-item\:last-child{
     border-bottom:0;
 }
 
@@ -409,45 +397,47 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    TAKİP
-========================================================= */
+\========================================================= \*/
 
 .follow-box{
-    display:flex;
+    display\:flex;
     gap:8px;
-    flex-wrap:wrap;
+    flex-wrap\:wrap;
 }
 
 .follow-btn{
     flex:1;
     min-width:90px;
-    text-align:center;
+    text-align\:center;
     padding:9px 8px;
     border-radius:7px;
     background:#1e293b;
     color:#cbd5e1;
     border:1px solid #334155;
     font-size:11px;
-    cursor:pointer;
+    cursor\:pointer;
 }
 
-.follow-btn:hover{
+.follow-btn\:hover{
     background:#2563eb;
     color:#fff;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    ÖNE ÇIKAN
-========================================================= */
+\========================================================= \*/
 
 .feature-item{
     padding:13px 0;
     border-bottom:1px solid #1f2937;
 }
 
-.feature-item:last-child{
+.feature-item\:last-child{
     border-bottom:0;
 }
 
@@ -471,12 +461,13 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    REHBERLER
-========================================================= */
+\========================================================= \*/
 
 .guide-tabs{
-    display:flex;
+    display\:flex;
     gap:5px;
     margin-bottom:10px;
 }
@@ -489,7 +480,7 @@ button{
     border-radius:6px;
     padding:7px 4px;
     font-size:10px;
-    cursor:pointer;
+    cursor\:pointer;
 }
 
 .guide-tab.active{
@@ -503,7 +494,7 @@ button{
     border-bottom:1px solid #1f2937;
 }
 
-.guide-item:last-child{
+.guide-item\:last-child{
     border-bottom:0;
 }
 
@@ -532,19 +523,20 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    ÇEVRİM İÇİ YETKİLİLER
-========================================================= */
+\========================================================= \*/
 
 .online-staff{
-    display:flex;
-    align-items:center;
+    display\:flex;
+    align-items\:center;
     gap:9px;
     padding:9px 0;
     border-bottom:1px solid #1f2937;
 }
 
-.online-staff:last-child{
+.online-staff\:last-child{
     border-bottom:0;
 }
 
@@ -569,18 +561,19 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    ÇEVRİM İÇİ ÜYELER
-========================================================= */
+\========================================================= \*/
 
 .member-list{
-    display:flex;
-    flex-wrap:wrap;
+    display\:flex;
+    flex-wrap\:wrap;
     gap:7px;
 }
 
 .member-name{
-    display:inline-block;
+    display\:inline-block;
     background:#1e293b;
     border:1px solid #334155;
     border-radius:6px;
@@ -596,16 +589,17 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    YAZILIMLAR
-========================================================= */
+\========================================================= \*/
 
 .software-item{
     padding:13px 0;
     border-bottom:1px solid #1f2937;
 }
 
-.software-item:last-child{
+.software-item\:last-child{
     border-bottom:0;
 }
 
@@ -629,20 +623,21 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    İSTATİSTİK
-========================================================= */
+\========================================================= \*/
 
 .stats-row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display\:flex;
+    justify-content\:space-between;
+    align-items\:center;
     gap:10px;
     padding:11px 0;
     border-bottom:1px solid #1f2937;
 }
 
-.stats-row:last-child{
+.stats-row\:last-child{
     border-bottom:0;
 }
 
@@ -655,7 +650,7 @@ button{
     color:#e5e7eb;
     font-size:14px;
     font-weight:700;
-    text-align:right;
+    text-align\:right;
 }
 
 .stats-last{
@@ -663,9 +658,10 @@ button{
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    PAYLAŞ
-========================================================= */
+\========================================================= \*/
 
 .share-title{
     color:#94a3b8;
@@ -674,8 +670,8 @@ button{
 }
 
 .share-buttons{
-    display:flex;
-    flex-wrap:wrap;
+    display\:flex;
+    flex-wrap\:wrap;
     gap:6px;
 }
 
@@ -686,35 +682,37 @@ button{
     border-radius:6px;
     padding:7px 9px;
     font-size:10px;
-    cursor:pointer;
+    cursor\:pointer;
 }
 
-.share-btn:hover{
+.share-btn\:hover{
     background:#2563eb;
     color:#fff;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    FOOTER
-========================================================= */
+\========================================================= \*/
 
 .footer{
     background:#111827;
     margin-top:40px;
     padding:25px;
-    text-align:center;
+    text-align\:center;
     color:#94a3b8;
     border-top:1px solid #1f2937;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    COOKIE
-========================================================= */
+\========================================================= \*/
 
 .cookie{
-    position:fixed;
+    position\:fixed;
     left:15px;
     right:15px;
     bottom:15px;
@@ -722,9 +720,9 @@ button{
     border:1px solid #2563eb;
     border-radius:10px;
     min-height:48px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display\:flex;
+    align-items\:center;
+    justify-content\:center;
     padding:10px 50px 10px 15px;
     color:#cbd5e1;
     font-size:12px;
@@ -733,20 +731,21 @@ button{
 }
 
 .cookie-close{
-    position:absolute;
+    position\:absolute;
     right:12px;
     top:7px;
     border:0;
-    background:transparent;
+    background\:transparent;
     color:#60a5fa;
     font-size:22px;
-    cursor:pointer;
+    cursor\:pointer;
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    RESPONSIVE
-========================================================= */
+\========================================================= \*/
 
 @media(max-width:1000px){
 
@@ -767,10 +766,11 @@ button{
 
     .forum-stat,
     .forum-last{
-        display:none;
+        display\:none;
     }
 
 }
+
 
 
 @media(max-width:650px){
@@ -786,8 +786,8 @@ button{
     .menu{
         gap:12px;
         font-size:13px;
-        overflow-x:auto;
-        flex-wrap:nowrap;
+        overflow-x\:auto;
+        flex-wrap\:nowrap;
     }
 
     .actions{
@@ -796,7 +796,7 @@ button{
 
     .actions .btn{
         flex:1;
-        text-align:center;
+        text-align\:center;
     }
 
     .hero h1{
@@ -804,1475 +804,2839 @@ button{
     }
 
     .tabs{
-        overflow-x:auto;
-        flex-wrap:nowrap;
+        overflow-x\:auto;
+        flex-wrap\:nowrap;
     }
 
     .tabs button{
-        white-space:nowrap;
+        white-space\:nowrap;
     }
 
 }
 
-</style>
-
-</head>
 
 
-<body>
-
-
-<!-- =====================================================
+}
+\</style>
+\</head>
+\<body>
+\<!-- =====================================================
      NAVBAR
-===================================================== -->
-
-<nav class="navbar">
-
-<div class="container">
-
-<div class="nav-inner">
-
-<div class="logo">
+\===================================================== -->
+\<nav class="navbar">
+\<div class="container">
+\<div class="nav-inner">
+\<div class="logo">
 🚀 DijitalForum
-</div>
-
-
-<ul class="menu">
-
-<li>
-<a href="index.html">
+\</div>
+\<ul class="menu">
+\<li>
+\<a href="index.html">
 Ana Sayfa
-</a>
-</li>
-
-<li>
-<a href="yeni-mesajlar.html">
+\</a>
+\</li>
+\<li>
+\<a href="yeni-mesajlar.html">
 Yeni Mesajlar
-</a>
-</li>
-
-<li>
-<a href="konu-olustur.html">
+\</a>
+\</li>
+\<li>
+\<a href="konu-olustur.html">
 Konu Oluştur
-</a>
-</li>
-
-<li>
-<a href="kategori-sec.html">
+\</a>
+\</li>
+\<li>
+\<a href="kategori-sec.html">
 Kategoriler
-</a>
-</li>
-
-<li>
-<a href="profil.html">
+\</a>
+\</li>
+\<li>
+\<a href="profil.html">
 Profil
-</a>
-</li>
-
-<li>
-<a href="bildirimler.html">
+\</a>
+\</li>
+\<li>
+\<a href="bildirimler.html">
 Bildirimler
-</a>
-</li>
-
-<li>
-<a href="login.html">
+\</a>
+\</li>
+\<li>
+\<a href="login.html">
 Giriş
-</a>
-</li>
-
-<li>
-<a href="register.html">
+\</a>
+\</li>
+\<li>
+\<a href="register.html">
 Kayıt Ol
-</a>
-</li>
-
-</ul>
-
-
-<div
-class="actions"
-id="userActions"
-></div>
-
-</div>
-
-</div>
-
-</nav>
-
-
-<!-- =====================================================
+\</a>
+\</li>
+\</ul>
+\<div class="actions" id="userActions">\</div>
+\</div>
+\</div>
+\</nav>
+\<!-- =====================================================
      HERO
-===================================================== -->
-
-<section class="hero">
-
-<h1>
+\===================================================== -->
+\<section class="hero">
+\<h1>
 DijitalForum Sosyal
-</h1>
-
-<p>
+\</h1>
+\<p>
 Teknoloji, yazılım, donanım, mobil ve oyun topluluğu
-</p>
-
-</section>
-
-
-<div class="container">
-
-
-<!-- =====================================================
+\</p>
+\</section>
+\<div class="container">
+\<!-- =====================================================
      TABS
-===================================================== -->
-
-<div class="tabs">
-
-<button
-class="active"
-data-filter="new"
->
+\===================================================== -->
+\<div class="tabs">
+\<button class="active" data-filter="new">
 🆕 Yeni Konular
-</button>
-
-<button data-filter="latest">
+\</button>
+\<button data-filter="latest">
 💬 Son Mesajlar
-</button>
-
-<button data-filter="popular">
+\</button>
+\<button data-filter="popular">
 🔥 Popüler Konular
-</button>
-
-<button data-filter="unanswered">
+\</button>
+\<button data-filter="unanswered">
 ❓ Cevapsız Sorular
-</button>
-
-<button data-filter="deals">
+\</button>
+\<button data-filter="deals">
 🏷️ Sıcak Fırsatlar
-</button>
-
-<button data-filter="content">
+\</button>
+\<button data-filter="content">
 📚 DijitalForum İçerikleri
-</button>
-
-<button data-filter="offtopic">
+\</button>
+\<button data-filter="offtopic">
 💬 Konu Dışı
-</button>
-
-</div>
-
-
-<!-- =====================================================
+\</button>
+\</div>
+\<!-- =====================================================
      ANA
-===================================================== -->
-
-<div class="main">
-
-
-<!-- =====================================================
+\===================================================== -->
+\<div class="main">
+\<!-- =====================================================
      SOL TARAF
-===================================================== -->
-
-<div>
-
-
-<div class="category">
-
-<div
-class="category-title"
-id="categoryTitle"
->
+\===================================================== -->
+\<div>
+\<div class="category">
+\<div class="category-title" id="categoryTitle">
 🆕 Yeni Konular
-</div>
-
-<div id="topicList">
-
-<div class="empty">
+\</div>
+\<div id="topicList">
+\<div class="empty">
 Yeni bir konu yok.
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      DİJİTAL FORUM TR
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-row">
+\<div class="forum-icon">
 D
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Dijital Forum TR
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Dijital Forum TR
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Yeni konu oluşturulmadı
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      İÇERİKLER
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-row">
+\<div class="forum-icon">
 ▤
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Dijital Forum TR İçerikleri
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Dijital Forum TR Video İçerikleri
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Yeni içerik bulunmuyor
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      ÖNERİLER
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-row">
+\<div class="forum-icon">
 💡
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Dijital Forum TR Önerileri
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Öneriler
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz mesaj yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      İÇERİK ÖNERİLERİ
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-row">
+\<div class="forum-icon">
 ▶
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Dijital Forum TR İçerik Önerileri
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 İçerik önerileri
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz mesaj yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      CEVAP BEKLEYEN
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
 ❓ Cevap Bekleyen Sorular
-</h2>
-
-<p>
+\</h2>
+\<p>
 Cevap bekleyen sorular
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
 ?
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Cevap Bekleyen Sorular
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Henüz cevaplanmamış sorular
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz soru yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      ÇÖZÜLMÜŞ
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
 ✓ Çözüme Kavuşmuş Sorular
-</h2>
-
-<p>
+\</h2>
+\<p>
 Çözüm bulunan sorular
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
 ✓
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Çözüme Kavuşmuş Sorular
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Çözüm bulunan sorular
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz soru yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      ÇÖZÜLMEMİŞ
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
 ! Çözüme Kavuşmamış Sorular
-</h2>
-
-<p>
+\</h2>
+\<p>
 Çözüm bekleyen sorular
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
 !
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Çözüme Kavuşmamış Sorular
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Henüz çözülemeyen sorular
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz soru yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      REHBERLER
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
 📚 Rehberler
-</h2>
-
-<p>
+\</h2>
+\<p>
 Faydalı rehberler ve anlatımlar
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
 📚
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Rehberler
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Teknoloji ve oyun rehberleri
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz rehber yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      ATATÜRK
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
 🇹🇷 Atatürk Köşesi
-</h2>
-
-<p>
+\</h2>
+\<p>
 Atatürk'ün hayatı, düşünceleri, videoları ve fotoğrafları.
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
 🇹🇷
-</div>
-
-<div>
-
-<div class="forum-name">
+\</div>
+\<div>
+\<div class="forum-name">
 Atatürk Köşesi
-</div>
-
-<div class="forum-desc">
+\</div>
+\<div class="forum-desc">
 Atatürk'ün Hayatı · Videolar · Fotoğraflar
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      DONANIM
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
-💻 Donanım
-</h2>
-
-<p>
-Bilgisayar donanımı hakkında konular.
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
-🖥️
-</div>
-
-<div>
-
-<div class="forum-name">
-Bilgisayar Donanımı
-</div>
-
-<div class="forum-desc">
-İşlemci · Ekran Kartı · RAM · Anakart · SSD
-</div>
-
-</div>
-
-<div class="forum-stat">
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
+Donanım
+\</h2>
+\<p>
+Donanım tavsiyelerine ek olarak sorunlarınızı çözüm bulabileceğiniz bölüm.
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+?
+\</div>
+\<div>
+\<div class="forum-name">
+Teknik Destek
+\</div>
+\<div class="forum-desc">
+Mavi Ekran Hata Analizi
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▣
+\</div>
+\<div>
+\<div class="forum-name">
+Masaüstü Bilgisayarlar
+\</div>
+\<div class="forum-desc">
+Bilgisayar Toplama · Marka ve Hazır Bilgisayarlar · Kasa · Anakart · RAM · İşlemci · Ekran Kartı · Güç Kaynağı
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▰
+\</div>
+\<div>
+\<div class="forum-name">
+Dizüstü Bilgisayarlar
+\</div>
+\<div class="forum-desc">
+Ultrabook · eGPU · Gaming Laptop · Laptop RAM
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▣
+\</div>
+\<div>
+\<div class="forum-name">
+Mini Bilgisayarlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▦
+\</div>
+\<div>
+\<div class="forum-name">
+Monitörler ve Görüntüleme Aygıtları
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▰
+\</div>
+\<div>
+\<div class="forum-name">
+SSD, Flash ve Sabit Diskler
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+♟
+\</div>
+\<div>
+\<div class="forum-name">
+Sistem Performansı
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▦
+\</div>
+\<div>
+\<div class="forum-name">
+Ağ Donanımları
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+✚
+\</div>
+\<div>
+\<div class="forum-name">
+Oyun Ekipmanları
+\</div>
+\<div class="forum-desc">
+Fare · Gamepad ve Direksiyon Seti · Klavye · Mouse Pad · Oyuncu Koltuğu · Oyun Kayıt Aygıtları
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+⚙
+\</div>
+\<div>
+\<div class="forum-name">
+Diğer Donanımlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+●
+\</div>
+\<div>
+\<div class="forum-name">
+Mac
+\</div>
+\<div class="forum-desc">
+MacBook · iMac · Mac mini · Mac Pro
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+⚒
+\</div>
+\<div>
+\<div class="forum-name">
+PC Modifikasyon
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◉
+\</div>
+\<div>
+\<div class="forum-name">
+Overclock ve Soğutma
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◈
+\</div>
+\<div>
+\<div class="forum-name">
+Sanal Gerçeklik
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+ϟ
+\</div>
+\<div>
+\<div class="forum-name">
+Elektrik ve Elektronik
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
+     SES VE KAYIT TEKNOLOJILERI
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
+Ses ve Kayıt Teknolojileri
+\</h2>
+\<p>
+Kulaklıklar, oyun kulaklıkları, Bluetooth kulaklıklar, IEM’ler, mikrofonlar vb. kategorilerin olduğu bölümdür.
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◉
+\</div>
+\<div>
+\<div class="forum-name">
+Kulaklıklar ve Mikrofonlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◉
+\</div>
+\<div>
+\<div class="forum-name">
+Oyun Kulaklığı
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◖
+\</div>
+\<div>
+\<div class="forum-name">
+Ses Sistemleri
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◉
+\</div>
+\<div>
+\<div class="forum-name">
+Müzik Ekipmanları
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
+     MOBIL
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
+Mobil
+\</h2>
+\<p>
+Mobil oyunlar, uygulamalar, telefon aksesuarları, akıllı saatler, telefon ve tablet gibi konularla ilgili içeriklere ulaşabileceğiniz bölüm.
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◆
+\</div>
+\<div>
+\<div class="forum-name">
+Mobil Oyunlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▣
+\</div>
+\<div>
+\<div class="forum-name">
+Mobil Operatörler
+\</div>
+\<div class="forum-desc">
+eSIM
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◎
+\</div>
+\<div>
+\<div class="forum-name">
+Mobil Uygulamalar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▯
+\</div>
+\<div>
+\<div class="forum-name">
+Telefon Tavsiyeleri
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+♟
+\</div>
+\<div>
+\<div class="forum-name">
+Android
+\</div>
+\<div class="forum-desc">
+Samsung · Xiaomi · Huawei · Nothing Phone · Oppo · OnePlus · Realme · Diğer Markalar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+●
+\</div>
+\<div>
+\<div class="forum-name">
+iPhone
+\</div>
+\<div class="forum-desc">
+iPhone 17 · iPhone 16 · iPhone 15 · iPhone 14 · iPhone 13 · iPhone 12 · iPhone 11 · Diğer iPhone Modelleri
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◢
+\</div>
+\<div>
+\<div class="forum-name">
+Diğer Telefonlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+⚒
+\</div>
+\<div>
+\<div class="forum-name">
+Mobil Aksesuarlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▯
+\</div>
+\<div>
+\<div class="forum-name">
+Tabletler
+\</div>
+\<div class="forum-desc">
+Tablet Tavsiyeleri · iPad · Galaxy Tab · Lenovo Tab · Matepad
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◉
+\</div>
+\<div>
+\<div class="forum-name">
+Giyilebilir Teknolojiler
+\</div>
+\<div class="forum-desc">
+Akıllı Saatler ve Bileklikler · Akıllı Gözlükler
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
+     İNTERNET VE WEB
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
+İnternet ve Web
+\</h2>
+\<p>
+Sabit internet, web servisleri ve yayıncılık gibi birçok kategoride içeriklere ulaşabileceğiniz bölüm.
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+e
+\</div>
+\<div>
+\<div class="forum-name">
+İnternet Erişimi
+\</div>
+\<div class="forum-desc">
+Kablonet · Superonline · Vodafone Net · Millenicom · Netspeed · Türk Telekom · TurkNet · IPv6
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+●
+\</div>
+\<div>
+\<div class="forum-name">
+Sosyal Medya ve Mesajlaşma
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▣
+\</div>
+\<div>
+\<div class="forum-name">
+Web Servisleri
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▣
+\</div>
+\<div>
+\<div class="forum-name">
+Web Tasarım
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▤
+\</div>
+\<div>
+\<div class="forum-name">
+Server - Web Hosting
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▶
+\</div>
+\<div>
+\<div class="forum-name">
+Dijital Video Platformları
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◉
+\</div>
+\<div>
+\<div class="forum-name">
+Dijital Yayıncılık
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
+     İŞLETIM SISTEMLERI
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
+İşletim Sistemleri
+\</h2>
+\<p>
+Windows, Linux, Mac vb. bütün işletim sistemleri hakkındaki soru ve görüşleriniz.
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▦
+\</div>
+\<div>
+\<div class="forum-name">
+Windows
+\</div>
+\<div class="forum-desc">
+Windows 11 · Windows 10 · Windows 8.1 · 🌐 Windows 7 · Diğer Windows Sürümleri
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+●
+\</div>
+\<div>
+\<div class="forum-name">
+macOS
+\</div>
+\<div class="forum-desc">
+OpenCore · 26 Tahoe · 15.0 Sequoia · 14.0 Sonoma · 13.0 Ventura · 12.0 Monterey · 11.0 Big Sur · Başarılı Kurulumlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+♧
+\</div>
+\<div>
+\<div class="forum-name">
+GNU/Linux
+\</div>
+\<div class="forum-desc">
+Debian · Pardus · Kali · Ubuntu · Linux Mint · Pop!\_OS · Elementary OS · RedHat · CentOS ve AlmaLinux · Fedora · Arch Linux · Manjaro · Gentoo · NixOS · openSUSE
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▣
+\</div>
+\<div>
+\<div class="forum-name">
+Diğer İşletim Sistemleri
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      YAZILIM
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
-💻 Yazılım
-</h2>
-
-<p>
-Programlama ve yazılım geliştirme.
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
-⌨️
-</div>
-
-<div>
-
-<div class="forum-name">
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>
+Yazılım
+\</h2>
+\<p>
+Yapay zeka, aygıt sürücüleri, programlama, internet/sistem araçları gibi daha birçok kategoride içeriklere ulaşabileceğiniz bölüm.
+\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+♙
+\</div>
+\<div>
+\<div class="forum-name">
+Yapay Zeka
+\</div>
+\<div class="forum-desc">
+Yapay Zeka Araçları · Yapay Zekaya Sor
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+⌘
+\</div>
+\<div>
+\<div class="forum-name">
+Aygıt Sürücüleri
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+&lt;/&gt;
+\</div>
+\<div>
+\<div class="forum-name">
 Programlama
-</div>
-
-<div class="forum-desc">
-HTML · CSS · JavaScript · Kotlin · Python
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\<div class="forum-desc">
+Web Programlama · Mobil Programlama · Oyun Programlama · Veri Tabanı Sistemleri · Geliştirme Kartları
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     MOBİL
-===================================================== -->
-
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
-📱 Mobil
-</h2>
-
-<p>
-Telefonlar ve mobil uygulamalar.
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
-📱
-</div>
-
-<div>
-
-<div class="forum-name">
-Telefonlar
-</div>
-
-<div class="forum-desc">
-iPhone · Samsung · Xiaomi · Android
-</div>
-
-</div>
-
-<div class="forum-stat">
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+⬟
+\</div>
+\<div>
+\<div class="forum-name">
+Güvenlik
+\</div>
+\</div>
+\<div class="forum-stat">
 Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
 Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
 Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
+\</div>
+\<div class="forum-last-meta">
 Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+⚙
+\</div>
+\<div>
+\<div class="forum-name">
+Sistem Araçları
+\</div>
+\<div class="forum-desc">
+Sanal Makine · Ofis Araçları
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◉
+\</div>
+\<div>
+\<div class="forum-name">
+Multimedya / Çoklu ortam
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+◌
+\</div>
+\<div>
+\<div class="forum-name">
+İnternet Araçları
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▣
+\</div>
+\<div>
+\<div class="forum-name">
+Grafik ve Tasarım
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+▤
+\</div>
+\<div>
+\<div class="forum-name">
+Diğer Yazılımlar
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">
+⚒
+\</div>
+\<div>
+\<div class="forum-name">
+Tersine Mühendislik
+\</div>
+\</div>
+\<div class="forum-stat">
+Konular
+\<strong>0\</strong>
+\</div>
+\<div class="forum-stat">
+Mesajlar
+\<strong>0\</strong>
+\</div>
+\<div class="forum-last">
+\<div class="forum-last-title">
+Henüz konu yok
+\</div>
+\<div class="forum-last-meta">
+Henüz veri yok
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      OYUN
-===================================================== -->
+\===================================================== -->
+\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Oyunlar\</h2>
+\<p>Online ve hikâyeli oyunlar, oyun tavsiyeleri ve haberleri, dijital oyun servisleri ve Türkçe yama gibi birçok kategoride içeriklere ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◈\</div>\<div>\<div class="forum-name">Oyun Modlama\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">?\</div>\<div>\<div class="forum-name">Oyun Teknik Destek\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">★\</div>\<div>\<div class="forum-name">Oyun ve DLC Tavsiyeleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚡\</div>\<div>\<div class="forum-name">Oyun Haberleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">✎\</div>\<div>\<div class="forum-name">Oyun İncelemeleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▣\</div>\<div>\<div class="forum-name">Oyun Programları\</div>\<div class="forum-desc">Emülatör\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▤\</div>\<div>\<div class="forum-name">Türkçe Yama\</div>\<div class="forum-desc">Tamamlanmış Yerelleştirmeler · Devam Eden Yerelleştirmeler\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◉\</div>\<div>\<div class="forum-name">Dijital Oyun Servisleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◉\</div>\<div>\<div class="forum-name">Aksiyon / First Person Shooter\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">♟\</div>\<div>\<div class="forum-name">Strateji\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◆\</div>\<div>\<div class="forum-name">Battle Royale\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◈\</div>\<div>\<div class="forum-name">Macera\</div>\<div class="forum-desc">Minecraft\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">♙\</div>\<div>\<div class="forum-name">Rol Yapma Oyunları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◌\</div>\<div>\<div class="forum-name">Simülasyon\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚽\</div>\<div>\<div class="forum-name">Spor Oyunları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▱\</div>\<div>\<div class="forum-name">Yarış\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">☷\</div>\<div>\<div class="forum-name">Online Oyunlar\</div>\<div class="forum-desc">MOBA Oyunları · Counter-Strike · Valorant\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◢\</div>\<div>\<div class="forum-name">GTA\</div>\<div class="forum-desc">GTA VI · GTA V · Diğer GTA Oyunları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎮\</div>\<div>\<div class="forum-name">Diğer Oyunlar\</div>\<div class="forum-desc">Mount &amp; Blade · Souls-Like\</div>\</div>
+\<div class="forum-stat">Konular\<strong>0\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>0\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Henüz konu yok\</div>\<div class="forum-last-meta">Henüz veri yok\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Konsol Dünyası\</h2>
+\<p>Konsollarla ilgili destek alabileceğiniz veya paylaşım yapabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◈\</div>\<div>\<div class="forum-name">Konsol Tavsiyeleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>99\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,4B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">PS5 Pro almak mantıklı mı?\</div>\<div class="forum-last-meta">Pazartesi 22:08 ddakbrother\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎮\</div>\<div>\<div class="forum-name">El Konsolları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>298\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">15.000-20.000 TL'ye el konsolu önerisi\</div>\<div class="forum-last-meta">Çarşamba 21:41 Peter Griffin\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▣\</div>\<div>\<div class="forum-name">Nintendo\</div>\</div>
+\<div class="forum-stat">Konular\<strong>242\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>2,4B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Nintendo Switch 2 alınır mı?\</div>\<div class="forum-last-meta">Cuma 18:34 UATORN\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◉\</div>\<div>\<div class="forum-name">PlayStation\</div>\</div>
+\<div class="forum-stat">Konular\<strong>1B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>9,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">PS Vita'da PS2 oyunu çalıştırıldı\</div>\<div class="forum-last-meta">Cuma 17:59 erdym\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◢\</div>\<div>\<div class="forum-name">Xbox\</div>\</div>
+\<div class="forum-stat">Konular\<strong>341\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Rehber JTAG'li XBOX 360 XBOX Live'a nasıl bağlanır?\</div>\<div class="forum-last-meta">15 Eylül 2026 Rhodi\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◌\</div>\<div>\<div class="forum-name">Diğer Konsollar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>57\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>737\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Steam Machine Görünümlü Mendil Kutusu!\</div>\<div class="forum-last-meta">13 Ağustos 2026 Telefonunu Çıkra\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Dijital Fotoğrafçılık ve Video\</h2>
+\<p>Görsel ekipmanlar, kurgu/montaj ve daha fazlası gibi kategorilerde destek alabileceğiniz, çektiğiniz fotoğraflarınızı paylaşabileceğiniz bir bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◈\</div>\<div>\<div class="forum-name">Fotoğraf Sanatı\</div>\</div>
+\<div class="forum-stat">Konular\<strong>1,2B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>6,2B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Kocaeli marina, deniz ve sahil | Samsung A55\</div>\<div class="forum-last-meta">Bugün 17:40 Hakan Yusuf\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">📷\</div>\<div>\<div class="forum-name">Dijital Fotoğraf Makineleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>123\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>811\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">35.000 TL bütçede hediye fotoğraf makinesi tavsiyesi\</div>\<div class="forum-last-meta">Dün 20:49 DarthGorsoy\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🔭\</div>\<div>\<div class="forum-name">Objektif ve Ekipmanlar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>14\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>42\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Rehber Sky-Watcher Star Adventurer 2i'nin (SWSA 2i) polar aydınlatıcısını 150 TL'ye modifiye etmek\</div>\<div class="forum-last-meta">19 Temmuz 2026 DarthGorsoy\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▣\</div>\<div>\<div class="forum-name">Video Kameralar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>148\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>557\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">GoPro Windows Bağlantı Problemi\</div>\<div class="forum-last-meta">Cuma 12:00 wndhndz541\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">✎\</div>\<div>\<div class="forum-name">Film Kurgu &amp; Montaj\</div>\</div>
+\<div class="forum-stat">Konular\<strong>261\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Bir zamanların efsane edit programı Vegas Pro neden popülerliğini kaybetti?\</div>\<div class="forum-last-meta">12 Eylül 2026 Relapse\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Tüketici Ürünleri\</h2>
+\<p>Ev/ofis elektroniği ve mobilyaları konusunda birçok içeriğe ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◉\</div>\<div>\<div class="forum-name">Uydu Teknolojileri ve Dijital Yayın\</div>\</div>
+\<div class="forum-stat">Konular\<strong>151\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Digitürk, reklamsız maç yayınlarına başlıyor\</div>\<div class="forum-last-meta">19 Eylül 2026 Themir\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▣\</div>\<div>\<div class="forum-name">Ev Elektroniği ve Elektrikli Ev Aletleri\</div>\<div class="forum-desc">Beyaz Eşya Elektrikli Küçük Ev Aletleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>556\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">11 kg çamaşır makinesi için 9 kg kurutma makinesi az mı?\</div>\<div class="forum-last-meta">Bugün 14:54 Işıklımışıklı\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▤\</div>\<div>\<div class="forum-name">Televizyonlar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>581\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3,6B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">20.000 TL'ye kadar televizyon önerisi\</div>\<div class="forum-last-meta">Bugün 17:17 MissInformation\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▶\</div>\<div>\<div class="forum-name">Medya Oynatıcılar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>119\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>938\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Redline Prestige S7 için stock IMG Firmware nereden bulunur?\</div>\<div class="forum-last-meta">23 Ağustos 2026 Mahmut659\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">❄\</div>\<div>\<div class="forum-name">Isıtma ve Soğutma Sistemleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>201\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,4B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">9.000 TL bütçede 24 metrekare oda için ısıtıcı tavsiyesi\</div>\<div class="forum-last-meta">5 Eylül 2026 vercetti\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▰\</div>\<div>\<div class="forum-name">Mobilya\</div>\</div>
+\<div class="forum-stat">Konular\<strong>273\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">5.000 TL bütçe ile NZXT H6 Flow için geniş kasa standı veya yan sehpa önerisi\</div>\<div class="forum-last-meta">Bugün 17:19 LA Knight\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▤\</div>\<div>\<div class="forum-name">Yazıcı\</div>\<div class="forum-desc">3D Yazıcılar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>312\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">3D yazıcıyı uzatma kablosuna takmak sorun yaratır mı?\</div>\<div class="forum-last-meta">20 Eylül 2026 alitoprak55\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▦\</div>\<div>\<div class="forum-name">Diğer Ürünler ve Eşyalar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>204\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Modem ve çoklu priz için akım korumalı priz önerisi\</div>\<div class="forum-last-meta">Bugün 02:57 Çağatay Torun\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Taşıt Dünyası\</h2>
+\<p>Motorlu/motorsuz araçlar, oto ekipmanları, ses sistemleri gibi birçok kategoride içeriğe ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🚗\</div>\<div>\<div class="forum-name">Otomobil\</div>\<div class="forum-desc">Elektrikli Otomobiller\</div>\</div>
+\<div class="forum-stat">Konular\<strong>1,3B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>15,4B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">2015 model Hyundai i20 satılmalı mı?\</div>\<div class="forum-last-meta">Bugün 12:07 Carlzberg\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🛡️\</div>\<div>\<div class="forum-name">Yol Yardımı ve Sigorta\</div>\</div>
+\<div class="forum-stat">Konular\<strong>12\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>73\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Zorunlu trafik sigortası yapılırken tescil tarihi ne olmalı?\</div>\<div class="forum-last-meta">29 Ağustos 2026 Greens1903\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🚲\</div>\<div>\<div class="forum-name">Bisiklet ve Scooter\</div>\</div>
+\<div class="forum-stat">Konular\<strong>261\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,4B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Bisiklet kadrosunda kaynağa benzeyen pürüzlü şeyler normal mi?\</div>\<div class="forum-last-meta">Perşembe 23:03 bahacprz\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚙\</div>\<div>\<div class="forum-name">Oto Ekipmanları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>100\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>617\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Otomobil için kış lastiği önerisi\</div>\<div class="forum-last-meta">Bugün 12:09 tryfing\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🏍️\</div>\<div>\<div class="forum-name">Motosiklet ve Mobilet\</div>\</div>
+\<div class="forum-stat">Konular\<strong>386\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Yağ yokken motordan ses gelir mi?\</div>\<div class="forum-last-meta">Salı 15:21 xBN\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🚙\</div>\<div>\<div class="forum-name">Diğer Motorlu Araçlar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>45\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>357\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">KTM Duke 250 alınır mı?\</div>\<div class="forum-last-meta">28 Ağustos 2026 Yener K\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Finans\</h2>
+\<p>Kripto paralar, borsa, banka ve emlak gibi daha birçok kategoride içeriklere ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">₿\</div>\<div>\<div class="forum-name">NFT ve Kripto Paralar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>87\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>574\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Kripto paranın satılmasından elde edilen para ile yapılan alışveriş yasal mı?\</div>\<div class="forum-last-meta">Pazartesi 17:54 Relapse\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">▣\</div>\<div>\<div class="forum-name">Kredi Kartları, Krediler ve Bankalar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>1,5B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>11,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">55.000 nakit limiti olan kredi kartına ek ödeme yaparsak limit artışı olur mu?\</div>\<div class="forum-last-meta">Bugün 11:35 Yakuza\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">₺\</div>\<div>\<div class="forum-name">Döviz, Para ve Yatırım: Altın, Dolar, Euro, Borsa\</div>\</div>
+\<div class="forum-stat">Konular\<strong>227\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>2,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Dolar nereden alınmalı?\</div>\<div class="forum-last-meta">Cuma 06:53 KarasızGirişimci\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⌂\</div>\<div>\<div class="forum-name">Emlak\</div>\</div>
+\<div class="forum-stat">Konular\<strong>44\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>498\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Faiz düşüşü olur mu? Ev fiyatları nasıl etkilenir?\</div>\<div class="forum-last-meta">7 Eylül 2026 xBN\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Hobiler\</h2>
+\<p>Hobileriniz ve projeleriniz ile ilgili paylaşım yapabileceğiniz ve bunlarla ilgili içeriklere ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚙\</div>\<div>\<div class="forum-name">Projeleriniz\</div>\</div>
+\<div class="forum-stat">Konular\<strong>171\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">8 yıl sonra Goley üzerinden kendi Private Server'ımı yazıyorum\</div>\<div class="forum-last-meta">22 dakika önce Furkan9600\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🚁\</div>\<div>\<div class="forum-name">RC Araçlar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>29\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>96\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">4K çekim için drone önerisi\</div>\<div class="forum-last-meta">24 Mayıs 2026 Michael MYERS\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🐾\</div>\<div>\<div class="forum-name">Hayvanlar Alemi\</div>\</div>
+\<div class="forum-stat">Konular\<strong>315\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Yeni doğmuş kedi 10 saat aç durabilir mi?\</div>\<div class="forum-last-meta">17 Eylül 2026 BirForumcuKişi\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎨\</div>\<div>\<div class="forum-name">Diğer Hobiler\</div>\</div>
+\<div class="forum-stat">Konular\<strong>280\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>2,6B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Xiao - Genshin Impact | semi-realism çizim denemesi\</div>\<div class="forum-last-meta">Dün 12:50 Yusuf7878\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Alışveriş\</h2>
+\<p>Alışveriş, indirimli ürünler, kargo ve tüketici hakları gibi birçok konuda içeriklere ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚖\</div>\<div>\<div class="forum-name">Karşılaştırma\</div>\</div>
+\<div class="forum-stat">Konular\<strong>269\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3,5B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Samsung S25 FE'den iPhone 16e'ye geçiş sonrası deneyimim\</div>\<div class="forum-last-meta">17 Eylül 2026 deiinzz\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">📦\</div>\<div>\<div class="forum-name">Kargo ve Taşımacılık\</div>\</div>
+\<div class="forum-stat">Konular\<strong>567\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>4,5B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Kargo otomatında kalan Trendyol siparişi nasıl alınır?\</div>\<div class="forum-last-meta">Dün 11:25 gokxybtw\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🔥\</div>\<div>\<div class="forum-name">Sıcak Fırsatlar\</div>\<div class="forum-desc">Hepsiburada İndirimleri · Oyun İndirimleri · Sonlanan İndirim ve Kampanyalar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>9,9B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>63B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Elektronik NZXT H7 Flow 2024 - 3.349 TL\</div>\<div class="forum-last-meta">22 dakika önce Rhodes\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🛒\</div>\<div>\<div class="forum-name">Web ve Mağazadan Alışveriş\</div>\<div class="forum-desc">Web ve Mağaza Alışverişlerinde Yaşanan Sorunlar\</div>\</div>
+\<div class="forum-stat">Konular\<strong>3,5B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>27,9B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">İtopya Garantisi sonlanan bozuk bilgisayar için işlem yapar mı?\</div>\<div class="forum-last-meta">Bugün 15:55 Şişman Adam\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚖\</div>\<div>\<div class="forum-name">Tüketici Hakları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>678\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>5,9B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">N11'de 3 ay sonra arızalanan Redmi Buds 8 Pro için iade talebi nasıl oluşturulur?\</div>\<div class="forum-last-meta">Cuma 22:09 yigits\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>İkinci El\</h2>
+\<p>İkinci el alım/satım ve hizmet ilanlarını paylaşabileceğiniz, bunlarla ilgili içeriklere ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">♻\</div>\<div>\<div class="forum-name">İkinci El Alım Satım İlanları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>549\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,5B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Ücretsiz Durumları bilinmeyen DDR3 RAM'ler ve LGA775 işlemciler\</div>\<div class="forum-last-meta">Bugün 15:14 Vâveylâ\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Haberler &amp; Kullanıcı İncelemeleri\</h2>
+\<p>Kullanıcıların haberlerine ve incelemelerine ulaşabileceğiniz, bunlarla ilgili paylaşım yapabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">★\</div>\<div>\<div class="forum-name">Kullanıcı İncelemeleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>620\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">İnceleme AirPods 4\</div>\<div class="forum-last-meta">Dün 01:20 deiinzz\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚡\</div>\<div>\<div class="forum-name">Kullanıcı Haberleri\</div>\</div>
+\<div class="forum-stat">Konular\<strong>2,2B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>30,5B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Paradox'un kalemi kırıldı\</div>\<div class="forum-last-meta">Bugün 17:16 dvsvroowvwc18347\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Hayat\</h2>
+\<p>Sağlıktan kişisel bakıma, giyimden gezi ve turizme, felsefeden tarihe, eğitimden bilime ve çok daha fazlası için içeriklere ulaşabileceğiniz bölüm.\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">💼\</div>\<div>\<div class="forum-name">Kariyer Alanları\</div>\</div>
+\<div class="forum-stat">Konular\<strong>643\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>6,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Başka şehirde çalışmak mantıklı mı?\</div>\<div class="forum-last-meta">Bugün 13:01 welito07\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">✦\</div>\<div>\<div class="forum-name">Kişisel Bakım\</div>\</div>
+\<div class="forum-stat">Konular\<strong>702\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>6,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Kıvırcık saç, uzadığında nasıl kullanılmalı?\</div>\<div class="forum-last-meta">Dün 11:36 or3m.d\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">❤\</div>\<div>\<div class="forum-name">Sağlık\</div>\</div>
+\<div class="forum-stat">Konular\<strong>1,8B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>22,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Mor diş beyazlatma jeli gerçekten işe yarıyor mu?\</div>\<div class="forum-last-meta">Dün 11:43 Captain Skriniar\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">👕\</div>\<div>\<div class="forum-name">Giyim\</div>\</div>
+\<div class="forum-stat">Konular\<strong>679\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>4,5B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">6.000 TL bütçede sonbahar-kış için bot önerisi\</div>\<div class="forum-last-meta">Cuma 10:43 orlev\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">✈\</div>\<div>\<div class="forum-name">Gezi, Ulaşım ve Turizm\</div>\</div>
+\<div class="forum-stat">Konular\<strong>371\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>3,3B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Çözüldü Kuzey Marmara Otoyolu'nun ücreti ne kadar?\</div>\<div class="forum-last-meta">Dün 23:47 Neoxa\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚖\</div>\<div>\<div class="forum-name">Yurttaşlık ve Hukuk\</div>\</div>
+\<div class="forum-stat">Konular\<strong>465\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>4,2B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Eski çalıştığım bir iş yeri maaşımı yatırmıyor\</div>\<div class="forum-last-meta">Bugün 09:58 Şişman Adam\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⌛\</div>\<div>\<div class="forum-name">Tarih\</div>\</div>
+\<div class="forum-stat">Konular\<strong>200\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>2,4B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Batılılar neden Ermeni Soykırımı'nı gerçek sanıyor?\</div>\<div class="forum-last-meta">18 Eylül 2026 KökBilgi\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🔬\</div>\<div>\<div class="forum-name">Bilim\</div>\</div>
+\<div class="forum-stat">Konular\<strong>101\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,3B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Ağustos böceklerinin kısacık ömrü\</div>\<div class="forum-last-meta">15 Ağustos 2026 XEfe.Bey\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🍕\</div>\<div>\<div class="forum-name">Yiyecek, İçecek ve Mutfak\</div>\</div>
+\<div class="forum-stat">Konular\<strong>603\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>10,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Papa Johns mu, PizzaLazza mı?\</div>\<div class="forum-last-meta">Cuma 21:54 Rhodes\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🧠\</div>\<div>\<div class="forum-name">Felsefe\</div>\</div>
+\<div class="forum-stat">Konular\<strong>338\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>8,8B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">İnsanın Hükmü\</div>\<div class="forum-last-meta">Salı 14:45 xxxZAURxxx\</div>\</div>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎨\</div>\<div>\<div class="forum-name">Sanat\</div>\</div>
+\<div class="forum-stat">Konular\<strong>41\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>294\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Wizard Cat Smoking, semi-realism çizim denemesi\</div>\<div class="forum-last-meta">13 Eylül 2026 Lacan\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Müzik\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎵\</div>\<div>\<div class="forum-name">Müzik Köşesi\</div>\</div>
+\<div class="forum-stat">Konular\<strong>3,2B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>14,7B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Oynatma listesine şarkı önerisi\</div>\<div class="forum-last-meta">38 dakika önce Captain Skriniar\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Sinema &amp; TV\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎬\</div>\<div>\<div class="forum-name">Sinema &amp; TV\</div>\</div>
+\<div class="forum-stat">Konular\<strong>1,1B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>11,4B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Film ve dizi önerisi\</div>\<div class="forum-last-meta">Salı 00:33 Savasnmk\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Tiyatro\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎭\</div>\<div>\<div class="forum-name">Tiyatro\</div>\</div>
+\<div class="forum-stat">Konular\<strong>18\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>64\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Karagöz İle Hacivat: Tuzsuz Deli Bekir\</div>\<div class="forum-last-meta">22 Haziran 2026 Serdar92\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Spor\</h2>
+\<p>Futbol · Basketbol · Formula 1 · Fitness · E-Spor\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🏆\</div>\<div>\<div class="forum-name">Spor\</div>\</div>
+\<div class="forum-stat">Konular\<strong>2,5B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>31B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Rafael Leão ve Batrakov nasıl futbolcu?\</div>\<div class="forum-last-meta">20 dakika önce localizer\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Dilimin Ucunda\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">◌\</div>\<div>\<div class="forum-name">Dilimin Ucunda\</div>\</div>
+\<div class="forum-stat">Konular\<strong>724\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>4,2B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Fotoğraftaki "NCR" yazılı kaskın modeli nedir?\</div>\<div class="forum-last-meta">Pazartesi 19:06 DarthGorsoy\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Edebiyat\</h2>
+\<p>Kitap · Çizgi Romanlar\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">📚\</div>\<div>\<div class="forum-name">Edebiyat\</div>\</div>
+\<div class="forum-stat">Konular\<strong>590\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>4,2B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Bir Ekonomik Tetikçinin İtirafları serisi nerede bulunur ve bu türden kitap önerisi?\</div>\<div class="forum-last-meta">Perşembe 20:25 RPM\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">\<div class="forum-block-header">\<h2>Anime / Manga\</h2>\</div>\<div class="forum-row">
+\<div class="forum-icon">◈\</div>\<div>\<div class="forum-name">Anime / Manga\</div>\</div>
+\<div class="forum-stat">Konular\<strong>354\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>4,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Anime izlemek için uygulama önerisi\</div>\<div class="forum-last-meta">20 Eylül 2026 nnomad\</div>\</div>
+\</div>\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Dünya ve Türkiye Gündemi\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🌍\</div>\<div>\<div class="forum-name">Dünya ve Türkiye Gündemi\</div>\</div>
+\<div class="forum-stat">Konular\<strong>2,5B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>46,1B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Mersin'in Erdemli ilçesinde bir şahıs elinde bıçaklarla çocukların olduğu bir parka girdi!\</div>\<div class="forum-last-meta">Dün 19:34 MR Hubu\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Doğal Afetler\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⚠\</div>\<div>\<div class="forum-name">Doğal Afetler\</div>\</div>
+\<div class="forum-stat">Konular\<strong>48\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>645\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Şanlıurfa'da 5.4 büyüklüğünde deprem oldu\</div>\<div class="forum-last-meta">Perşembe 14:47 Deep01\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Saatler\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">⌚\</div>\<div>\<div class="forum-name">Saatler\</div>\</div>
+\<div class="forum-stat">Konular\<strong>146\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,2B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">25.000 TL bütçede saat tavsiyesi\</div>\<div class="forum-last-meta">15 Eylül 2026 YXEL\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Havacılık ve Uzay\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">✈\</div>\<div>\<div class="forum-name">Havacılık ve Uzay\</div>\</div>
+\<div class="forum-stat">Konular\<strong>157\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>1,6B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Gelecekte egzotik enerji bularak solucan deliği oluşturmamız sizce mümkün mü?\</div>\<div class="forum-last-meta">6 Eylül 2026 The_Turk\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Mizah ve Eğlence\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">😂\</div>\<div>\<div class="forum-name">Mizah ve Eğlence\</div>\</div>
+\<div class="forum-stat">Konular\<strong>1,1B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>11,3B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">Gördüğünüz en garip/komik yemek sipariş yorumlarını paylaşın\</div>\<div class="forum-last-meta">20 dakika önce Shadow00\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Eğitim\</h2>
+\<p>İlköğretim · Ortaöğretim · Yükseköğretim · Özel Eğitimler · ÖSYM Sınavları · Üniversite ve Bölüm Tavsiyeleri · Ders Soru Çözümleri · Yabancı Dil\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">🎓\</div>\<div>\<div class="forum-name">Eğitim\</div>\</div>
+\<div class="forum-stat">Konular\<strong>4,7B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>43,2B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">KPSS-A İİBF kontenjanı çok mu?\</div>\<div class="forum-last-meta">Bugün 17:57 leventlevent\</div>\</div>
+\</div>
+\</div>\<div class="forum-block">
+\<div class="forum-block-header">
+\<h2>Konu Dışı\</h2>
+\<p>\</p>
+\</div>
+\<div class="forum-row">
+\<div class="forum-icon">💬\</div>\<div>\<div class="forum-name">Konu Dışı\</div>\</div>
+\<div class="forum-stat">Konular\<strong>9,2B\</strong>\</div>\<div class="forum-stat">Mesajlar\<strong>129,2B\</strong>\</div>
+\<div class="forum-last">\<div class="forum-last-title">FC 27 lansmanında Enes Batur ve Ali Biçim'in alaka seviyesi nedir?\</div>\<div class="forum-last-meta">28 dakika önce Michael MYERS\</div>\</div>
+\</div>
+\</div>
 
-<div class="forum-block">
-
-<div class="forum-block-header">
-
-<h2>
-🎮 Oyun
-</h2>
-
-<p>
-PC, konsol ve mobil oyunlar.
-</p>
-
-</div>
-
-<div class="forum-row">
-
-<div class="forum-icon">
-🎮
-</div>
-
-<div>
-
-<div class="forum-name">
-Oyun Dünyası
-</div>
-
-<div class="forum-desc">
-PC · PlayStation · Xbox · Nintendo · Mobil
-</div>
-
-</div>
-
-<div class="forum-stat">
-Konular
-<strong>0</strong>
-</div>
-
-<div class="forum-stat">
-Mesajlar
-<strong>0</strong>
-</div>
-
-<div class="forum-last">
-
-<div class="forum-last-title">
-Henüz konu yok
-</div>
-
-<div class="forum-last-meta">
-Henüz veri yok
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 
-</div>
 
 
-<!-- =====================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\<!-- =====================================================
+     KONSOL DÜNYASI
+\===================================================== -->
+\<!-- =====================================================
+     DIJITAL FOTOĞRAFÇILIK VE VIDEO
+\===================================================== -->
+\<!-- =====================================================
+     TÜKETICI ÜRÜNLERI
+\===================================================== -->
+\<!-- =====================================================
+     TAŞIT DÜNYASI
+\===================================================== -->
+\<!-- =====================================================
+     FINANS
+\===================================================== -->
+\<!-- =====================================================
+     HOBILER
+\===================================================== -->
+\<!-- =====================================================
+     ALIŞVERIŞ
+\===================================================== -->
+\<!-- =====================================================
+     İKINCI EL
+\===================================================== -->
+\<!-- =====================================================
+     HABERLER & KULLANICI İNCELEMELERI
+\===================================================== -->
+\<!-- =====================================================
+     HAYAT
+\===================================================== -->
+\<!-- =====================================================
+     MÜZIK
+\===================================================== -->
+\<!-- =====================================================
+     SINEMA & TV
+\===================================================== -->
+\<!-- =====================================================
+     TIYATRO
+\===================================================== -->
+\<!-- =====================================================
+     SPOR
+\===================================================== -->
+\<!-- =====================================================
+     DILIMIN UCUNDA
+\===================================================== -->
+\<!-- =====================================================
+     EDEBIYAT
+\===================================================== -->
+\<!-- =====================================================
+     DÜNYA VE TÜRKIYE GÜNDEMI
+\===================================================== -->
+\<!-- =====================================================
+     DOĞAL AFETLER
+\===================================================== -->
+\<!-- =====================================================
+     SAATLER
+\===================================================== -->
+\<!-- =====================================================
+     HAVACILIK VE UZAY
+\===================================================== -->
+\<!-- =====================================================
+     MIZAH VE EĞLENCE
+\===================================================== -->
+\<!-- =====================================================
+     EĞITIM
+\===================================================== -->
+\<!-- =====================================================
+     KONU DIŞI
+\===================================================== -->
+\<!-- =====================================================
      SAĞ TARAF
-===================================================== -->
-
-<div>
-
-
-<!-- =====================================================
+\===================================================== -->
+\<div>
+\<!-- =====================================================
      NE VAR NE YOK
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 📰 Ne var ne yok?
-</h3>
-
-<div id="newsList">
-
-<div class="empty">
+\</h3>
+\<div id="newsList">
+\<div class="empty">
 Henüz bir şey bulunmamaktadır.
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      TAKİP ET ABONE OL
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 📣 Takip et, abone ol
-</h3>
-
-<div class="follow-box">
-
-<button
-class="follow-btn"
-onclick="followAction('Mastodon')"
->
+\</h3>
+\<div class="follow-box">
+\<button class="follow-btn" onclick="followAction('Mastodon')">
 Mastodon
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('Facebook')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('Facebook')">
 Facebook
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('X')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('X')">
 X
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('Bluesky')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('Bluesky')">
 Bluesky
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('LinkedIn')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('LinkedIn')">
 LinkedIn
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('Reddit')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('Reddit')">
 Reddit
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('Pinterest')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('Pinterest')">
 Pinterest
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('Tumblr')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('Tumblr')">
 Tumblr
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('WhatsApp')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('WhatsApp')">
 WhatsApp
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('Telegram')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('Telegram')">
 Telegram
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('E-posta')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('E-posta')">
 E-posta
-</button>
-
-<button
-class="follow-btn"
-onclick="followAction('Google')"
->
+\</button>
+\<button class="follow-btn" onclick="followAction('Google')">
 Google
-</button>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</button>
+\</div>
+\</div>
+\<!-- =====================================================
      ÖNE ÇIKARILAN
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 ⭐ Öne çıkarılan konular
-</h3>
-
-<div id="featuredList">
-
-<div class="empty">
+\</h3>
+\<div id="featuredList">
+\<div class="empty">
 Öne çıkarılan konular bulunmamaktadır.
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      POPÜLER REHBERLER
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 📚 Popüler Rehberler
-</h3>
-
-<div class="guide-tabs">
-
-<button
-class="guide-tab active"
-data-guide="weekly"
->
+\</h3>
+\<div class="guide-tabs">
+\<button class="guide-tab active" data-guide="weekly">
 Haftalık
-</button>
-
-<button
-class="guide-tab"
-data-guide="monthly"
->
+\</button>
+\<button class="guide-tab" data-guide="monthly">
 Aylık
-</button>
-
-<button
-class="guide-tab"
-data-guide="all"
->
+\</button>
+\<button class="guide-tab" data-guide="all">
 Tümü
-</button>
-
-</div>
-
-<div id="guideList">
-
-<div class="empty">
+\</button>
+\</div>
+\<div id="guideList">
+\<div class="empty">
 Popüler rehberinde bir konu bulunmamaktadır.
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      ÇEVRİM İÇİ YETKİLİLER
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 🛡️ Çevrim içi yetkililer
-</h3>
-
-<div id="onlineStaffList">
-
-<div class="empty">
+\</h3>
+\<div id="onlineStaffList">
+\<div class="empty">
 Çevrim içi yetkili yok
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      ÇEVRİM İÇİ ÜYELER
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 🟢 Çevrim içi üyeler
-</h3>
-
-<div id="onlineMembersList">
-
-<div class="empty">
+\</h3>
+\<div id="onlineMembersList">
+\<div class="empty">
 Çevrim içi üyeler yok
-</div>
-
-</div>
-
-<div
-id="otherOnlineUsers"
-class="member-more"
->
+\</div>
+\</div>
+\<div class="member-more" id="otherOnlineUsers">
 0 diğer kullanıcı.
-</div>
-
-<div
-id="onlineTotalText"
-style="
+\</div>
+\<div id="onlineTotalText" style="
 margin-top:10px;
 padding-top:10px;
 border-top:1px solid #1f2937;
 color:#94a3b8;
 font-size:11px;
-"
->
+">
 Toplam: 0 (üye: 0, misafir: 0)
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\<!-- =====================================================
      YENİ YAZILIMLAR
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 💿 Yeni yazılımlar
-</h3>
-
-<div id="softwareList">
-
-<div class="empty">
+\</h3>
+\<div id="softwareList">
+\<div class="empty">
 Henüz yeni yazılım bulunmamaktadır.
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      SOSYAL İSTATİSTİKLERİ
-===================================================== -->
-
-<div class="sidebar-box">
-
-<h3>
+\===================================================== -->
+\<div class="sidebar-box">
+\<h3>
 📊 Sosyal istatistikleri
-</h3>
-
-<div class="stats-row">
-
-<div class="stats-label">
+\</h3>
+\<div class="stats-row">
+\<div class="stats-label">
 Konular
-</div>
-
-<div
-class="stats-value"
-id="socialTopics"
->
+\</div>
+\<div class="stats-value" id="socialTopics">
 0
-</div>
-
-</div>
-
-
-<div class="stats-row">
-
-<div class="stats-label">
+\</div>
+\</div>
+\<div class="stats-row">
+\<div class="stats-label">
 Mesajlar
-</div>
-
-<div
-class="stats-value"
-id="socialPosts"
->
+\</div>
+\<div class="stats-value" id="socialPosts">
 0
-</div>
-
-</div>
-
-
-<div class="stats-row">
-
-<div class="stats-label">
+\</div>
+\</div>
+\<div class="stats-row">
+\<div class="stats-label">
 Üyeler
-</div>
-
-<div
-class="stats-value"
-id="socialMembers"
->
+\</div>
+\<div class="stats-value" id="socialMembers">
 0
-</div>
-
-</div>
-
-
-<div class="stats-row">
-
-<div class="stats-label">
+\</div>
+\</div>
+\<div class="stats-row">
+\<div class="stats-label">
 Son Üye
-</div>
-
-<div
-class="stats-value stats-last"
-id="socialLastMember"
->
+\</div>
+\<div class="stats-value stats-last" id="socialLastMember">
 Son üye bulunmamaktadır
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      PAYLAŞ
-===================================================== -->
-
-<div class="sidebar-box">
-
-<div class="share-title">
+\===================================================== -->
+\<div class="sidebar-box">
+\<div class="share-title">
 Bu sayfayı paylaş
-</div>
-
-<div class="share-buttons">
-
-<button
-class="share-btn"
-onclick="sharePage('Mastodon')"
->
+\</div>
+\<div class="share-buttons">
+\<button class="share-btn" onclick="sharePage('Mastodon')">
 Mastodon
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('Facebook')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('Facebook')">
 Facebook
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('X')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('X')">
 X
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('Bluesky')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('Bluesky')">
 Bluesky
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('LinkedIn')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('LinkedIn')">
 LinkedIn
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('Reddit')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('Reddit')">
 Reddit
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('Pinterest')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('Pinterest')">
 Pinterest
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('Tumblr')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('Tumblr')">
 Tumblr
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('WhatsApp')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('WhatsApp')">
 WhatsApp
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('Telegram')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('Telegram')">
 Telegram
-</button>
-
-<button
-class="share-btn"
-onclick="sharePage('E-posta')"
->
+\</button>
+\<button class="share-btn" onclick="sharePage('E-posta')">
 E-posta
-</button>
-
-<button
-class="share-btn"
-onclick="copyPageLink()"
->
+\</button>
+\<button class="share-btn" onclick="copyPageLink()">
 🔗 Link
-</button>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
+\</button>
+\</div>
+\</div>
+\</div>
+\</div>
+\</div>
+\<!-- =====================================================
      FOOTER
-===================================================== -->
-
-<footer class="footer">
+\===================================================== -->
+\<footer class="footer">
 
 © 2026 DijitalForum - Tüm Hakları Saklıdır
 
-</footer>
-
-
-<!-- =====================================================
+\</footer>
+\<!-- =====================================================
      COOKIE
-===================================================== -->
-
-<div
-class="cookie"
-id="cookie"
->
+\===================================================== -->
+\<div class="cookie" id="cookie">
 
 DijitalForum Sosyal, anlık bildirimleri etkinleştirmek
 için izninizi istiyor.
 
-<button
-class="cookie-close"
-onclick="document.getElementById('cookie').remove()"
->
+\<button class="cookie-close" onclick="document.getElementById('cookie').remove()">
 ×
-</button>
+\</button>
+\</div>
+\<script>
 
-</div>
-
-
-<script>
-
-/* =========================================================
+/\* =========================================================
    VERİLER
    ŞU ANDA VERİ YOK.
    Veri geldiğinde sadece bu diziler doldurulacak.
-========================================================= */
+\========================================================= \*/
 
 const socialData = {
 
@@ -2308,15 +3672,16 @@ const socialData = {
 };
 
 
-/* =========================================================
+
+/\* =========================================================
    HTML GÜVENLİĞİ
-========================================================= */
+\========================================================= \*/
 
 function escapeHTML(value){
 
     return String(value ?? "")
         .replace(/&/g,"&amp;")
-        .replace(/</g,"&lt;")
+        .replace(/\</g,"&lt;")
         .replace(/>/g,"&gt;")
         .replace(/"/g,"&quot;")
         .replace(/'/g,"&#039;");
@@ -2324,9 +3689,10 @@ function escapeHTML(value){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    GİRİŞ DURUMU
-========================================================= */
+\========================================================= \*/
 
 document.addEventListener(
 "DOMContentLoaded",
@@ -2354,48 +3720,50 @@ function(){
     }
 
 
+
     if(!isLoggedIn){
 
-        userActions.innerHTML = `
+        userActions.innerHTML = \`
 
-            <a
+            \<a
                 href="register.html"
                 class="btn btn-dark"
-            >
+            \>
                 Kayıt Ol
-            </a>
+            \</a>
 
-            <a
+            \<a
                 href="login.html"
                 class="btn btn-blue"
-            >
+            \>
                 Giriş Yap
-            </a>
+            \</a>
 
-        `;
+        \`;
 
     }
     else{
 
-        userActions.innerHTML = `
+        userActions.innerHTML = \`
 
-            <a
+            \<a
                 href="yeni-mesajlar.html"
                 class="btn btn-dark"
-            >
+            \>
                 🔥 Yeni Mesajlar
-            </a>
+            \</a>
 
-            <a
+            \<a
                 href="konu-olustur.html"
                 class="btn btn-blue"
-            >
+            \>
                 ✏️ Konu Aç
-            </a>
+            \</a>
 
-        `;
+        \`;
 
     }
+
 
 
     renderAllSocialData();
@@ -2403,9 +3771,10 @@ function(){
 });
 
 
-/* =========================================================
+
+/\* =========================================================
    TÜM SAĞ TARAFI RENDER ET
-========================================================= */
+\========================================================= \*/
 
 function renderAllSocialData(){
 
@@ -2426,9 +3795,10 @@ function renderAllSocialData(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    NE VAR NE YOK
-========================================================= */
+\========================================================= \*/
 
 function renderNews(){
 
@@ -2447,48 +3817,50 @@ function renderNews(){
         [];
 
 
+
     if(data.length === 0){
 
-        box.innerHTML = `
+        box.innerHTML = \`
 
-            <div class="empty">
+            \<div class="empty">
                 Henüz bir şey bulunmamaktadır.
-            </div>
+            \</div>
 
-        `;
+        \`;
 
         return;
 
     }
 
 
+
     box.innerHTML =
         data.map(
             function(item){
 
-                return `
+                return \`
 
-                    <div class="news-item">
+                    \<div class="news-item">
 
-                        <div class="news-source">
+                        \<div class="news-source">
                             ${escapeHTML(item.source || "DijitalForum")}
-                        </div>
+                        \</div>
 
-                        <div class="news-title">
+                        \<div class="news-title">
                             ${escapeHTML(item.title)}
-                        </div>
+                        \</div>
 
-                        <div class="news-meta">
+                        \<div class="news-meta">
                             ${escapeHTML(item.meta || "")}
-                        </div>
+                        \</div>
 
-                        <div class="news-category">
+                        \<div class="news-category">
                             ${escapeHTML(item.category || "")}
-                        </div>
+                        \</div>
 
-                    </div>
+                    \</div>
 
-                `;
+                \`;
 
             }
         ).join("");
@@ -2496,9 +3868,10 @@ function renderNews(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    ÖNE ÇIKARILAN
-========================================================= */
+\========================================================= \*/
 
 function renderFeatured(){
 
@@ -2517,44 +3890,46 @@ function renderFeatured(){
         [];
 
 
+
     if(data.length === 0){
 
-        box.innerHTML = `
+        box.innerHTML = \`
 
-            <div class="empty">
+            \<div class="empty">
                 Öne çıkarılan konular bulunmamaktadır.
-            </div>
+            \</div>
 
-        `;
+        \`;
 
         return;
 
     }
 
 
+
     box.innerHTML =
         data.map(
             function(item){
 
-                return `
+                return \`
 
-                    <div class="feature-item">
+                    \<div class="feature-item">
 
-                        <div class="feature-user">
+                        \<div class="feature-user">
                             ${escapeHTML(item.user || "")}
-                        </div>
+                        \</div>
 
-                        <div class="feature-title">
+                        \<div class="feature-title">
                             ${escapeHTML(item.title || "")}
-                        </div>
+                        \</div>
 
-                        <div class="feature-meta">
+                        \<div class="feature-meta">
                             ${escapeHTML(item.meta || "")}
-                        </div>
+                        \</div>
 
-                    </div>
+                    \</div>
 
-                `;
+                \`;
 
             }
         ).join("");
@@ -2562,9 +3937,10 @@ function renderFeatured(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    POPÜLER REHBERLER
-========================================================= */
+\========================================================= \*/
 
 function renderGuides(type){
 
@@ -2584,48 +3960,50 @@ function renderGuides(type){
         [];
 
 
+
     if(guides.length === 0){
 
-        box.innerHTML = `
+        box.innerHTML = \`
 
-            <div class="empty">
+            \<div class="empty">
                 Popüler rehberinde bir konu bulunmamaktadır.
-            </div>
+            \</div>
 
-        `;
+        \`;
 
         return;
 
     }
 
 
+
     box.innerHTML =
         guides.map(
             function(item){
 
-                return `
+                return \`
 
-                    <div class="guide-item">
+                    \<div class="guide-item">
 
-                        <div class="guide-user">
+                        \<div class="guide-user">
                             ${escapeHTML(item.user || "")}
-                        </div>
+                        \</div>
 
-                        <div class="guide-title">
+                        \<div class="guide-title">
                             📖 ${escapeHTML(item.title || "")}
-                        </div>
+                        \</div>
 
-                        <div class="guide-meta">
+                        \<div class="guide-meta">
                             ${escapeHTML(item.meta || "")}
-                        </div>
+                        \</div>
 
-                        <div class="guide-category">
+                        \<div class="guide-category">
                             ${escapeHTML(item.category || "")}
-                        </div>
+                        \</div>
 
-                    </div>
+                    \</div>
 
-                `;
+                \`;
 
             }
         ).join("");
@@ -2633,9 +4011,10 @@ function renderGuides(type){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    REHBER SEKME BUTONLARI
-========================================================= */
+\========================================================= \*/
 
 document.addEventListener(
 "click",
@@ -2647,11 +4026,13 @@ function(event){
         );
 
 
+
     if(!button){
 
         return;
 
     }
+
 
 
     document
@@ -2669,9 +4050,11 @@ function(event){
         );
 
 
+
     button.classList.add(
         "active"
     );
+
 
 
     renderGuides(
@@ -2681,9 +4064,10 @@ function(event){
 });
 
 
-/* =========================================================
+
+/\* =========================================================
    ÇEVRİM İÇİ YETKİLİLER
-========================================================= */
+\========================================================= \*/
 
 function renderOnlineStaff(){
 
@@ -2702,48 +4086,50 @@ function renderOnlineStaff(){
         [];
 
 
+
     if(data.length === 0){
 
-        box.innerHTML = `
+        box.innerHTML = \`
 
-            <div class="empty">
+            \<div class="empty">
                 Çevrim içi yetkili yok
-            </div>
+            \</div>
 
-        `;
+        \`;
 
         return;
 
     }
 
 
+
     box.innerHTML =
         data.map(
             function(item){
 
-                return `
+                return \`
 
-                    <div class="online-staff">
+                    \<div class="online-staff">
 
-                        <span
+                        \<span
                             class="online-dot"
-                        ></span>
+                        \>\</span>
 
-                        <div>
+                        \<div>
 
-                            <div class="online-name">
+                            \<div class="online-name">
                                 ${escapeHTML(item.name || item)}
-                            </div>
+                            \</div>
 
-                            <div class="online-rank">
+                            \<div class="online-rank">
                                 ${escapeHTML(item.rank || "Moderasyon Üyesi")}
-                            </div>
+                            \</div>
 
-                        </div>
+                        \</div>
 
-                    </div>
+                    \</div>
 
-                `;
+                \`;
 
             }
         ).join("");
@@ -2751,9 +4137,10 @@ function renderOnlineStaff(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    ÇEVRİM İÇİ ÜYELER
-========================================================= */
+\========================================================= \*/
 
 function renderOnlineMembers(){
 
@@ -2772,10 +4159,12 @@ function renderOnlineMembers(){
         [];
 
 
+
     const otherUsers =
         Number(
             socialData.otherOnlineUsers
         ) || 0;
+
 
 
     const members =
@@ -2784,30 +4173,32 @@ function renderOnlineMembers(){
         ) || 0;
 
 
+
     const guests =
         Number(
             socialData.totalGuestsOnline
         ) || 0;
 
 
+
     if(data.length === 0){
 
-        box.innerHTML = `
+        box.innerHTML = \`
 
-            <div class="empty">
+            \<div class="empty">
                 Çevrim içi üyeler yok
-            </div>
+            \</div>
 
-        `;
+        \`;
 
     }
     else{
 
         box.innerHTML =
 
-            `<div class="member-list">`
+            \`\<div class="member-list">\`
 
-            +
+            \+
 
             data.map(
                 function(member){
@@ -2819,22 +4210,23 @@ function renderOnlineMembers(){
                         :
                         member.name || "";
 
-                    return `
+                    return \`
 
-                        <span class="member-name">
+                        \<span class="member-name">
                             ${escapeHTML(name)}
-                        </span>
+                        \</span>
 
-                    `;
+                    \`;
 
                 }
             ).join("")
 
-            +
+            \+
 
-            `</div>`;
+            \`\</div>\`;
 
     }
+
 
 
     document.getElementById(
@@ -2842,6 +4234,7 @@ function renderOnlineMembers(){
     ).textContent =
         otherUsers +
         " diğer kullanıcı.";
+
 
 
     document.getElementById(
@@ -2861,9 +4254,10 @@ function renderOnlineMembers(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    YENİ YAZILIMLAR
-========================================================= */
+\========================================================= \*/
 
 function renderSoftware(){
 
@@ -2882,44 +4276,46 @@ function renderSoftware(){
         [];
 
 
+
     if(data.length === 0){
 
-        box.innerHTML = `
+        box.innerHTML = \`
 
-            <div class="empty">
+            \<div class="empty">
                 Henüz yeni yazılım bulunmamaktadır.
-            </div>
+            \</div>
 
-        `;
+        \`;
 
         return;
 
     }
 
 
+
     box.innerHTML =
         data.map(
             function(item){
 
-                return `
+                return \`
 
-                    <div class="software-item">
+                    \<div class="software-item">
 
-                        <div class="software-name">
+                        \<div class="software-name">
                             ${escapeHTML(item.name || "")}
-                        </div>
+                        \</div>
 
-                        <div class="software-description">
+                        \<div class="software-description">
                             ${escapeHTML(item.description || "")}
-                        </div>
+                        \</div>
 
-                        <div class="software-meta">
+                        \<div class="software-meta">
                             ${escapeHTML(item.meta || "")}
-                        </div>
+                        \</div>
 
-                    </div>
+                    \</div>
 
-                `;
+                \`;
 
             }
         ).join("");
@@ -2927,14 +4323,16 @@ function renderSoftware(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    SOSYAL İSTATİSTİKLERİ
-========================================================= */
+\========================================================= \*/
 
 function renderStats(){
 
     const stats =
         socialData.stats || {};
+
 
 
     const topics =
@@ -2952,12 +4350,14 @@ function renderStats(){
         ).trim();
 
 
+
     document.getElementById(
         "socialTopics"
     ).textContent =
         topics.toLocaleString(
             "tr-TR"
         );
+
 
 
     document.getElementById(
@@ -2968,12 +4368,14 @@ function renderStats(){
         );
 
 
+
     document.getElementById(
         "socialMembers"
     ).textContent =
         members.toLocaleString(
             "tr-TR"
         );
+
 
 
     document.getElementById(
@@ -2985,9 +4387,10 @@ function renderStats(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    TAKİP
-========================================================= */
+\========================================================= \*/
 
 function followAction(name){
 
@@ -2999,113 +4402,121 @@ function followAction(name){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    PAYLAŞ
-========================================================= */
+\========================================================= \*/
 
 function sharePage(name){
 
     const url =
-        window.location.href;
+        window\.location.href;
 
     const title =
         "DijitalForum Sosyal";
 
 
+
     if(name === "WhatsApp"){
 
-        window.open(
-            "https://wa.me/?text=" +
+        window\.open(
+            "[https://wa.me/?text=](https://wa.me/?text=)" +
             encodeURIComponent(
                 title +
                 " " +
                 url
             ),
-            "_blank"
+            "\_blank"
         );
 
         return;
 
     }
+
 
 
     if(name === "Telegram"){
 
-        window.open(
-            "https://t.me/share/url?url=" +
+        window\.open(
+            "[https://t.me/share/url?url=](https://t.me/share/url?url=)" +
             encodeURIComponent(url) +
             "&text=" +
             encodeURIComponent(title),
-            "_blank"
+            "\_blank"
         );
 
         return;
 
     }
+
 
 
     if(name === "Facebook"){
 
-        window.open(
-            "https://www.facebook.com/sharer/sharer.php?u=" +
+        window\.open(
+            "[https://www.facebook.com/sharer/sharer.php?u=](https://www.facebook.com/sharer/sharer.php?u=)" +
             encodeURIComponent(url),
-            "_blank"
+            "\_blank"
         );
 
         return;
 
     }
+
 
 
     if(name === "X"){
 
-        window.open(
-            "https://twitter.com/intent/tweet?url=" +
+        window\.open(
+            "[https://twitter.com/intent/tweet?url=](https://twitter.com/intent/tweet?url=)" +
             encodeURIComponent(url) +
             "&text=" +
             encodeURIComponent(title),
-            "_blank"
+            "\_blank"
         );
 
         return;
 
     }
+
 
 
     if(name === "LinkedIn"){
 
-        window.open(
-            "https://www.linkedin.com/sharing/share-offsite/?url=" +
+        window\.open(
+            "[https://www.linkedin.com/sharing/share-offsite/?url=](https://www.linkedin.com/sharing/share-offsite/?url=)" +
             encodeURIComponent(url),
-            "_blank"
+            "\_blank"
         );
 
         return;
 
     }
+
 
 
     if(name === "Reddit"){
 
-        window.open(
-            "https://www.reddit.com/submit?url=" +
+        window\.open(
+            "[https://www.reddit.com/submit?url=](https://www.reddit.com/submit?url=)" +
             encodeURIComponent(url) +
             "&title=" +
             encodeURIComponent(title),
-            "_blank"
+            "\_blank"
         );
 
         return;
 
     }
+
 
 
     if(name === "Pinterest"){
 
-        window.open(
-            "https://pinterest.com/pin/create/button/?url=" +
+        window\.open(
+            "[https://pinterest.com/pin/create/button/?url=](https://pinterest.com/pin/create/button/?url=)" +
             encodeURIComponent(url),
-            "_blank"
+            "\_blank"
         );
 
         return;
@@ -3113,9 +4524,10 @@ function sharePage(name){
     }
 
 
+
     if(name === "E-posta"){
 
-        window.location.href =
+        window\.location.href =
             "mailto:?subject=" +
             encodeURIComponent(title) +
             "&body=" +
@@ -3124,6 +4536,7 @@ function sharePage(name){
         return;
 
     }
+
 
 
     if(
@@ -3139,14 +4552,16 @@ function sharePage(name){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    LINK KOPYALA
-========================================================= */
+\========================================================= \*/
 
 function copyPageLink(){
 
     const url =
-        window.location.href;
+        window\.location.href;
+
 
 
     if(
@@ -3183,9 +4598,10 @@ function copyPageLink(){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    YEDEK KOPYALAMA
-========================================================= */
+\========================================================= \*/
 
 function fallbackCopy(text){
 
@@ -3195,16 +4611,20 @@ function fallbackCopy(text){
         );
 
 
+
     input.value =
         text;
+
 
 
     input.style.position =
         "fixed";
 
 
+
     input.style.opacity =
         "0";
+
 
 
     document.body.appendChild(
@@ -3212,7 +4632,9 @@ function fallbackCopy(text){
     );
 
 
+
     input.select();
+
 
 
     try{
@@ -3235,6 +4657,7 @@ function fallbackCopy(text){
     }
 
 
+
     document.body.removeChild(
         input
     );
@@ -3242,9 +4665,10 @@ function fallbackCopy(text){
 }
 
 
-/* =========================================================
+
+/\* =========================================================
    SEKME SİSTEMİ
-========================================================= */
+\========================================================= \*/
 
 document
 .querySelectorAll(
@@ -3272,6 +4696,7 @@ document
                     );
 
 
+
                 button.classList.add(
                     "active"
                 );
@@ -3282,9 +4707,6 @@ document
     }
 );
 
-</script>
-
-
-</body>
-
-</html>
+\</script>
+\</div>\</body>
+\</html>
