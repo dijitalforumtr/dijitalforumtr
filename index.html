@@ -7,9 +7,7 @@
 <meta name="google-site-verification" content="google1272a9d1aa7f4cae.html">
 
 <meta name="description" content="DijitalForum - Türkiye'nin teknoloji, yazılım, donanım, mobil ve oyun topluluğu.">
-
 <meta name="keywords" content="forum, teknoloji, oyun, yazılım, donanım, mobil, bilgisayar">
-
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://dijitalforumtr.onrender.com/">
@@ -78,7 +76,6 @@ a{
 
 .menu a{
     color:#d1d5db;
-    text-decoration:none;
     transition:.2s;
 }
 
@@ -95,7 +92,6 @@ a{
 .btn{
     padding:10px 15px;
     border-radius:8px;
-    text-decoration:none;
     font-weight:600;
     display:inline-block;
 }
@@ -139,18 +135,23 @@ a{
     margin-top:25px;
 }
 
-.tabs a{
-    background:#111827;
+.tabs button{
     border:1px solid #1f2937;
+    background:#111827;
     color:#cbd5e1;
     padding:10px 14px;
     border-radius:8px;
     font-size:13px;
+    cursor:pointer;
     transition:.2s;
 }
 
-.tabs a:hover,
-.tabs a.active{
+.tabs button:hover{
+    background:#1e3a8a;
+    color:#fff;
+}
+
+.tabs button.active{
     background:#2563eb;
     color:#fff;
     border-color:#2563eb;
@@ -306,10 +307,6 @@ a{
     border-bottom:0;
 }
 
-.side-topic:hover{
-    color:#60a5fa;
-}
-
 /* FOOTER */
 .footer{
     background:#111827;
@@ -351,6 +348,14 @@ a{
     cursor:pointer;
 }
 
+/* EMPTY */
+.empty{
+    padding:35px 20px;
+    text-align:center;
+    color:#64748b;
+    font-size:14px;
+}
+
 /* TABLET */
 @media(max-width:1000px){
 
@@ -371,7 +376,6 @@ a{
     .topic-last{
         display:none;
     }
-
 }
 
 /* MOBILE */
@@ -425,7 +429,7 @@ a{
         padding-bottom:5px;
     }
 
-    .tabs a{
+    .tabs button{
         white-space:nowrap;
     }
 
@@ -459,7 +463,6 @@ a{
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="container">
-
         <div class="nav-inner">
 
             <div class="logo">
@@ -488,55 +491,51 @@ a{
             </div>
 
         </div>
-
     </div>
 </nav>
 
 
 <!-- HERO -->
 <section class="hero">
-
     <h1>DijitalForum Sosyal</h1>
-
     <p>
         Toplulukta yeni konuları, son mesajları ve popüler tartışmaları keşfet
     </p>
-
 </section>
 
 
 <div class="container">
 
-    <!-- TABS -->
-    <div class="tabs">
+    <!-- ÇALIŞAN SEKME BUTONLARI -->
+    <div class="tabs" id="tabs">
 
-        <a href="#" class="active">
+        <button type="button" class="active" data-filter="new">
             Yeni Konular
-        </a>
+        </button>
 
-        <a href="#">
+        <button type="button" data-filter="latest">
             Son Mesajlar
-        </a>
+        </button>
 
-        <a href="#">
+        <button type="button" data-filter="popular">
             Popüler Konular
-        </a>
+        </button>
 
-        <a href="#">
+        <button type="button" data-filter="unanswered">
             Cevapsız Sorular
-        </a>
+        </button>
 
-        <a href="#">
+        <button type="button" data-filter="deals">
             Sıcak Fırsatlar
-        </a>
+        </button>
 
-        <a href="#">
+        <button type="button" data-filter="content">
             DijitalForum İçerikleri
-        </a>
+        </button>
 
-        <a href="#">
+        <button type="button" data-filter="offtopic">
             Konu Dışı
-        </a>
+        </button>
 
     </div>
 
@@ -548,307 +547,339 @@ a{
 
             <div class="category">
 
-                <div class="category-title">
+                <div class="category-title" id="categoryTitle">
                     🆕 Yeni Konular
                 </div>
 
+                <div id="topicList">
 
-                <a class="topic" href="thread.html">
+                    <!-- 1 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="ram"
+                       data-messages="0"
+                       data-views="3"
+                       data-time="4"
+                       data-type="new">
 
-                    <div class="topic-avatar">
-                        C
-                    </div>
+                        <div class="topic-avatar">C</div>
 
-                    <div class="topic-main">
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                KLEVV CRAS V RGB 2x16 GB DDR5 RAM ayarları nasıldır?
+                            </div>
 
-                        <div class="topic-title">
-                            KLEVV CRAS V RGB 2x16 GB DDR5 RAM ayarları nasıldır?
+                            <div class="topic-meta">
+                                CanPatrioTic · 4 dakika önce · RAM
+                            </div>
                         </div>
 
-                        <div class="topic-meta">
-                            CanPatrioTic · 4 dakika önce · RAM
+                        <div class="topic-stats">
+                            Mesaj: 0<br>
+                            Görüntüleme: 3
                         </div>
 
-                    </div>
-
-                    <div class="topic-stats">
-                        Mesaj: 0<br>
-                        Görüntüleme: 3
-                    </div>
-
-                    <div class="topic-last">
-                        4 dakika önce
-                        <small>CanPatrioTic</small>
-                    </div>
-
-                </a>
-
-
-                <a class="topic" href="thread.html">
-
-                    <div class="topic-avatar">
-                        V
-                    </div>
-
-                    <div class="topic-main">
-
-                        <div class="topic-title">
-                            Valorant GO 1. Cilt Bıçağı vs İyon Enerji Kılıcı
+                        <div class="topic-last">
+                            4 dakika önce
+                            <small>CanPatrioTic</small>
                         </div>
 
-                        <div class="topic-meta">
-                            General5306 · 23 dakika önce · Valorant
+                    </a>
+
+
+                    <!-- 2 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="valorant"
+                       data-messages="2"
+                       data-views="20"
+                       data-time="23"
+                       data-type="new">
+
+                        <div class="topic-avatar">V</div>
+
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                Valorant GO 1. Cilt Bıçağı vs İyon Enerji Kılıcı
+                            </div>
+
+                            <div class="topic-meta">
+                                General5306 · 23 dakika önce · Valorant
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="topic-stats">
-                        Mesaj: 2<br>
-                        Görüntüleme: 20
-                    </div>
-
-                    <div class="topic-last">
-                        3 dakika önce
-                        <small>LokxER</small>
-                    </div>
-
-                </a>
-
-
-                <a class="topic" href="thread.html">
-
-                    <div class="topic-avatar">
-                        M
-                    </div>
-
-                    <div class="topic-main">
-
-                        <div class="topic-title">
-                            Dell AW2723DF ve RTX 4080 sistemde 244 Hz seçince çözünürlük 1080P'ye düşüyor
+                        <div class="topic-stats">
+                            Mesaj: 2<br>
+                            Görüntüleme: 20
                         </div>
 
-                        <div class="topic-meta">
-                            magraven · 28 dakika önce · Monitörler ve Görüntüleme Aygıtları
+                        <div class="topic-last">
+                            3 dakika önce
+                            <small>LokxER</small>
                         </div>
 
-                    </div>
-
-                    <div class="topic-stats">
-                        Mesaj: 0<br>
-                        Görüntüleme: 7
-                    </div>
-
-                    <div class="topic-last">
-                        28 dakika önce
-                        <small>magraven</small>
-                    </div>
-
-                </a>
+                    </a>
 
 
-                <a class="topic" href="thread.html">
+                    <!-- 3 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="monitor"
+                       data-messages="0"
+                       data-views="7"
+                       data-time="28"
+                       data-type="new">
 
-                    <div class="topic-avatar">
-                        D
-                    </div>
+                        <div class="topic-avatar">M</div>
 
-                    <div class="topic-main">
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                Dell AW2723DF ve RTX 4080 sistemde 244 Hz seçince çözünürlük 1080P'ye düşüyor
+                            </div>
 
-                        <div class="topic-title">
-                            iPhone 16e'den hangi modele geçilmeli?
+                            <div class="topic-meta">
+                                magraven · 28 dakika önce · Monitörler ve Görüntüleme Aygıtları
+                            </div>
                         </div>
 
-                        <div class="topic-meta">
-                            darwin. · 30 dakika önce · Telefon Tavsiyeleri
+                        <div class="topic-stats">
+                            Mesaj: 0<br>
+                            Görüntüleme: 7
                         </div>
 
-                    </div>
-
-                    <div class="topic-stats">
-                        Mesaj: 6<br>
-                        Görüntüleme: 46
-                    </div>
-
-                    <div class="topic-last">
-                        21 dakika önce
-                        <small>Simon</small>
-                    </div>
-
-                </a>
-
-
-                <a class="topic" href="thread.html">
-
-                    <div class="topic-avatar">
-                        K
-                    </div>
-
-                    <div class="topic-main">
-
-                        <div class="topic-title">
-                            [Elektronik] KTC H25T7 200 Hz IPS monitör | 3.639 TL!
+                        <div class="topic-last">
+                            28 dakika önce
+                            <small>magraven</small>
                         </div>
 
-                        <div class="topic-meta">
-                            Caner Uncu · 32 dakika önce · Sıcak Fırsatlar
+                    </a>
+
+
+                    <!-- 4 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="phone"
+                       data-messages="6"
+                       data-views="46"
+                       data-time="30"
+                       data-type="new">
+
+                        <div class="topic-avatar">D</div>
+
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                iPhone 16e'den hangi modele geçilmeli?
+                            </div>
+
+                            <div class="topic-meta">
+                                darwin. · 30 dakika önce · Telefon Tavsiyeleri
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="topic-stats">
-                        Mesaj: 0<br>
-                        Görüntüleme: 39
-                    </div>
-
-                    <div class="topic-last">
-                        32 dakika önce
-                        <small>Caner Uncu</small>
-                    </div>
-
-                </a>
-
-
-                <a class="topic" href="thread.html">
-
-                    <div class="topic-avatar">
-                        A
-                    </div>
-
-                    <div class="topic-main">
-
-                        <div class="topic-title">
-                            Aziz Yıldırım, seneye başkanlığı bırakmayacak
+                        <div class="topic-stats">
+                            Mesaj: 6<br>
+                            Görüntüleme: 46
                         </div>
 
-                        <div class="topic-meta">
-                            Captain Skriniar · 43 dakika önce · Futbol
+                        <div class="topic-last">
+                            21 dakika önce
+                            <small>Simon</small>
                         </div>
 
-                    </div>
-
-                    <div class="topic-stats">
-                        Mesaj: 5<br>
-                        Görüntüleme: 55
-                    </div>
-
-                    <div class="topic-last">
-                        35 dakika önce
-                        <small>PlayStation 3</small>
-                    </div>
-
-                </a>
+                    </a>
 
 
-                <a class="topic" href="thread.html">
+                    <!-- 5 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="deals"
+                       data-messages="0"
+                       data-views="39"
+                       data-time="32"
+                       data-type="deals">
 
-                    <div class="topic-avatar">
-                        H
-                    </div>
+                        <div class="topic-avatar">K</div>
 
-                    <div class="topic-main">
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                [Elektronik] KTC H25T7 200 Hz IPS monitör | 3.639 TL!
+                            </div>
 
-                        <div class="topic-title">
-                            Siyah parçalarla beyaz kasa kullanan var mı?
+                            <div class="topic-meta">
+                                Caner Uncu · 32 dakika önce · Sıcak Fırsatlar
+                            </div>
                         </div>
 
-                        <div class="topic-meta">
-                            Halo · 43 dakika önce · Kasa
+                        <div class="topic-stats">
+                            Mesaj: 0<br>
+                            Görüntüleme: 39
                         </div>
 
-                    </div>
+                        <div class="topic-last">
+                            32 dakika önce
+                            <small>Caner Uncu</small>
+                        </div>
 
-                    <div class="topic-stats">
-                        Mesaj: 6<br>
-                        Görüntüleme: 36
-                    </div>
-
-                    <div class="topic-last">
-                        1 dakika önce
-                        <small>Yusuf7878</small>
-                    </div>
-
-                </a>
+                    </a>
 
 
-                <a class="topic" href="thread.html">
+                    <!-- 6 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="football"
+                       data-messages="5"
+                       data-views="55"
+                       data-time="43"
+                       data-type="offtopic">
 
-                    <div class="topic-avatar">
-                        W
-                    </div>
+                        <div class="topic-avatar">A</div>
 
-                    <div class="topic-main">
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                Aziz Yıldırım, seneye başkanlığı bırakmayacak
+                            </div>
 
-                        <div class="topic-title">
+                            <div class="topic-meta">
+                                Captain Skriniar · 43 dakika önce · Futbol
+                            </div>
+                        </div>
 
-                            <span style="
-                                border:1px solid #2563eb;
-                                border-radius:4px;
-                                padding:2px 5px;
-                                font-size:11px;
-                                color:#60a5fa;
-                            ">
-                                Çözüldü
-                            </span>
+                        <div class="topic-stats">
+                            Mesaj: 5<br>
+                            Görüntüleme: 55
+                        </div>
 
-                            Bully oyunundan atma sorunu için hangi fix indirilmeli?
+                        <div class="topic-last">
+                            35 dakika önce
+                            <small>PlayStation 3</small>
+                        </div>
+
+                    </a>
+
+
+                    <!-- 7 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="case"
+                       data-messages="6"
+                       data-views="36"
+                       data-time="43"
+                       data-type="offtopic">
+
+                        <div class="topic-avatar">H</div>
+
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                Siyah parçalarla beyaz kasa kullanan var mı?
+                            </div>
+
+                            <div class="topic-meta">
+                                Halo · 43 dakika önce · Kasa
+                            </div>
+                        </div>
+
+                        <div class="topic-stats">
+                            Mesaj: 6<br>
+                            Görüntüleme: 36
+                        </div>
+
+                        <div class="topic-last">
+                            1 dakika önce
+                            <small>Yusuf7878</small>
+                        </div>
+
+                    </a>
+
+
+                    <!-- 8 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="game-support"
+                       data-messages="3"
+                       data-views="37"
+                       data-time="46"
+                       data-type="content">
+
+                        <div class="topic-avatar">W</div>
+
+                        <div class="topic-main">
+
+                            <div class="topic-title">
+
+                                <span style="
+                                    border:1px solid #2563eb;
+                                    border-radius:4px;
+                                    padding:2px 5px;
+                                    font-size:11px;
+                                    color:#60a5fa;
+                                ">
+                                    Çözüldü
+                                </span>
+
+                                Bully oyunundan atma sorunu için hangi fix indirilmeli?
+
+                            </div>
+
+                            <div class="topic-meta">
+                                Wartz · 46 dakika önce · Oyun Teknik Destek
+                            </div>
 
                         </div>
 
-                        <div class="topic-meta">
-                            Wartz · 46 dakika önce · Oyun Teknik Destek
+                        <div class="topic-stats">
+                            Mesaj: 3<br>
+                            Görüntüleme: 37
                         </div>
 
-                    </div>
-
-                    <div class="topic-stats">
-                        Mesaj: 3<br>
-                        Görüntüleme: 37
-                    </div>
-
-                    <div class="topic-last">
-                        40 dakika önce
-                        <small>Lain makura</small>
-                    </div>
-
-                </a>
-
-
-                <a class="topic" href="thread.html">
-
-                    <div class="topic-avatar">
-                        B
-                    </div>
-
-                    <div class="topic-main">
-
-                        <div class="topic-title">
-                            Temiz RTX 4060 ikinci elde ne kadar eder?
+                        <div class="topic-last">
+                            40 dakika önce
+                            <small>Lain makura</small>
                         </div>
 
-                        <div class="topic-meta">
-                            BetterTurnip728 · 46 dakika önce · Ekran Kartı
+                    </a>
+
+
+                    <!-- 9 -->
+                    <a class="topic"
+                       href="thread.html"
+                       data-category="gpu"
+                       data-messages="0"
+                       data-views="20"
+                       data-time="46"
+                       data-type="new">
+
+                        <div class="topic-avatar">B</div>
+
+                        <div class="topic-main">
+                            <div class="topic-title">
+                                Temiz RTX 4060 ikinci elde ne kadar eder?
+                            </div>
+
+                            <div class="topic-meta">
+                                BetterTurnip728 · 46 dakika önce · Ekran Kartı
+                            </div>
                         </div>
 
-                    </div>
+                        <div class="topic-stats">
+                            Mesaj: 0<br>
+                            Görüntüleme: 20
+                        </div>
 
-                    <div class="topic-stats">
-                        Mesaj: 0<br>
-                        Görüntüleme: 20
-                    </div>
+                        <div class="topic-last">
+                            46 dakika önce
+                            <small>BetterTurnip728</small>
+                        </div>
 
-                    <div class="topic-last">
-                        46 dakika önce
-                        <small>BetterTurnip728</small>
-                    </div>
+                    </a>
 
-                </a>
+                </div>
 
             </div>
 
         </div>
 
 
-        <!-- SAĞ SIDEBAR -->
+        <!-- SIDEBAR -->
         <div>
 
             <div class="sidebar-box">
@@ -860,7 +891,6 @@ a{
                     <div class="profile-avatar"></div>
 
                     <div>
-
                         <div class="profile-name">
                             muhammetaktas122
                         </div>
@@ -880,7 +910,6 @@ a{
                         <div class="profile-stat">
                             Ödül Puanları: 444
                         </div>
-
                     </div>
 
                 </div>
@@ -949,7 +978,6 @@ a{
 </footer>
 
 
-<!-- COOKIE -->
 <div class="cookie" id="cookie">
 
     DijitalForum Sosyal, anlık bildirimleri etkinleştirmek için izninizi istiyor.
@@ -961,6 +989,155 @@ a{
     </button>
 
 </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const tabs = document.querySelectorAll("#tabs button");
+    const topics = Array.from(document.querySelectorAll("#topicList .topic"));
+    const title = document.getElementById("categoryTitle");
+    const list = document.getElementById("topicList");
+
+    function showTopics(filter){
+
+        let visibleTopics = [];
+
+        if(filter === "new"){
+
+            visibleTopics = topics.slice();
+
+            title.textContent = "🆕 Yeni Konular";
+
+        }
+
+        else if(filter === "latest"){
+
+            visibleTopics = topics
+                .slice()
+                .sort(function(a,b){
+                    return Number(a.dataset.time) - Number(b.dataset.time);
+                });
+
+            title.textContent = "💬 Son Mesajlar";
+
+        }
+
+        else if(filter === "popular"){
+
+            visibleTopics = topics
+                .slice()
+                .sort(function(a,b){
+
+                    const aScore =
+                        Number(a.dataset.views) +
+                        Number(a.dataset.messages) * 10;
+
+                    const bScore =
+                        Number(b.dataset.views) +
+                        Number(b.dataset.messages) * 10;
+
+                    return bScore - aScore;
+
+                });
+
+            title.textContent = "🔥 Popüler Konular";
+
+        }
+
+        else if(filter === "unanswered"){
+
+            visibleTopics = topics.filter(function(topic){
+
+                return Number(topic.dataset.messages) === 0;
+
+            });
+
+            title.textContent = "❓ Cevapsız Sorular";
+
+        }
+
+        else if(filter === "deals"){
+
+            visibleTopics = topics.filter(function(topic){
+
+                return topic.dataset.category === "deals";
+
+            });
+
+            title.textContent = "🏷️ Sıcak Fırsatlar";
+
+        }
+
+        else if(filter === "content"){
+
+            visibleTopics = topics.filter(function(topic){
+
+                return topic.dataset.type === "content";
+
+            });
+
+            title.textContent = "📚 DijitalForum İçerikleri";
+
+        }
+
+        else if(filter === "offtopic"){
+
+            visibleTopics = topics.filter(function(topic){
+
+                return topic.dataset.type === "offtopic";
+
+            });
+
+            title.textContent = "💬 Konu Dışı";
+
+        }
+
+
+        list.innerHTML = "";
+
+
+        if(visibleTopics.length === 0){
+
+            list.innerHTML = `
+                <div class="empty">
+                    Bu kategoride henüz konu bulunmuyor.
+                </div>
+            `;
+
+            return;
+        }
+
+
+        visibleTopics.forEach(function(topic){
+
+            list.appendChild(topic);
+
+        });
+
+    }
+
+
+    tabs.forEach(function(tab){
+
+        tab.addEventListener("click", function(e){
+
+            e.preventDefault();
+
+            tabs.forEach(function(item){
+                item.classList.remove("active");
+            });
+
+            tab.classList.add("active");
+
+            showTopics(tab.dataset.filter);
+
+        });
+
+    });
+
+});
+</script>
 
 </body>
 </html>
