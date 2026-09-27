@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yeni Profil Mesajları - DijitalForum</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",Tahoma,sans-serif
+}
+
+html,body{
+  min-height:100%
+}
+
+body{
+  background:#0f172a;
+  color:#fff
+}
+
+a{
+  color:inherit;
+  text-decoration:none
+}
+
+button{
+  font-family:inherit
+}
+
+.container{
+  width:95%;
+  max-width:1400px;
+  margin:auto
+}
+
+
+/* NAVBAR */
+
+.navbar{
+  background:#111827;
+  border-bottom:1px solid #1f2937;
+  position:sticky;
+  top:0;
+  z-index:999
+}
+
+.nav-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+  gap:20px;
+  flex-wrap:wrap
+}
+
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#60a5fa;
+  white-space:nowrap
+}
+
+.menu{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  flex-wrap:wrap
+}
+
+.menu a{
+  color:#d1d5db;
+  transition:.2s
+}
+
+.menu a:hover{
+  color:#60a5fa
+}
+
+.actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap
+}
+
+.btn{
+  padding:10px 15px;
+  border-radius:8px;
+  font-weight:600;
+  display:inline-block;
+  cursor:pointer;
+  border:0
+}
+
+.btn-dark{
+  background:#1e293b;
+  color:#fff
+}
+
+.btn-blue{
+  background:#2563eb;
+  color:#fff
+}
+
+.btn:hover{
+  opacity:.9
+}
+
+
+/* HERO */
+
+.hero{
+  background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  padding:45px 20px;
+  text-align:center
+}
+
+.hero h1{
+  font-size:38px;
+  margin-bottom:10px
+}
+
+.hero p{
+  color:#dbeafe;
+  font-size:17px
+}
+
+
+/* ANA ALAN */
+
+.main{
+  display:block;
+  margin-top:20px
+}
+
+
+/* SEKME MENÜSÜ */
+
+.new-tabs{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:18px;
+  overflow-x:auto;
+  white-space:nowrap;
+  padding:2px 0
+}
+
+.new-tabs a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  min-height:36px;
+  border:1px solid #1f2937;
+  border-radius:8px;
+  background:#111827;
+  color:#cbd5e1;
+  font-size:13px;
+  font-weight:600;
+  transition:.18s;
+  cursor:pointer;
+  box-shadow:0 1px 2px rgba(0,0,0,.15)
+}
+
+.new-tabs a:hover{
+  background:#162033;
+  border-color:#2563eb;
+  color:#fff
+}
+
+.new-tabs a.active{
+  background:#2563eb;
+  border-color:#2563eb;
+  color:#fff
+}
+
+.new-tabs a:focus-visible{
+  outline:2px solid #60a5fa;
+  outline-offset:2px
+}
+
+
+/* PROFİL MESAJLARI KARTI */
+
+.profile-card{
+  background:#111827;
+  border-radius:12px;
+  border:1px solid #1f2937;
+  overflow:hidden;
+  margin-bottom:20px
+}
+
+.profile-title{
+  background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  padding:15px 16px;
+  font-size:18px;
+  font-weight:700
+}
+
+
+/* PROFİL MESAJI */
+
+.profile-list{
+  display:flex;
+  flex-direction:column
+}
+
+.profile-message{
+  display:flex;
+  gap:14px;
+  padding:16px 17px;
+  border-bottom:1px solid #1f2937;
+  transition:.2s
+}
+
+.profile-message:last-child{
+  border-bottom:0
+}
+
+.profile-message:hover{
+  background:#162033
+}
+
+.profile-avatar{
+  width:46px;
+  height:46px;
+  min-width:46px;
+  border-radius:10px;
+  background:#1e293b;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  border:1px solid #273449;
+  overflow:hidden
+}
+
+.profile-info{
+  min-width:0;
+  flex:1
+}
+
+.profile-header{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:5px
+}
+
+.profile-name{
+  color:#dbeafe;
+  font-size:15px;
+  font-weight:600
+}
+
+.profile-time{
+  color:#64748b;
+  font-size:11px
+}
+
+.profile-target{
+  color:#60a5fa;
+  font-size:12px;
+  margin-bottom:5px
+}
+
+.profile-text{
+  color:#cbd5e1;
+  font-size:13px;
+  line-height:1.6;
+  word-break:break-word
+}
+
+
+/* EK DOSYA */
+
+.profile-attachment{
+  margin-top:10px;
+  background:#0f172a;
+  border:1px solid #273449;
+  border-radius:8px;
+  padding:10px 12px
+}
+
+.profile-attachment-title{
+  color:#dbeafe;
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:3px
+}
+
+.profile-attachment-link{
+  color:#60a5fa;
+  font-size:12px
+}
+
+
+/* TEPKİLER */
+
+.profile-reactions{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-top:9px
+}
+
+.profile-reaction{
+  background:#1e293b;
+  border:1px solid #273449;
+  color:#94a3b8;
+  border-radius:6px;
+  padding:4px 7px;
+  font-size:11px
+}
+
+
+/* BOŞ DURUM */
+
+.profile-empty{
+  min-height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px
+}
+
+.profile-empty-inner{
+  max-width:500px
+}
+
+.profile-empty-icon{
+  font-size:52px;
+  margin-bottom:15px;
+  opacity:.9
+}
+
+.profile-empty-title{
+  font-size:22px;
+  font-weight:700;
+  color:#e5e7eb;
+  margin-bottom:8px
+}
+
+.profile-empty-text{
+  color:#94a3b8;
+  font-size:14px;
+  line-height:1.6
+}
+
+
+/* SAYFALAMA */
+
+.pagination{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  flex-wrap:wrap;
+  padding:18px;
+  border-top:1px solid #1f2937
+}
+
+.pagination a,
+.pagination span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:36px;
+  height:36px;
+  padding:0 10px;
+  border:1px solid #1f2937;
+  border-radius:8px;
+  background:#111827;
+  color:#cbd5e1;
+  font-size:13px;
+  font-weight:600;
+  transition:.18s
+}
+
+.pagination a:hover{
+  background:#162033;
+  border-color:#2563eb;
+  color:#fff
+}
+
+.pagination a.active{
+  background:#2563eb;
+  border-color:#2563eb;
+  color:#fff
+}
+
+.pagination span{
+  background:transparent;
+  border-color:transparent;
+  color:#64748b
+}
+
+
+/* FOOTER */
+
+.footer{
+  background:#111827;
+  margin-top:40px;
+  padding:25px;
+  text-align:center;
+  color:#94a3b8;
+  border-top:1px solid #1f2937
+}
+
+
+/* ÇEREZ */
+
+.cookie{
+  position:fixed;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  background:#111827;
+  border:1px solid #2563eb;
+  border-radius:10px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 50px 10px 15px;
+  color:#cbd5e1;
+  font-size:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  z-index:1000
+}
+
+.cookie-close{
+  position:absolute;
+  right:12px;
+  top:7px;
+  border:0;
+  background:transparent;
+  color:#60a5fa;
+  font-size:22px;
+  cursor:pointer
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+  .menu{
+    order:3;
+    width:100%
+  }
+
+}
+
+@media(max-width:650px){
+
+  .container{
+    width:94%
+  }
+
+  .logo{
+    font-size:24px
+  }
+
+  .menu{
+    gap:12px;
+    font-size:13px;
+    overflow-x:auto;
+    flex-wrap:nowrap
+  }
+
+  .actions{
+    width:100%
+  }
+
+  .actions .btn{
+    flex:1;
+    text-align:center
+  }
+
+  .hero h1{
+    font-size:28px
+  }
+
+  .profile-message{
+    padding:13px
+  }
+
+  .profile-avatar{
+    width:40px;
+    height:40px;
+    min-width:40px;
+    font-size:19px
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+  <div class="container">
+
+    <div class="nav-inner">
+
+      <div class="logo">
+        🚀 DijitalForum
+      </div>
+
+
+      <ul class="menu">
+
+        <li>
+          <a href="index.html">
+            Ana Sayfa
+          </a>
+        </li>
+
+        <li>
+          <a href="yeni-mesajlar.html">
+            Yeni Mesajlar
+          </a>
+        </li>
+
+        <li>
+          <a href="konu-olustur.html">
+            Konu Oluştur
+          </a>
+        </li>
+
+        <li>
+          <a href="kategori-sec.html">
+            Kategoriler
+          </a>
+        </li>
+
+        <li>
+          <a href="profil.html">
+            Profil
+          </a>
+        </li>
+
+        <li>
+          <a href="bildirimler.html">
+            Bildirimler
+          </a>
+        </li>
+
+        <li>
+          <a href="login.html">
+            Giriş
+          </a>
+        </li>
+
+        <li>
+          <a href="register.html">
+            Kayıt Ol
+          </a>
+        </li>
+
+      </ul>
+
+
+      <div
+        class="actions"
+        id="userActions">
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <h1>
+      👤 Yeni Profil Mesajları
+    </h1>
+
+    <p>
+      Üyelerin profillerinde paylaştığı en yeni mesajları buradan takip edebilirsin.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- ANA İÇERİK -->
+
+<main class="container">
+
+  <div class="main">
+
+
+    <!-- SEKME MENÜSÜ -->
+
+    <div
+      class="new-tabs"
+      role="tablist"
+      aria-label="Ne var ne yok menüsü">
+
+
+      <a href="neler-yeni.html">
+        Ne var ne yok?
+      </a>
+
+
+      <a href="yeni-mesajlar.html">
+        Yeni mesajlar
+      </a>
+
+
+      <a href="yeni-blog-girdileri.html">
+        Yeni blog girdileri
+      </a>
+
+
+      <a href="yeni-blog-yorumlari.html">
+        Yeni blog yorumları
+      </a>
+
+
+      <a href="yeni-yazilimlar.html">
+        Yeni yazılımlar
+      </a>
+
+
+      <a
+        href="yeni-profil-mesajlari.html"
+        class="active"
+        aria-current="page">
+        Yeni profil mesajları
+      </a>
+
+
+      <a href="son-etkinlik.html">
+        Son etkinlik
+      </a>
+
+    </div>
+
+
+
+    <!-- PROFİL MESAJLARI -->
+
+    <div class="profile-card">
+
+
+      <div class="profile-title">
+        👤 Yeni Profil Mesajları
+      </div>
+
+
+      <div
+        class="profile-list"
+        id="profileList">
+
+
+        <!--
+          PROFİL MESAJLARI BURAYA GELECEK
+        -->
+
+
+        <div
+          class="profile-empty"
+          id="profileEmpty">
+
+          <div class="profile-empty-inner">
+
+            <div class="profile-empty-icon">
+              👤
+            </div>
+
+            <div class="profile-empty-title">
+              Yeni Profil Mesajları bulunmamaktadır.
+            </div>
+
+            <div class="profile-empty-text">
+              Üyeler profil mesajı yayınladığında
+              burada görünecek.
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <!--
+        PAGINATION
+
+        Başlangıçta display:none.
+
+        Profil mesajları 1 sayfadan fazla olduğunda
+        JavaScript tarafından gösterilecek.
+      -->
+
+      <div
+        class="pagination"
+        id="pagination">
+
+        <a
+          href="https://techolay.net/sosyal/neler-yeni/profil-mesajlari/1146086/"
+          class="active">
+          1
+        </a>
+
+        <a
+          href="https://techolay.net/sosyal/neler-yeni/profil-mesajlari/1146086/page-2">
+          2
+        </a>
+
+        <a
+          href="https://techolay.net/sosyal/neler-yeni/profil-mesajlari/1146086/page-3">
+          3
+        </a>
+
+        <span>
+          …
+        </span>
+
+        <a
+          href="https://techolay.net/sosyal/neler-yeni/profil-mesajlari/1146086/page-61">
+          61
+        </a>
+
+        <a
+          href="https://techolay.net/sosyal/neler-yeni/profil-mesajlari/1146086/page-2">
+          Sonraki
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  © 2026 DijitalForum - Tüm Hakları Saklıdır
+
+</footer>
+
+
+
+<!-- ÇEREZ -->
+
+<div
+  class="cookie"
+  id="cookieBox">
+
+  Bu web sitesi deneyimini geliştirmek için çerezleri kullanabilir.
+
+  <button
+    class="cookie-close"
+    onclick="closeCookie()"
+    aria-label="Çerezi kapat">
+
+    ×
+
+  </button>
+
+</div>
+
+
+
+<script>
+
+
+/* =========================================================
+   KULLANICI BUTONLARI
+   ========================================================= */
+
+const userActions =
+  document.getElementById("userActions");
+
+
+let isLoggedIn = false;
+
+
+try{
+
+  isLoggedIn =
+    localStorage.getItem("isLoggedIn") === "true";
+
+}catch(e){
+
+  isLoggedIn = false;
+
+}
+
+
+if(isLoggedIn){
+
+  userActions.innerHTML =
+    '<a href="yeni-mesajlar.html" class="btn btn-dark">🔥 Yeni Mesajlar</a>' +
+    '<a href="konu-olustur.html" class="btn btn-blue">✏️ Konu Aç</a>';
+
+}else{
+
+  userActions.innerHTML =
+    '<a href="register.html" class="btn btn-dark">Kayıt Ol</a>' +
+    '<a href="login.html" class="btn btn-blue">Giriş Yap</a>';
+
+}
+
+
+
+/* =========================================================
+   PROFİL MESAJLARI
+   =========================================================
+
+   ŞU ANDA BOŞ.
+
+   Bu yüzden:
+
+   Yeni Profil Mesajları bulunmamaktadır.
+
+   gösterilecek.
+
+   Pagination da görünmeyecek.
+
+   Mesaj eklendiğinde aşağıdaki yapıyı kullanabilirsin:
+
+   {
+     name:"Kullanıcı",
+     time:"10 dakika önce",
+     avatar:"👤",
+     target:"Profil mesajı",
+     text:"Merhaba!"
+   }
+
+   ========================================================= */
+
+const profileMessages = [
+
+  /*
+  {
+    name:"Kullanıcı Adı",
+    time:"10 dakika önce",
+    avatar:"👤",
+    target:"Profil mesajı",
+    text:"Merhaba!"
+  }
+  */
+
+];
+
+
+
+/* =========================================================
+   PROFİL MESAJLARINI GÖSTER
+   ========================================================= */
+
+const profileList =
+  document.getElementById("profileList");
+
+const profileEmpty =
+  document.getElementById("profileEmpty");
+
+const pagination =
+  document.getElementById("pagination");
+
+
+const messagesPerPage = 10;
+
+
+
+function escapeHtml(value){
+
+  return String(value)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+
+}
+
+
+
+function renderProfileMessages(){
+
+
+  /* =======================================================
+     HİÇ MESAJ YOK
+     ======================================================= */
+
+  if(
+    !Array.isArray(profileMessages) ||
+    profileMessages.length === 0
+  ){
+
+    profileEmpty.style.display = "flex";
+
+    pagination.style.display = "none";
+
+    return;
+
+  }
+
+
+
+  /* =======================================================
+     MESAJLAR VAR
+     ======================================================= */
+
+  profileEmpty.style.display = "none";
+
+
+  const totalPages =
+    Math.ceil(
+      profileMessages.length /
+      messagesPerPage
+    );
+
+
+
+  profileMessages
+    .forEach(function(message){
+
+
+      const item =
+        document.createElement("article");
+
+      item.className =
+        "profile-message";
+
+
+      let attachmentHTML = "";
+
+
+      if(message.attachment){
+
+        attachmentHTML = `
+
+          <div class="profile-attachment">
+
+            <div class="profile-attachment-title">
+              ${escapeHtml(
+                message.attachment.title || ""
+              )}
+            </div>
+
+            <div class="profile-attachment-link">
+              ${escapeHtml(
+                message.attachment.link || ""
+              )}
+            </div>
+
+          </div>
+
+        `;
+
+      }
+
+
+
+      let reactionsHTML = "";
+
+
+      if(
+        Array.isArray(message.reactions) &&
+        message.reactions.length > 0
+      ){
+
+        reactionsHTML = `
+
+          <div class="profile-reactions">
+
+            ${
+              message.reactions
+                .map(function(user){
+
+                  return `
+                    <span class="profile-reaction">
+                      👍 ${escapeHtml(user)}
+                    </span>
+                  `;
+
+                })
+                .join("")
+            }
+
+          </div>
+
+        `;
+
+      }
+
+
+
+      item.innerHTML = `
+
+        <div class="profile-avatar">
+          ${message.avatar || "👤"}
+        </div>
+
+
+        <div class="profile-info">
+
+          <div class="profile-header">
+
+            <span class="profile-name">
+              ${escapeHtml(
+                message.name || "Kullanıcı"
+              )}
+            </span>
+
+            <span class="profile-time">
+              ${escapeHtml(
+                message.time || ""
+              )}
+            </span>
+
+          </div>
+
+
+          ${
+            message.target
+            ?
+            `
+              <div class="profile-target">
+                ${escapeHtml(message.target)}
+              </div>
+            `
+            :
+            ""
+          }
+
+
+          <div class="profile-text">
+            ${escapeHtml(
+              message.text || ""
+            )}
+          </div>
+
+
+          ${attachmentHTML}
+
+
+          ${reactionsHTML}
+
+        </div>
+
+      `;
+
+
+      profileList.insertBefore(
+        item,
+        profileEmpty
+      );
+
+    });
+
+
+
+  /* =======================================================
+     SADECE 2 VEYA DAHA FAZLA SAYFA VARSA
+     PAGINATION GÖSTER
+     ======================================================= */
+
+  if(totalPages > 1){
+
+    pagination.style.display = "flex";
+
+  }else{
+
+    pagination.style.display = "none";
+
+  }
+
+}
+
+
+
+renderProfileMessages();
+
+
+
+/* =========================================================
+   ÇEREZ KAPAT
+   ========================================================= */
+
+function closeCookie(){
+
+  const cookie =
+    document.getElementById("cookieBox");
+
+
+  if(cookie){
+
+    cookie.style.display = "none";
+
+  }
+
+
+  try{
+
+    localStorage.setItem(
+      "dijitalForumCookieClosed",
+      "true"
+    );
+
+  }catch(e){}
+
+}
+
+
+
+/* =========================================================
+   ÇEREZ DURUMU
+   ========================================================= */
+
+try{
+
+  if(
+    localStorage.getItem(
+      "dijitalForumCookieClosed"
+    ) === "true"
+  ){
+
+    const cookie =
+      document.getElementById("cookieBox");
+
+
+    if(cookie){
+
+      cookie.style.display = "none";
+
+    }
+
+  }
+
+}catch(e){}
+
+
+</script>
+
+
+</body>
+</html>
