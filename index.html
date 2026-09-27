@@ -4593,12 +4593,22 @@ document
 
     function bindRestoredRows(){
         document.querySelectorAll('.forum-row').forEach(function(row){
-            if(row.dataset.sectionBound==='1') return;
-            row.dataset.sectionBound='1';
+            // The restored HTML already contains data-section-bound from the original rows.
+            // Remove it first so the newly restored DOM gets fresh click handlers.
+            row.removeAttribute('data-section-bound');
             row.classList.add('section-clickable');
-            row.setAttribute('role','button'); row.setAttribute('tabindex','0');
-            row.addEventListener('click',function(e){if(!e.target.closest('a,button,input,select,textarea')) openSection(rowData(row));});
-            row.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openSection(rowData(row));}});
+            row.setAttribute('role','button');
+            row.setAttribute('tabindex','0');
+            row.addEventListener('click',function(e){
+                if(!e.target.closest('a,button,input,select,textarea')) openSection(rowData(row));
+            });
+            row.addEventListener('keydown',function(e){
+                if(e.key==='Enter'||e.key===' '){
+                    e.preventDefault();
+                    openSection(rowData(row));
+                }
+            });
+            row.dataset.sectionBound='1';
         });
     }
     rows.forEach(r=>r.dataset.sectionBound='1');
